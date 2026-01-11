@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="es">
+
+
+<!-- Mirrored from lifehunter.netlify.app/reinoanimal/biografiaanimal/codigosa/biografiaalmeja by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 11 Jan 2026 08:53:39 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="../../../../unpkg.com/%40google/model-viewer%404.1.0/dist/model-viewer.min.js"></script>
+    <link rel="stylesheet" href="../css/BiografiaA.css">
+    <link rel="stylesheet" href="../../../css/session.css">
+    <style>
+        body {
+            --fondo: url("../css/Fondo/Almeja-Fondo.jpg")
+        }
+    </style>
+    <title>LifeHunter - Almeja</title>
+    <link rel="shortcut icon" href="../imagenes/Fooder/logo1png.png" type="image/x-icon">
+</head>
+
+<body class="body-abanico">
+    <header>
+        <a class='header-logo-link' href='../../../index.html'>
+            <img src="../../../img/logo.jpg" alt="Logo LifeHunter" class="header-logo">
+        </a>
+        <h1 class="tituloPrincipal">LifeHunter</h1>
+
+        <div class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <nav class="navegacion-principal">
+
+            <a class='nav-enlace' href='../../animal.html'>Regresar</a>
+            <div class="boton-sesion-mobile">Iniciar Sesión</div>
+        </nav>
+
+        <div class="boton-sesion iniciarSesion-btn">Iniciar Sesión</div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="titulo">
+                <h1>ALMEJA</h1>
+            </div>
+
+            <div class="info-box">
+                <div class="contenedor">
+                    <div class="taxonomy-block">
+                        <div class="taxonomy">
+                            <div>REINO</div>
+                            <div>CATEGORIA</div>
+                            <div>FILO</div>
+                            <div>CLASE</div>
+                            <div>ORDEN</div>
+                        </div>
+                        <div class="taxonomy2">
+                            <div><a href='../../animal.html'>Animal</a></div>
+                            <div><a href='../../animal0e7d.html?Subfilo=invertebrado'>Invertebrado</a></div>
+                            <div><a href='../../animal948b.html?Filo=moluscos'>Molusco</a></div>
+                            <div><a href='../../animalf6ae.html?clase=bivaldos'>Bivaldo</a></div>
+                            <div><a href='../../animald633.html?orden=filtradores'>Filtrador</a></div>
+                        </div>
+                        <div class="taxonomy">
+                            <div>REPRODUCCION</div>
+                            <div>HABITAT</div>
+                        </div>
+                        <div class="taxonomy2">
+                            <div><a href='../../animalf411.html?reproduccion=oviparos'>Oviparo</a></div>
+                            <div><a href='../../animal0f84.html?habitat=acuaticos'>Acuático</a></div>
+                        </div>
+                    </div>
+                    <div class="image-container">
+                        <img class="background" src="../imagenes/Almeja/fondo.jpg" alt="Fondo">
+                        <img class="base" src="../imagenes/Almeja/base.jpg" alt="Base">
+                        <img class="main-image" src="../../imagenes/Transparente/AlmejaT.png" alt="Almeja">
+                    </div>
+                </div>
+            </div>
+
+            <div class="description">
+                <section>
+                    <h2>Descripción</h2>
+                    <hr>
+                    <p>
+                        La almeja, ese modesto molusco bivalvo que habita los sedimentos acuáticos, es en realidad una
+                        ingeniera ecológica cuya existencia silenciosa sostiene ecosistemas enteros. Pertenecientes a la
+                        clase Bivalvia, estos invertebrados han perfeccionado el arte de la supervivencia desde el
+                        Cámbrico, hace más de 500 millones de años, desarrollando estrategias que desafían nuestra
+                        comprensión de la vida en condiciones extremas.
+                        Su concha calcárea, compuesta de carbonato de calcio dispuesto en finísimas capas como las
+                        páginas de un libro mineral, registra en sus anillos de crecimiento no solo su edad sino también
+                        las condiciones ambientales de cada año de su vida, convirtiéndose en un archivo natural de la
+                        historia acuática.
+                    </p>
+                </section>
+                <section>
+                    <h2>Distribución y hábitat</h2>
+                    <hr>
+                    <p>
+                        Las almejas han colonizado prácticamente todos los cuerpos de agua del planeta, desde las
+                        gélidas profundidades abisales hasta los cálidos estuarios tropicales, pasando por los lagos de
+                        alta montaña y las aguas salobres de los deltas fluviales. Cada especie ha desarrollado
+                        preferencias específicas: la almeja gigante (Tridacna gigas) adorna los arrecifes de coral del
+                        Indo-Pacífico, mientras que la venerupis (Ruditapes philippinarum)
+                        prefiere los fondos arenosos de las costas atlánticas. En España, especies como la almeja fina
+                        (Ruditapes decussatus) y la almeja babosa (Venerupis pullastra) son pilares de la economía
+                        marisquera gallega, donde se cultivan en bancos naturales llamados "parques" que siguen técnicas
+                        ancestrales. Estudios recientes han descubierto colonias de almejas hidrotermales (Calyptogena
+                        magnifica) en las dorsales oceánicas, prosperando a 2.500 metros de profundidad junto a
+                        fumarolas que emiten sulfuros a 350°C, en uno de los ejemplos más extremos de adaptación animal.
+                    </p>
+                    <div class="mapa-habitat">
+                        <div id="globo3d" class="container"></div>
+                    </div>
+
+                    <script src="https://unpkg.com/globe.gl"></script>
+                    <script src="../js/Continentes.js"></script>
+                    <script>
+                        const habitats = [
+                            { lat: 0, lng: -160, color: '#00bfff', label: 'Océano Pacífico' },
+                            { lat: 0, lng: -30, color: '#1e90ff', label: 'Océano Atlántico' },
+                            { lat: -20, lng: 80, color: '#4682b4', label: 'Océano Índico' },
+                            { lat: 85, lng: 0, color: '#b0e0e6', label: 'Océano Ártico' },
+                            { lat: -75, lng: 0, color: '#5f9ea0', label: 'Océano Antártico' }
+                        ];
+                        crearGlobo(habitats);
+                    </script>
+                </section>
+
+                <section>
+                    <h2>Alimentación</h2>
+                    <hr>
+                    <p>
+                        El sistema alimenticio de las almejas es un prodigio de eficiencia ecológica. Como organismos
+                        filtradores, bombean hasta 10 litros de agua por hora a través de sus sifones, atrapando
+                        fitoplancton, bacterias y materia orgánica en suspensión con sus branquias modificadas que
+                        funcionan como tamices microscópicos. Este proceso no solo las nutre, sino que clarifica las
+                        aguas y reduce la eutrofización, convirtiéndolas en depuradoras naturales. Algunas especies
+                        tropicales han desarrollado relaciones simbióticas con algas zooxantelas (como Symbiodinium),
+                        alojándolas en tejidos especializados donde realizan fotosíntesis a cambio de nutrientes, un
+                        mutualismo similar al de los corales. La almeja gigante puede obtener hasta el 70% de su energía
+                        de estas algas internas, complementando su dieta filtradora. En los fondos abisales, especies
+                        como Bathymodiolus albergan bacterias quimiosintéticas en sus branquias, capaces de transformar
+                        sulfuros tóxicos en alimento, demostrando una versatilidad metabólica sin parangón en el reino
+                        animal.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>Características físicas</h2>
+                    <hr>
+                    <p>
+                        La anatomía de la almeja es un compendio de soluciones evolutivas. Sus dos valvas, unidas por un
+                        ligamento elástico y músculos aductores, están compuestas de tres capas: el periostraco externo
+                        (resistente a la corrosión), la capa prismática (barrera mecánica) y la nácar interna (con hasta
+                        2.000 láminas de aragonito por milímetro). Este diseño las hace simultáneamente ligeras y
+                        extraordinariamente resistentes - la Tridacna gigas puede superar los 200 kg de peso y vivir más
+                        de 100 años. Su pie musculoso, que en algunas especies representa el 30% de su masa corporal,
+                        no solo les permite enterrarse rápidamente, sino que segrega biso, una sustancia proteica con la
+                        que se anclan al sustrato y que inspiró el desarrollo de adhesivos biomiméticos modernos.
+                    </p>
+                    <p>
+                        Los sifones inhalantes y exhalantes, a veces alargados como snorkels en especies que viven
+                        profundamente enterradas, están dotados de sensores químicos que detectan toxinas y vibraciones.
+                        Su sistema circulatorio abierto incluye un corazón con tres cámaras que bombea hemolinfa (sangre
+                        azul por su contenido en hemocianina) a través de vasos y senos, mientras que sus riñones
+                        primitivos filtran desechos con una eficiencia que supera a muchas plantas de tratamiento de
+                        agua. La almeja común (Mercenaria mercenaria) incluso desarrolla "dientes" de sílice en su
+                        estómago,
+                        estructuras cristalinas llamadas gastrolitos que trituran el alimento antes de la digestión.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>Comportamiento</h2>
+                    <hr>
+                    <p>
+                        Aunque carecen de cerebro centralizado, las almejas exhiben comportamientos complejos mediados
+                        por redes neuronales distribuidas. Pueden detectar cambios en la salinidad, temperatura y
+                        composición química del agua, respondiendo con ajustes en su tasa de filtración o enterramiento.
+                        Cuando perciben vibraciones de depredadores como estrellas de mar o cangrejos, algunas especies
+                        como la Mercenaria pueden enterrarse en menos de 8 segundos mediante rápidas contracciones de su
+                        pie.
+                    </p>
+                    <p>
+                        En los bancos de almejas, se ha observado sincronización reproductiva mediante feromonas
+                        disueltas en el agua, con liberaciones masivas de gametos que aumentan las probabilidades de
+                        fertilización. Algunas especies abisales emiten pulsos de luz bioluminiscente cuando son
+                        perturbadas, probablemente como mecanismo de defensa. Estudios recientes con Tridacna han
+                        revelado que ajustan la orientación de sus conchas a lo largo del día para maximizar la
+                        exposición de sus algas simbiontes a la luz solar, mostrando una forma primitiva de cognición
+                        espacial.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>Reproducción</h2>
+                    <hr>
+                    <p>
+                        El ciclo reproductivo de las almejas es tan diverso como sus hábitats. La mayoría son dioicas
+                        (sexos separados), aunque algunas especies como la almeja japonesa (Ruditapes philippinarum) son
+                        hermafroditas secuenciales. En eventos coordinados por temperatura y fases lunares, liberan
+                        nubes de esperma y óvulos que pueden teñir el agua de blanco lechoso. Una sola hembra de almeja
+                        gigante puede liberar 500 millones de óvulos en una temporada, de los cuales solo unos pocos
+                        completarán el complejo desarrollo larvario.
+                    <p>
+                        Las larvas velígeras, diminutas y nadadoras, pasan semanas o meses formando parte del plancton
+                        antes de sufrir la metamorfosis que las convertirá en juveniles bentónicos. Este proceso,
+                        estudiado en detalle en la almeja fina, implica la reabsorción del velo natatorio, el desarrollo
+                        del pie y la secreción de la primera concha calcárea verdadera. En condiciones óptimas, las
+                        almejas pueden alcanzar la madurez sexual en un año, aunque muchas especies viven décadas - se
+                        ha documentado una Arctica islandica (almeja de Islandia) que vivió 507 años, el animal más
+                        longevo jamás registrado.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>Defensa y depredadores</h2>
+                    <hr>
+                    <p>
+                        La vida de una almeja es una constante batalla por evitar ser comida. Sus estrategias defensivas
+                        incluyen enterramiento rápido, conchas reforzadas, producción de nácar.
+                    </p>
+                    <p>
+                        A pesar de estas defensas, son presa de estrellas de mar (que ejercen tracción constante para
+                        abrirlas), cangrejos (que rompen sus bordes con pinzas especializadas), peces como los
+                        odontodáctilos (que las destrozan con golpes de 80 km/h), y por supuesto, humanos. La sobrepesca
+                        ha reducido algunas poblaciones al 10% de sus niveles históricos, alterando cadenas tróficas
+                        enteras.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>Datos curiosos</h2>
+                    <hr>
+                    <ul class="lista">
+                        <li>Las perlas se forman cuando una partícula extraña es recubierta por hasta 2,000 capas de
+                            nácar a razón de 3-4 por día.</li>
+                        <li>La almeja gigante (Tridacna) puede alcanzar 1.4 metros de longitud y pesar 250 kg.</li>
+                        <li>Algunas almejas de agua dulce disparan larvas que se adhieren a peces como parásitos
+                            temporales.</li>
+                        <li>La Arctica islandica de 507 años fue nombrada "Ming" por haber nacido durante la dinastía
+                            Ming china.</li>
+                        <li>Las conchas de almeja fueron el primer dinero utilizado por los humanos, hace 4,000 años.
+                        </li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Estado de conservación</h2>
+                    <hr>
+                    <p>
+                        Mientras especies comerciales como la almeja japonesa prosperan en cultivos, muchas poblaciones
+                        naturales enfrentan crisis. La contaminación por microplásticos (que obstruyen sus sistemas
+                        filtradores), la acidificación oceánica (que disuelve sus conchas) y enfermedades emergentes
+                        como el "síndrome del sifón retraído" amenazan su supervivencia.
+                        Proyectos innovadores como el uso de almejas para limpiar aguas contaminadas (biorremediación) y
+                        bancos de conservación genética ofrecen esperanza. En la Bahía de Chesapeake (EEUU), la
+                        reintroducción de almejas nativas ha mejorado la claridad del agua en un 300%, demostrando que
+                        proteger estos humildes ingenieros ecosistémicos beneficia a toda la vida acuática.
+                    </p>
+                    <div class="estado-conservacion" data-estado="VU">
+                        <div class="estado" data-info="Extinto" data-code="EX">EX</div>
+                        <div class="estado" data-info="Extinto en estado silvestre" data-code="EW">EW</div>
+                        <div class="estado" data-info="En peligro crítico" data-code="CR">CR</div>
+                        <div class="estado" data-info="En peligro" data-code="EN">EN</div>
+                        <div class="estado" data-info="Vulnerable" data-code="VU">VU</div>
+                        <div class="estado" data-info="Casi amenazado" data-code="NT">NT</div>
+                        <div class="estado" data-info="Preocupación menor" data-code="LC">LC</div>
+                    </div>
+                </section>
+            </div>
+            <div class="img3D">
+                <h2>Modelo 3D:</h2>
+                <hr>
+                <model-viewer src="../Modelos3D/Almeja.glb" alt="Modelo 3D de un animal" auto-rotate camera-controls ar
+                    shadow-intensity="1">
+                </model-viewer>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer-contenedor">
+        <div class="footer-contenido">
+            <div class="footer-con">
+                <div class="footer-logo">
+                    <img src="../../../img/Proyecto%20nuevo.png" alt="Logo de LifeHunter" class="logo-img">
+                </div>
+
+                <button id="btn-dato">¡Curiosidad animal!</button>
+
+                <div id="animal-container" class="hidden">
+                    <img id="animal-img" src="#" alt="Animal animado">
+                    <p id="dato-curioso"></p>
+                </div>
+
+                <div class="footer-communidad">
+                    <h3 class="community-titilo">Comunidad</h3>
+                    <div class="redes-sociales">
+                        <a href="https://discord.com/" class="red-social" target="_blank" rel="noopener noreferrer"
+                            aria-label="Discord">
+                            <img src="../../../img/discordblanco.png" alt="Discord" class="icono-social">
+                        </a>
+                        <a href="https://www.instagram.com/" class="red-social" target="_blank"
+                            rel="noopener noreferrer" aria-label="Instagram">
+                            <img src="../../../img/instagramblanco.png" alt="Instagram" class="icono-social">
+                        </a>
+                        <a href="https://www.youtube.com/" class="red-social" target="_blank" rel="noopener noreferrer"
+                            aria-label="YouTube">
+                            <img src="../../../img/youtubeblanco.png" alt="YouTube" class="icono-social">
+                        </a>
+                        <a href="https://x.com/" class="red-social" target="_blank" rel="noopener noreferrer"
+                            aria-label="Twitter">
+                            <img src="../../../img/xblanco.png" alt="Twitter" class="icono-social">
+                        </a>
+                        <a href="https://www.facebook.com/" class="red-social" target="_blank" rel="noopener noreferrer"
+                            aria-label="Facebook">
+                            <img src="../../../img/facebookblanco.png" alt="Facebook" class="icono-social">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-info">
+                <div class="lugar">
+                    <p>Puedes encontrarnos en:</p>
+                    <a href="https://maps.app.goo.gl/hSpv9RwdGKMLmeew6" target="_blank">Av. Nicolás de Piérola 1221,
+                        Trujillo 13001</a>
+                </div>
+                <div class="contacta">
+                    <a href='../../../contactanos/contacto.html'>Contáctanos</a> <br> <br>
+                    <a href='../../../sitemap/sitemap.html'>Mapa del sitio</a>
+                </div>
+                <div class="telefono">
+                    <p>Teléfono:</p>
+                    <a href="#">+51 910425708</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-divide">
+            <hr class="linea-dividir">
+        </div>
+
+        <div class="copyright">
+            <p class="copyright-texto">LifeHunter © 2025 Grupo 1. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="../js/codigo.js"></script>
+    <script src="session.js"></script>
+
+</body>
+
+
+<!-- Mirrored from lifehunter.netlify.app/reinoanimal/biografiaanimal/codigosa/biografiaalmeja by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 11 Jan 2026 08:53:40 GMT -->
+</html>

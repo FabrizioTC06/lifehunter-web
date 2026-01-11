@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="es">
+
+
+<!-- Mirrored from lifehunter.netlify.app/reinoanimal/biografiaanimal/codigosa/biografiaalcotan by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 11 Jan 2026 08:53:35 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="../../../../unpkg.com/%40google/model-viewer%404.1.0/dist/model-viewer.min.js"></script>
+    <link rel="stylesheet" href="../css/BiografiaA.css">
+    <style>
+        body {
+            --fondo: url("../css/Fondo/Alcotan-Fondo.jpg")
+        }
+    </style>
+    <title>LifeHunter - Alcotán</title>
+    <link rel="shortcut icon" href="../imagenes/Fooder/logo1png.png" type="image/x-icon">
+    <link rel="stylesheet" href="../../../css/session.css">
+</head>
+
+<body class="body-abanico">
+    <header>
+        <a class='header-logo-link' href='../../../index.html'>
+            <img src="../../../img/logo.jpg" alt="Logo LifeHunter" class="header-logo">
+        </a>
+        <h1 class="tituloPrincipal">LifeHunter</h1>
+
+        <div class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <nav class="navegacion-principal">
+
+            <a class='nav-enlace' href='../../animal.html'>Regresar</a>
+            <div class="boton-sesion-mobile">Iniciar Sesión</div>
+        </nav>
+
+        <div class="boton-sesion iniciarSesion-btn">Iniciar Sesión</div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="titulo">
+                <h1>ALCOTÁN</h1>
+            </div>
+
+            <div class="info-box">
+                <div class="contenedor">
+                    <div class="taxonomy-block">
+                        <div class="taxonomy">
+                            <div>REINO</div>
+                            <div>CATEGORIA</div>
+                            <div>FILO</div>
+                            <div>CLASE</div>
+                            <div>ORDEN</div>
+                        </div>
+                        <div class="taxonomy2">
+                            <div><a href='../../animal.html'>Animal</a></div>
+                            <div><a href='../../animale250.html?Subfilo=vertebrado'>Vertebrado</a></div>
+                            <div><a href='../../animalc6cc.html?Filo=cordados'>Cordado</a></div>
+                            <div><a href='../../animal6826.html?clase=aves'>Ave</a></div>
+                            <div><a href='../../animal5fd4.html?orden=carnivoros'>Carnívoro</a></div>
+                        </div>
+                        <div class="taxonomy">
+                            <div>REPRODUCCION</div>
+                            <div>HABITAT</div>
+                        </div>
+                        <div class="taxonomy2">
+                            <div><a href='../../animalf411.html?reproduccion=oviparos'>Ovíparo</a></div>
+                            <div><a href='../../animal111b.html?habitat=aereos'>Aéreo</a></div>
+                        </div>
+                    </div>
+                    <div class="image-container">
+                        <img class="background" src="../imagenes/Alcotan/fondo.jpg" alt="Fondo">
+                        <img class="base" src="../imagenes/Alcotan/base.jpg" alt="Base">
+                        <img class="main-image" src="../../imagenes/Transparente/Alcot%c3%a1nT.png" alt="Alcotán">
+                    </div>
+                </div>
+            </div>
+
+            <div class="description">
+                <section>
+                    <h2>Descripción</h2>
+                    <hr>
+                    <p>
+                        El alcotán (Falco subbuteo), conocido como el "halcón de los mil vuelos", es una fascinante
+                        rapaz de la familia Falconidae que combina la elegancia de un cazador aéreo con la ferocidad de
+                        un depredador especializado. Con su silueta de alas afiladas como cuchillas y su vuelo
+                        meteórico, este pequeño halcón es el equivalente aviar de un caza militar, capaz de maniobras
+                        aéreas que desafían las leyes de la física.
+                        Su nombre científico subbuteo (del latín "casi buitre") es una ironía zoológica, pues este
+                        cazador de apenas 35 cm de longitud comparte con los buitres únicamente la maestría del vuelo
+                        sostenido, aunque con una agilidad que sus primos carroñeros jamás podrían emular.
+                    </p>
+                </section>
+                <section>
+                    <h2>Distribución y hábitat</h2>
+                    <hr>
+                    <p>
+                        El alcotán posee una de las distribuciones más amplias entre las rapaces, criando desde los
+                        bosques de la taiga siberiana hasta las dehesas ibéricas, y desde las estepas mongolas hasta los
+                        parques periurbanos de Europa Central. En España, donde llega en abril tras un viaje migratorio
+                        de 6,000 km desde sus cuarteles invernales en el sur de África, se concentra principalmente en
+                        las mesetas castellanas,
+                        Extremadura y los valles del Ebro y Guadalquivir.
+                    </p>
+                    <p>
+                        Estos halcones selectivos prefieren paisajes en mosaico que combinen zonas arboladas para
+                        nidificar (usando frecuentemente nidos abandonados de córvidos) con áreas abiertas ricas en
+                        insectos y pequeñas aves. Estudios con geolocalizadores han revelado que algunos individuos
+                        ibéricos invernan en Namibia y Botswana, siguiendo rutas migratorias distintas a las poblaciones
+                        centroeuropeas,
+                        con escalas en el estrecho de Gibraltar donde se concentran por cientos en septiembre formando
+                        espectaculares dormideros comunales.
+                    </p>
+                    <div class="mapa-habitat">
+                        <div id="globo3d" class="container"></div>
+                    </div>
+
+                    <script src="https://unpkg.com/globe.gl"></script>
+                    <script src="../js/Continentes.js"></script>
+                    <script>
+                        const habitats = [
+                            { lat: 2, lng: 21, color: 'yellow', label: 'Africa' },
+                            { lat: 48, lng: 15, color: 'blue', label: 'Europa' },
+                            { lat: 35, lng: 105, color: 'purple', label: 'Asia' }
+                        ];
+                        crearGlobo(habitats);
+                    </script>
+                </section>
+
+                <section>
+                    <h2>Alimentación</h2>
+                    <hr>
+                    <p>
+                        La dieta del alcotán es un testimonio de versatilidad depredadora. Especializado en la captura
+                        de presas al vuelo, su menú estival en Europa se compone en un 70% de insectos grandes
+                        (escarabajos, libélulas y mariposas) y un 30% de pequeñas aves como golondrinas, vencejos y
+                        estorninos. Técnicas de caza incluyen el "picado en tijera" (pliegue repentino de alas para
+                        cambiar dirección),
+                        el "robo en vuelo" (arrebatar presas a otras aves) y el espectacular "lanzamiento en parapente",
+                        donde tras una ascensión vertical suelta la presa para recogerla en picado.
+                    </p>
+                    <p>
+                        Análisis de egagrópilas han demostrado que un solo alcotán puede consumir hasta 1,000 insectos
+                        diarios durante las emergencias de libélulas. En África, donde pasan el invierno, cambian a una
+                        dieta basada en termitas aladas y pequeños paseriformes, mostrando una adaptabilidad trófica
+                        excepcional entre las rapaces.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>Características físicas</h2>
+                    <hr>
+                    <p>
+                        Con apenas 200-300 gramos de peso, el alcotán posee la proporción alar más extrema entre los
+                        halcones europeos - alas largas y puntiagudas que alcanzan 85 cm de envergadura, combinadas con
+                        una cola corta que actúa como timón de precisión. Su plumaje azul-pizarra oscuro con vientre
+                        barrado y "pantalones" rojizos lo hacen inconfundible,
+                        mientras que el característico bigote negro típico de los halcones aparece menos marcado que en
+                        sus parientes mayores.
+                    </p>
+                    <p>
+                        Los ojos oscuros, proporcionalmente más grandes que los del halcón peregrino, están protegidos
+                        por un tercer párpado transparente ("membrana nictitante") que actúa como gafas de protección
+                        durante los picados a alta velocidad. Sus patas, aunque cortas, terminan en garras
+                        excepcionalmente fuertes para su tamaño, capaces de inmovilizar aves más grandes que él en pleno
+                        vuelo.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>Comportamiento</h2>
+                    <hr>
+                    <p>
+                        El alcotán redefine el concepto de territorialidad, defendiendo no un área geográfica fija sino
+                        un "espacio aéreo" tridimensional que puede extenderse hasta 2 km alrededor del nido. Durante la
+                        cría, las parejas realizan espectaculares vuelos de exhibición que incluyen vuelos sincronizados
+                        donde la hembra vuela boca arriba para recibir presas del macho, descensos en caída libre
+                        seguidos de recuperaciones a centímetros del suelo
+                        y donde un individuo dispersa bandadas de aves hacia su compañero.
+                    </p>
+                    <p>
+                        Estudios con cámaras montadas en aves (ornitodrones) han grabado alcotanes realizando giros de
+                        270° en menos de un segundo, soportando fuerzas G que superan las de los aviones de combate.
+                        Fuera de la temporada reproductiva, forman dormideros comunales de hasta 300 individuos en
+                        árboles ribereños, comportamientos sociales inusuales en halcones.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>Reproducción</h2>
+                    <hr>
+                    <p>
+                        El ritual nupcial del alcotán es una de las exhibiciones aéreas más complejas del mundo aviar.
+                        Los machos realizan "vuelos de cortejo" donde alcanzan 160 km/h en picado, seguidos de ascensos
+                        en espiral que culminan con la entrega de presas en pleno vuelo. La hembra, más grande que el
+                        macho (un raro caso de dimorfismo sexual inverso en rapaces), selecciona pareja basándose en la
+                        calidad de estas demostraciones.
+                    <p>
+                        Anidan en antiguos nidos de córvidos o rapaces, preferentemente en pinos aislados o chopos
+                        ribereños. La puesta típica de 2-4 huevos (color "terroso" con moteado denso) es incubada
+                        principalmente por la hembra durante 28 días, mientras el macho provee alimento. Los polluelos,
+                        cubiertos inicialmente por un plumón blanco cremoso, desarrollan en 3 semanas el característico
+                        plumaje juvenil y realizan sus primeros vuelos a los 30 días,
+                        permaneciendo dependientes otros 4-6 semanas mientras perfeccionan técnicas de caza en
+                        espectaculares "escuelas de vuelo" familiares.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>Defensa y depredadores</h2>
+                    <hr>
+                    <p>
+                        A pesar de su velocidad, los alcotanes enfrentan múltiples amenazas empezando con depredación de
+                        nidos, por parte de garduñas, ardillas y cuervos. Y parasitismo por moscas Carnus hemapterus que
+                        debilitan a los polluelos.
+                    </p>
+                    <p>
+                        Su principal estrategia defensiva es el camuflaje de los nidos y ataques en picado a intrusos,
+                        incluyendo humanos que se acercan demasiado. En África, donde conviven con halcones abejeros,
+                        han desarrollado la táctica de seguir a estas rapaces mayores para aprovechar los insectos que
+                        espantan.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>Datos curiosos</h2>
+                    <hr>
+                    <ul class="lista">
+                        <li>Pueden detectar y capturar una libélula a 300 metros de distancia.</li>
+                        <li>El juego de mesa Subbuteo (1947) tomó su nombre científico por la agilidad de las fichas.
+                        </li>
+                        <li>En Rusia, se les llama "halcones golondrina" por su habilidad para cazar estas aves.</li>
+                        <li>Un estudio sueco cronometró un alcotán cazando 47 libélulas en 15 minutos.</li>
+                        <li>Sus plumas primarias tienen muescas especiales que reducen el ruido aerodinámico.</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Estado de conservación</h2>
+                    <hr>
+                    <p>
+                        Catalogado como Preocupación Menor globalmente pero Vulnerable en varios países europeos, el
+                        alcotán enfrenta retos críticos como uso de pesticidas, cambio climático y electrocuciones.
+                    </p>
+                    <p>
+                        Programas como la instalación de plataformas de nido en España y la protección de dormideros
+                        migratorios en Gibraltar han demostrado efectividad. En Finlandia, el marcaje satelital de
+                        juveniles reveló tasas de supervivencia migratoria del 40%,
+                        destacando la necesidad de proteger corredores aéreos internacionales para este maestro de los
+                        cielos.
+                    </p>
+                    <div class="estado-conservacion" data-estado="LC">
+                        <div class="estado" data-info="Extinto" data-code="EX">EX</div>
+                        <div class="estado" data-info="Extinto en estado silvestre" data-code="EW">EW</div>
+                        <div class="estado" data-info="En peligro crítico" data-code="CR">CR</div>
+                        <div class="estado" data-info="En peligro" data-code="EN">EN</div>
+                        <div class="estado" data-info="Vulnerable" data-code="VU">VU</div>
+                        <div class="estado" data-info="Casi amenazado" data-code="NT">NT</div>
+                        <div class="estado" data-info="Preocupación menor" data-code="LC">LC</div>
+                    </div>
+                </section>
+            </div>
+            <div class="img3D">
+                <h2>Modelo 3D:</h2>
+                <hr>
+                <model-viewer src="../Modelos3D/Alcotan.glb" alt="Modelo 3D de un animal" auto-rotate camera-controls ar
+                    shadow-intensity="1">
+                </model-viewer>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer-contenedor">
+        <div class="footer-contenido">
+            <div class="footer-con">
+                <div class="footer-logo">
+                    <img src="../../../img/Proyecto%20nuevo.png" alt="Logo de LifeHunter" class="logo-img">
+                </div>
+
+                <button id="btn-dato">¡Curiosidad animal!</button>
+
+                <div id="animal-container" class="hidden">
+                    <img id="animal-img" src="#" alt="Animal animado">
+                    <p id="dato-curioso"></p>
+                </div>
+
+                <div class="footer-communidad">
+                    <h3 class="community-titilo">Comunidad</h3>
+                    <div class="redes-sociales">
+                        <a href="https://discord.com/" class="red-social" target="_blank" rel="noopener noreferrer"
+                            aria-label="Discord">
+                            <img src="../../../img/discordblanco.png" alt="Discord" class="icono-social">
+                        </a>
+                        <a href="https://www.instagram.com/" class="red-social" target="_blank"
+                            rel="noopener noreferrer" aria-label="Instagram">
+                            <img src="../../../img/instagramblanco.png" alt="Instagram" class="icono-social">
+                        </a>
+                        <a href="https://www.youtube.com/" class="red-social" target="_blank" rel="noopener noreferrer"
+                            aria-label="YouTube">
+                            <img src="../../../img/youtubeblanco.png" alt="YouTube" class="icono-social">
+                        </a>
+                        <a href="https://x.com/" class="red-social" target="_blank" rel="noopener noreferrer"
+                            aria-label="Twitter">
+                            <img src="../../../img/xblanco.png" alt="Twitter" class="icono-social">
+                        </a>
+                        <a href="https://www.facebook.com/" class="red-social" target="_blank" rel="noopener noreferrer"
+                            aria-label="Facebook">
+                            <img src="../../../img/facebookblanco.png" alt="Facebook" class="icono-social">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-info">
+                <div class="lugar">
+                    <p>Puedes encontrarnos en:</p>
+                    <a href="https://maps.app.goo.gl/hSpv9RwdGKMLmeew6" target="_blank">Av. Nicolás de Piérola 1221,
+                        Trujillo 13001</a>
+                </div>
+                <div class="contacta">
+                    <a href='../../../contactanos/contacto.html'>Contáctanos</a> <br> <br>
+                    <a href='../../../sitemap/sitemap.html'>Mapa del sitio</a>
+                </div>
+                <div class="telefono">
+                    <p>Teléfono:</p>
+                    <a href="#">+51 910425708</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-divide">
+            <hr class="linea-dividir">
+        </div>
+
+        <div class="copyright">
+            <p class="copyright-texto">LifeHunter © 2025 Grupo 1. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="../js/codigo.js"></script>
+    <script src="session.js"></script>
+
+</body>
+
+
+<!-- Mirrored from lifehunter.netlify.app/reinoanimal/biografiaanimal/codigosa/biografiaalcotan by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 11 Jan 2026 08:53:36 GMT -->
+</html>

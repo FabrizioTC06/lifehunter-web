@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="es">
+
+
+<!-- Mirrored from lifehunter.netlify.app/reinoanimal/biografiaanimal/codigosa/biografiaatelopus by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 11 Jan 2026 08:54:30 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="../../../../unpkg.com/%40google/model-viewer%404.1.0/dist/model-viewer.min.js"></script>
+    <link rel="stylesheet" href="../css/BiografiaA.css">
+    <style>
+        body {
+            --fondo: url("../css/Fondo/Atelopus-Fondo.jpg")
+        }
+    </style>
+    <title>LifeHunter - Atelopus</title>
+    <link rel="shortcut icon" href="../imagenes/Fooder/logo1png.png" type="image/x-icon">
+    <link rel="stylesheet" href="../../../css/session.css">
+</head>
+
+<body class="body-abanico">
+    <header>
+        <a class='header-logo-link' href='../../../index.html'>
+            <img src="../../../img/logo.jpg" alt="Logo LifeHunter" class="header-logo">
+        </a>
+        <h1 class="tituloPrincipal">LifeHunter</h1>
+
+        <div class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <nav class="navegacion-principal">
+
+            <a class='nav-enlace' href='../../animal.html'>Regresar</a>
+            <div class="boton-sesion-mobile">Iniciar Sesión</div>
+        </nav>
+
+        <div class="boton-sesion iniciarSesion-btn">Iniciar Sesión</div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="titulo">
+                <h1>ATELOPUS</h1>
+            </div>
+
+            <div class="info-box">
+                <div class="contenedor">
+                    <div class="taxonomy-block">
+                        <div class="taxonomy">
+                            <div>REINO</div>
+                            <div>CATEGORIA</div>
+                            <div>FILO</div>
+                            <div>CLASE</div>
+                            <div>ORDEN</div>
+                        </div>
+                        <div class="taxonomy2">
+                            <div><a href='../../animal.html'>Animal</a></div>
+                            <div><a href='../../animale250.html?Subfilo=vertebrado'>Vertebrado</a></div>
+                            <div><a href='../../animalc6cc.html?Filo=cordados'>Cordado</a></div>
+                            <div><a href='../../animala1b4.html?clase=anfibios'>Anfibio</a></div>
+                            <div><a href='../../animalf15f.html?orden=insectivoros'>Insectívoro</a></div>
+                        </div>
+                        <div class="taxonomy">
+                            <div>REPRODUCCION</div>
+                            <div>HABITAT</div>
+                        </div>
+                        <div class="taxonomy2">
+                            <div><a href='../../animalf411.html?reproduccion=oviparos'>Ovíparo</a></div>
+                            <div><a href='../../animal9e88.html?habitat=mixtos'>Mixto</a></div>
+                        </div>
+                    </div>
+                    <div class="image-container">
+                        <img class="background" src="../imagenes/Atelopus/fondo.jpg" alt="Fondo">
+                        <img class="base" src="../imagenes/Atelopus/base.jpg" alt="Base">
+                        <img class="main-image" src="../../imagenes/Transparente/AtelopusT.png" alt="Atelopus">
+                    </div>
+                </div>
+            </div>
+
+            <div class="description">
+                <section>
+                    <h2>Descripción</h2>
+                    <hr>
+                    <p>
+                        El Atelopus, género de anfibios conocido como ranas arlequín, es un grupo de pequeños tesoros
+                        biológicos cuyos colores eléctricos iluminan los bosques nubosos de Centro y Sudamérica. Estas
+                        ranas, que parecen talladas en piedras semipreciosas con sus combinaciones de negro, amarillo,
+                        rojo y verde metálico, son mucho más que una maravilla estética: representan un fascinante caso
+                        de evolución en ambientes
+                        extremos y son centinelas de la salud de los ecosistemas tropicales. Su dramático declive (el
+                        75% de las especies están en peligro crítico o posiblemente extintas) las ha convertido en
+                        símbolos globales de la crisis de anfibios, mientras que su resistencia en algunos reductos
+                        remotos ofrece esperanzas para la conservación.
+                    </p>
+                </section>
+                <section>
+                    <h2>Distribución y hábitat</h2>
+                    <hr>
+                    <p>
+                        Las ranas arlequín habitan un arco altitudinal extraordinario, desde las tierras bajas del Chocó
+                        colombiano hasta los páramos andinos a 4,500 metros de altitud. Cada especie está perfectamente
+                        adaptada a microhábitats específicos: el Atelopus certus de Panamá vive exclusivamente junto a
+                        cascadas cristalinas, mientras que el Atelopus bomolochos de Ecuador prefiere los musgos
+                        saturados de agua de las bromelias gigantes.
+                    </p>
+                    <p>
+                        Estudios recientes han descubierto poblaciones relicto de Atelopus laetissimus en la Sierra
+                        Nevada de Santa Marta (Colombia), sobreviviendo en quebradas aisladas donde el hongo quitridio
+                        no ha llegado. Estas "poblaciones arcaicas" mantienen patrones de coloración únicos, sugiriendo
+                        adaptaciones locales desarrolladas durante milenios de aislamiento. En contraste, el Atelopus
+                        varius alguna vez se distribuyó desde
+                        Costa Rica hasta Panamá, pero hoy solo persiste en 2-3 localidades tras desaparecer del 99% de
+                        su rango histórico.
+                    </p>
+                    <div class="mapa-habitat">
+                        <div id="globo3d" class="container"></div>
+                    </div>
+
+                    <script src="https://unpkg.com/globe.gl"></script>
+                    <script src="../js/Continentes.js"></script>
+                    <script>
+                        const habitats = [
+                            { lat: -15, lng: -60, color: 'red', label: 'América del Sur' },
+                            { lat: 10, lng: -85, color: 'orange', label: 'América Central' }
+                        ];
+                        crearGlobo(habitats);
+                    </script>
+                </section>
+
+                <section>
+                    <h2>Alimentación</h2>
+                    <hr>
+                    <p>
+                        La dieta del Atelopus refleja su papel como reguladores de insectos en ecosistemas acuáticos.
+                        Estas ranas diurnas (inusuales entre los anfibios) cazan activamente pequeños artrópodos: desde
+                        colémbolos en las altas montañas hasta mosquitos y ácaros en las tierras bajas. Su técnica de
+                        caza es un prodigio de precisión: permanecen inmóviles durante largos periodos, detectando
+                        vibraciones mínimas con órganos sensoriales en las patas,
+                        antes de lanzar su lengua protráctil con una aceleración que supera los 10 m/s².
+                    </p>
+                    <p>
+                        Lo fascinante es su selectividad: análisis estomacales han revelado que evitan ciertos insectos
+                        potencialmente tóxicos, mientras que en cautiverio algunas especies muestran preferencia por
+                        hormigas aladas ricas en alcaloides que podrían contribuir a su propia toxicidad cutánea. Las
+                        larvas son raspadoras de algas, con bocas especializadas para adherirse a rocas en corrientes
+                        rápidas donde pocos depredadores pueden alcanzarlas.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>Características físicas</h2>
+                    <hr>
+                    <p>
+                        La morfología del Atelopus es tan singular como sus colores. Su cuerpo compacto (2-6 cm de
+                        longitud) está optimizado para moverse entre rocas resbaladizas: dedos largos con puntas
+                        redondeadas para mayor adherencia, piel lisa con microgránulos que reducen la fricción con el
+                        agua, y huesos craneales reforzados que protegen contra impactos en corrientes turbulentas.
+                    </p>
+                    <p>
+                        Sus colores aposemáticos (advertencia de toxicidad) varían desde el amarillo limón con negro del
+                        Atelopus zeteki (símbolo nacional de Panamá) hasta el verde iridiscente del Atelopus lynchi
+                        ecuatoriano. La piel secreta tetrodotoxinas y otras neurotoxinas tan potentes que los indígenas
+                        Emberá las usaban para envenenar flechas. Curiosamente, las especies de mayor altitud tienden a
+                        ser más oscuras,
+                        posiblemente para absorber mejor la radiación UV en ambientes fríos.
+                    </p>
+                    <p>
+                        Los ojos, grandes y prominentes, tienen pupilas horizontales que proporcionan visión panorámica
+                        para detectar depredadores. Los machos carecen de sacos vocales típicos de otras ranas,
+                        desarrollando en su lugar un aparato hioides modificado que produce llamadas de baja frecuencia
+                        (2-4 kHz) para comunicarse sobre el rugido de los ríos.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>Comportamiento</h2>
+                    <hr>
+                    <p>
+                        La etología del Atelopus desafía los estereotipos de los anfibios. Son activos principalmente
+                        durante el día, tomando el sol en rocas para regular su temperatura antes de cazar. Cuando se
+                        sienten amenazados, realizan "exhibiciones de advertencia": arquetan la espalda para mostrar
+                        colores ventrales brillantes y adoptan posturas que exageran su tamaño.
+                    </p>
+                    <p>
+                        Durante la estación seca, algunas especies como el Atelopus glyphus se refugian bajo musgos o
+                        raíces, entrando en un estado de estivación donde reducen su metabolismo hasta un 80%. Su
+                        capacidad para encontrar estos microrefugios (que mantienen humedad constante) es crucial para
+                        sobrevivir periodos de sequía extrema.
+                    </p>
+                    <p>
+                        Los machos son territoriales, defendiendo pequeños segmentos de quebradas (1-2 m²) donde atraen
+                        hembras con llamadas y exhibiciones de patas posteriores. Algunas especies como el Atelopus
+                        spurrelli realizan "coros" coordinados, alternando llamadas para evitar interferencias
+                        acústicas.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>Reproducción</h2>
+                    <hr>
+                    <p>
+                        El ciclo reproductivo del Atelopus es una carrera contra la extinción. Tras intensas lluvias,
+                        los machos guían a las hembras a sitios de ovoposición específicos (generalmente bajo rocas en
+                        corrientes rápidas), donde depositan cordones de 30-80 huevos fecundados externamente. La hembra
+                        puede poner hasta 500 huevos por temporada, aunque menos del 1% llegará a la edad adulta en
+                        condiciones naturales.
+                    </p>
+                    <p>
+                        Los renacuajos, equipados con ventosas bucales, se adhieren a sustratos donde la corriente
+                        oxigena el agua. Su desarrollo es lento (3-6 meses hasta metamorfosis), durante el cual son
+                        vulnerables a depredadores como larvas de libélula y peces introducidos. Los juveniles recién
+                        metamorfoseados miden apenas 1 cm y deben sobrevivir sin la protección de los adultos, que no
+                        brindan cuidado parental.
+                    </p>
+                    <p>
+                        Lo extraordinario es su plasticidad reproductiva: algunas poblaciones de Atelopus nahumae en
+                        Colombia se reproducen continuamente mientras persistan lluvias, mientras que las de Atelopus
+                        oxyrhynchus en Venezuela solo lo hacen tras sequías prolongadas, sugiriendo adaptaciones locales
+                        a regímenes climáticos específicos.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>Defensa y depredadores</h2>
+                    <hr>
+                    <p>
+                        A pesar de su toxicidad, los Atelopus enfrentan múltiples amenazas naturales. Serpientes como
+                        Leptodeira annulata han desarrollado resistencia a sus toxinas, mientras que aves como el martín
+                        pescador (Megaceryle torquata) los tragan enteros evitando el contacto con la piel.
+                    </p>
+                    <p>
+                        Sus principales defensas son: toxinas cutáneas que son suficientes para matar a 5 humanos
+                        adultos, coloración disruptiva que realiza patrones que rompen su silueta en el agua, el
+                        comportamiento thanatosis que fingen su muerte mostrando colores ventrales y secreciones
+                        pegajosas que irritan mucosas de depredadores.
+                    </p>
+                    <p>
+                        Sin embargo, ninguna adaptación los preparó para el hongo Batrachochytrium dendrobatidis
+                        (quitridio), que ha diezmado poblaciones al dañar su piel permeable. En áreas afectadas, la
+                        mortalidad puede alcanzar el 100% en meses.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>Datos curiosos</h2>
+                    <hr>
+                    <ul class="lista">
+                        <li>El Atelopus coynei de Ecuador tiene patas delanteras anaranjadas que ondea como banderas
+                            para comunicarse.</li>
+                        <li>Algunas toxinas de Atelopus son estudiadas para tratar arritmias cardiacas humanas.</li>
+                        <li>El Atelopus ignescens fue declarado extinto en 1990 pero reapareció en 2016 en Ecuador.</li>
+                        <li>Sus huesos fluorescen bajo luz UV por acumulación de pigmentos carotenoides.</li>
+                        <li>Los machos de Atelopus certus "abrazan" huevos para protegerlos de hongos.</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Estado de conservación</h2>
+                    <hr>
+                    <p>
+                        Catalogado como el género de anfibios más amenazado del planeta, el Atelopus enfrenta una crisis
+                        existencial: 40 de sus 100 especies no han sido vistas en décadas, mientras que otras como el
+                        Atelopus vogli solo persisten en cautiverio.
+                    </p>
+                    <p>
+                        Proyectos pioneros como el "Arca de los Anfibios" en Panamá mantienen colonias de seguro
+                        genético, mientras que en Ecuador el "Proyecto Jambato" redescubrió al Atelopus ignescens y
+                        ahora trabaja en su reintroducción. La restauración de microhábitats (especialmente la
+                        protección de cabeceras de ríos)
+                        está demostrando que algunas poblaciones pueden recuperarse cuando se controlan amenazas
+                        locales.
+                    </p>
+                    <p>
+                        Estas joyas vivientes, que han saltado por los Andes durante millones de años, hoy nos recuerdan
+                        que la biodiversidad no es un lujo sino un termómetro de la salud del planeta. Su supervivencia
+                        depende de nuestra capacidad para valorar lo pequeño, lo frágil, y lo aparentemente
+                        insignificante que, como el Atelopus,
+                        sostiene los delicados equilibrios de la vida.
+                    </p>
+                    <div class="estado-conservacion" data-estado="EN">
+                        <div class="estado" data-info="Extinto" data-code="EX">EX</div>
+                        <div class="estado" data-info="Extinto en estado silvestre" data-code="EW">EW</div>
+                        <div class="estado" data-info="En peligro crítico" data-code="CR">CR</div>
+                        <div class="estado" data-info="En peligro" data-code="EN">EN</div>
+                        <div class="estado" data-info="Vulnerable" data-code="VU">VU</div>
+                        <div class="estado" data-info="Casi amenazado" data-code="NT">NT</div>
+                        <div class="estado" data-info="Preocupación menor" data-code="LC">LC</div>
+                    </div>
+                </section>
+            </div>
+            <div class="img3D">
+                <h2>Modelo 3D:</h2>
+                <hr>
+                <model-viewer src="../Modelos3D/Atelopus.glb" alt="Modelo 3D de un animal" auto-rotate camera-controls
+                    ar shadow-intensity="1">
+                </model-viewer>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer-contenedor">
+        <div class="footer-contenido">
+            <div class="footer-con">
+                <div class="footer-logo">
+                    <img src="../../../img/Proyecto%20nuevo.png" alt="Logo de LifeHunter" class="logo-img">
+                </div>
+
+                <button id="btn-dato">¡Curiosidad animal!</button>
+
+                <div id="animal-container" class="hidden">
+                    <img id="animal-img" src="#" alt="Animal animado">
+                    <p id="dato-curioso"></p>
+                </div>
+
+                <div class="footer-communidad">
+                    <h3 class="community-titilo">Comunidad</h3>
+                    <div class="redes-sociales">
+                        <a href="https://discord.com/" class="red-social" target="_blank" rel="noopener noreferrer"
+                            aria-label="Discord">
+                            <img src="../../../img/discordblanco.png" alt="Discord" class="icono-social">
+                        </a>
+                        <a href="https://www.instagram.com/" class="red-social" target="_blank"
+                            rel="noopener noreferrer" aria-label="Instagram">
+                            <img src="../../../img/instagramblanco.png" alt="Instagram" class="icono-social">
+                        </a>
+                        <a href="https://www.youtube.com/" class="red-social" target="_blank" rel="noopener noreferrer"
+                            aria-label="YouTube">
+                            <img src="../../../img/youtubeblanco.png" alt="YouTube" class="icono-social">
+                        </a>
+                        <a href="https://x.com/" class="red-social" target="_blank" rel="noopener noreferrer"
+                            aria-label="Twitter">
+                            <img src="../../../img/xblanco.png" alt="Twitter" class="icono-social">
+                        </a>
+                        <a href="https://www.facebook.com/" class="red-social" target="_blank" rel="noopener noreferrer"
+                            aria-label="Facebook">
+                            <img src="../../../img/facebookblanco.png" alt="Facebook" class="icono-social">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-info">
+                <div class="lugar">
+                    <p>Puedes encontrarnos en:</p>
+                    <a href="https://maps.app.goo.gl/hSpv9RwdGKMLmeew6" target="_blank">Av. Nicolás de Piérola 1221,
+                        Trujillo 13001</a>
+                </div>
+                <div class="contacta">
+                    <a href='../../../contactanos/contacto.html'>Contáctanos</a> <br> <br>
+                    <a href='../../../sitemap/sitemap.html'>Mapa del sitio</a>
+                </div>
+                <div class="telefono">
+                    <p>Teléfono:</p>
+                    <a href="#">+51 910425708</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-divide">
+            <hr class="linea-dividir">
+        </div>
+
+        <div class="copyright">
+            <p class="copyright-texto">LifeHunter © 2025 Grupo 1. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="../js/codigo.js"></script>
+    <script src="session.js"></script>
+
+</body>
+
+
+<!-- Mirrored from lifehunter.netlify.app/reinoanimal/biografiaanimal/codigosa/biografiaatelopus by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 11 Jan 2026 08:54:30 GMT -->
+</html>

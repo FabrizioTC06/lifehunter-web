@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from lifehunter.netlify.app/login/login.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 11 Jan 2026 09:54:36 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LifeHunters-Login</title>
+  <link rel="shortcut icon" href="../img/logo1png.png" type="image/x-icon">
+  <link rel="stylesheet" href="estilologin.css">
+</head>
+
+<body>
+  <div class="contenedor resgistrarseSesion">
+    <div class="bienvenidoRegreso">
+      <div class="mensajes">
+        <h2>Bienvenido a <span class="texto-titulo">LifeHunter</span></h2>
+        <p>Si ya tienes una cuenta, inicia la sesión aquí</p>
+        <button class="iniciarSesion-btn">Iniciar sesión</button>
+      </div>
+    </div>
+    <form action="https://lifehunter.netlify.app/index.html" class="formulario" id="formulario">
+      <div class="regresar">
+        <a href="#" onclick="history.back()">Regresar</a>
+      </div>
+      <h2 class="text-crear-cuenta">Crear una cuenta</h2>
+      <div class="iconos">
+        <a href="https://www.facebook.com/" target="_blank">
+          <div class="bordes-iconos">
+            <img src="../img/facebook.png" alt="Facebook">
+          </div>
+        </a>
+        <a href="https://www.youtube.com/" target="_blank">
+          <div class="bordes-iconos">
+            <img src="../img/youtube.png" alt="YouTube">
+          </div>
+        </a>
+        <a href="https://www.instagram.com/" target="_blank">
+          <div class="bordes-iconos">
+            <img src="../img/instagram.png" alt="Instagram">
+          </div>
+        </a>
+      </div>
+      <p class="cuenta-gratis">Crear una cuenta gratis</p>
+      <input type="text" placeholder="Nombre" required>
+      <input type="email" placeholder="e-mail" required>
+      <input type="password" placeholder="Contraseña" required>
+      <button class="iniciarSesion-btn" value="Iniciar Sesion">Registrarse</button>
+    </form>
+  </div>
+
+  <div class="contenedor iniciarSesion">
+    <form action="https://lifehunter.netlify.app/index.html" class="formulario" id="formulario">
+      <div class="regresar">
+        <a href="#" onclick="history.back()">Regresar</a>
+      </div>
+      <h2 class="text-crear-cuenta">Iniciar sesión</h2>
+      <div class="iconos">
+        <a href="https://www.facebook.com/" target="_blank">
+          <div class="bordes-iconos">
+            <img src="../img/facebook.png" alt="Facebook">
+          </div>
+        </a>
+        <a href="https://www.youtube.com/" target="_blank">
+          <div class="bordes-iconos">
+            <img src="../img/youtube.png" alt="YouTube">
+          </div>
+        </a>
+        <a href="https://www.instagram.com/" target="_blank">
+          <div class="bordes-iconos">
+            <img src="../img/instagram.png" alt="Instagram">
+          </div>
+        </a>
+      </div>
+      <p class="cuenta">¿Ya tienes cuenta?</p>
+      <input type="email" placeholder="e-mail" required>
+      <input type="password" placeholder="Contraseña" required>
+      <button class="registro">Iniciar</button>
+    </form>
+    <div class="bienvenidoRegreso">
+      <div class="mensajes">
+        <h2>Bienvenido nuevamente a <span class="texto-titulo">LifeHunter</span></h2>
+        <p>Si no tienes una cuenta, registrate aquí</p>
+        <button class="registrarSesion-btn">Registrarse</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="codigo.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+  <script>
+    // 1. Inicialización de almacenamiento
+    if (!localStorage.getItem('users')) {
+      localStorage.setItem('users', JSON.stringify([]));
+    }
+
+    // 2. Función para actualizar la UI de los botones de sesión
+    function actualizarBotonesSesion() {
+      const currentUserEmail = localStorage.getItem('currentUser');
+      const users = JSON.parse(localStorage.getItem('users'));
+      const user = users.find(u => u.email === currentUserEmail);
+
+      const loginButtons = document.querySelectorAll('.iniciarSesion-btn, .boton-sesion, .boton-sesion-mobile');
+
+      if (user) {
+        loginButtons.forEach(button => {
+          // Guardar el estado original si no está guardado
+          if (!button.dataset.originalHTML) {
+            button.dataset.originalHTML = button.innerHTML;
+            button.dataset.originalHref = button.href || '';
+          }
+
+          // Actualizar a la vista de usuario logueado
+          button.innerHTML = `
+                <div class="user-session">
+                  <span class="username">${user.name}</span>
+                  <div class="user-dropdown">
+                    <div class="dropdown-option" data-action="logout">Cerrar sesión</div>
+                  </div>
+                </div>
+              `;
+
+          // Eliminar el href para evitar redirección
+          button.removeAttribute('href');
+
+          // Agregar evento al botón de cerrar sesión
+          button.querySelector('.dropdown-option').addEventListener('click', function (e) {
+            e.stopPropagation();
+            localStorage.removeItem('currentUser');
+            actualizarBotonesSesion();
+          });
+        });
+      } else {
+        // Restaurar botones a su estado original
+        loginButtons.forEach(button => {
+          if (button.dataset.originalHTML) {
+            button.innerHTML = button.dataset.originalHTML;
+            button.href = button.dataset.originalHref || '';
+          }
+        });
+      }
+    }
+
+    // 3. Función de registro
+    document.querySelector('.resgistrarseSesion form').addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      const name = this.querySelector('input[type="text"]').value.trim();
+      const email = this.querySelector('input[type="email"]').value.trim();
+      const password = this.querySelector('input[type="password"]').value;
+
+      // Validaciones
+      if (!name || !email || !password) {
+        Swal.fire({
+          icon: "error",
+          title: "ERROR",
+          text: "Por favor complete todos los campos",
+        });
+        return;
+      }
+
+      if (password.length < 6) {
+        Swal.fire({
+          icon: "error",
+          title: "ERROR",
+          text: "La contraseña debe tener al menos 6 caracteres",
+        });
+        return;
+      }
+
+      const users = JSON.parse(localStorage.getItem('users'));
+
+      if (users.some(user => user.email === email)) {
+        Swal.fire({
+          icon: "warning",
+          title: "ALERTA",
+          text: "Este correo ya está registrado",
+        });
+        return;
+      }
+
+      // Registro exitoso con mensaje personalizado y redirección
+      Swal.fire({
+        icon: "success",
+        title: `¡Bienvenido, ${name}!`,
+        text: "Tu cuenta ha sido creada correctamente. Redirigiendo...",
+        timer: 5000,
+        showConfirmButton: false,
+        willClose: () => {
+          users.push({ name, email, password });
+          localStorage.setItem('users', JSON.stringify(users));
+          localStorage.setItem('currentUser', email);
+
+          actualizarBotonesSesion();
+          window.location.href = '../index-2.html';
+        }
+      });
+    });
+
+
+
+    // 4. Función de inicio de sesión
+    document.querySelector('.iniciarSesion form').addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      const email = this.querySelector('input[type="email"]').value.trim();
+      const password = this.querySelector('input[type="password"]').value;
+
+      if (!email || !password) {
+        Swal.fire({
+          icon: "error",
+          title: "ERROR",
+          text: "Por favor complete todos los campos",
+        });
+        return;
+      }
+
+      // Validar credenciales
+      const users = JSON.parse(localStorage.getItem('users'));
+      const user = users.find(user => user.email === email);
+
+      if (!user) {
+        Swal.fire({
+          icon: "error",
+          title: "ERROR",
+          text: "Cuenta no encontrada",
+        });
+        return;
+      }
+
+      if (user.password !== password) {
+        Swal.fire({
+          icon: "error",
+          title: "ERROR",
+          text: "Contraseña incorrecta",
+        });
+        return;
+      }
+
+      // Iniciar sesión con saludo personalizado
+      Swal.fire({
+        icon: "success",
+        title: `¡Bienvenido, ${user.name}!`,
+        text: "Inicio de sesión exitoso. Redirigiendo...",
+        timer: 4000,
+        showConfirmButton: false,
+        willClose: () => {
+          localStorage.setItem('currentUser', email);
+          actualizarBotonesSesion();
+          window.location.href = '../index-2.html';
+        }
+      });
+    });
+
+
+
+    // 5. Configuración inicial al cargar la página
+    document.addEventListener('DOMContentLoaded', function () {
+      // Verificar sesión activa
+      if (localStorage.getItem('currentUser')) {
+        actualizarBotonesSesion();
+      }
+
+      // Configurar botón de inicio de sesión para móviles
+      const mobileLoginBtn = document.querySelector('.boton-sesion-mobile');
+      if (mobileLoginBtn) {
+        mobileLoginBtn.addEventListener('click', function (e) {
+          e.preventDefault();
+          window.location.href = 'login-2.html';
+        });
+      }
+    });
+  </script>
+</body>
+
+
+<!-- Mirrored from lifehunter.netlify.app/login/login.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 11 Jan 2026 09:54:36 GMT -->
+</html>

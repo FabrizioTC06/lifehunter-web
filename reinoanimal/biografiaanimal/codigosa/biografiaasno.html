@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="es">
+
+
+<!-- Mirrored from lifehunter.netlify.app/reinoanimal/biografiaanimal/codigosa/biografiaasno by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 11 Jan 2026 08:54:27 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="../../../../unpkg.com/%40google/model-viewer%404.1.0/dist/model-viewer.min.js"></script>
+    <link rel="stylesheet" href="../css/BiografiaA.css">
+    <style>
+        body {
+            --fondo: url("../css/Fondo/Asno-Fondo.jpg")
+        }
+    </style>
+    <title>LifeHunter - Asno</title>
+    <link rel="shortcut icon" href="../imagenes/Fooder/logo1png.png" type="image/x-icon">
+    <link rel="stylesheet" href="../../../css/session.css">
+</head>
+
+<body class="body-abanico">
+    <header>
+        <a class='header-logo-link' href='../../../index.html'>
+            <img src="../../../img/logo.jpg" alt="Logo LifeHunter" class="header-logo">
+        </a>
+        <h1 class="tituloPrincipal">LifeHunter</h1>
+
+        <div class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <nav class="navegacion-principal">
+
+            <a class='nav-enlace' href='../../animal.html'>Regresar</a>
+            <div class="boton-sesion-mobile">Iniciar Sesión</div>
+        </nav>
+
+        <div class="boton-sesion iniciarSesion-btn">Iniciar Sesión</div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="titulo">
+                <h1>ASNO</h1>
+            </div>
+
+            <div class="info-box">
+                <div class="contenedor">
+                    <div class="taxonomy-block">
+                        <div class="taxonomy">
+                            <div>REINO</div>
+                            <div>CATEGORIA</div>
+                            <div>FILO</div>
+                            <div>CLASE</div>
+                            <div>ORDEN</div>
+                        </div>
+                        <div class="taxonomy2">
+                            <div><a href='../../animal.html'>Animal</a></div>
+                            <div><a href='../../animale250.html?Subfilo=vertebrado'>Vertebrado</a></div>
+                            <div><a href='../../animalc6cc.html?Filo=cordados'>Cordado</a></div>
+                            <div><a href='../../animal5471.html?clase=mamiferos'>Mamífero</a></div>
+                            <div><a href='../../animal594a.html?orden=hervivoros'>Herbívoro</a></div>
+                        </div>
+                        <div class="taxonomy">
+                            <div>REPRODUCCION</div>
+                            <div>HABITAT</div>
+                        </div>
+                        <div class="taxonomy2">
+                            <div><a href='../../animaldfb3.html?reproduccion=viviparos'>Vivíparo</a></div>
+                            <div><a href='../../animal16d8.html?habitat=terrestres'>Terrestre</a></div>
+                        </div>
+                    </div>
+                    <div class="image-container">
+                        <img class="background" src="../imagenes/Asno/fondo.jpg" alt="Fondo">
+                        <img class="base" src="../imagenes/Asno/base.jpg" alt="Base">
+                        <img class="main-image" src="../../imagenes/Transparente/AsnoT.png" alt="Asno">
+                    </div>
+                </div>
+            </div>
+
+            <div class="description">
+                <section>
+                    <h2>Descripción</h2>
+                    <hr>
+                    <p>
+                        El asno (Equus africanus asinus), ese resistente équido domesticado hace más de 5,000 años en el
+                        noreste de África, es mucho más que un simple animal de carga: es un prodigio de adaptación a
+                        los ambientes más hostiles, un filósofo de las tierras secas cuyo estoicismo esconde una
+                        inteligencia social sofisticada. Descendiente del asno salvaje africano (actualmente en peligro
+                        crítico de extinción),
+                        este animal de orejas majestuosas y mirada serena ha sido compañero inseparable de
+                        civilizaciones desde el Antiguo Egipto hasta las culturas andinas, donde se mezcló con el burro
+                        español para dar origen a los robustos burros criollos. Su rebuzno, capaz de viajar 3 kilómetros
+                        en el aire del desierto, no es solo una llamada territorial sino un complejo sistema de
+                        comunicación que varía según la urgencia y el contexto social.
+                    </p>
+                </section>
+                <section>
+                    <h2>Distribución y hábitat</h2>
+                    <hr>
+                    <p>
+                        El asno doméstico heredó de sus ancestros salvajes una extraordinaria capacidad para prosperar
+                        donde otros herbívoros perecerían. Originario de las regiones semiáridas del Cuerno de África,
+                        hoy se encuentra en todos los continentes excepto la Antártida, adaptado a condiciones extremas
+                        que van desde los desiertos de Sonora hasta las altiplanicies tibetanas a 4,000 metros de
+                        altitud. En Europa, poblaciones asilvestradas como las de Chipre y
+                        Cerdeña han recolonizado hábitats mediterráneos con notable éxito, mientras que en América los
+                        burros mustang del suroeste estadounidense sobreviven con menos del 5% del agua que necesita un
+                        caballo.
+                    </p>
+                    <p>
+                        Estudios con GPS en el desierto de Negev han revelado que los asnos salvajes pueden detectar
+                        pozos de agua subterránea a 5 km de distancia, recordando su ubicación con precisión años
+                        después. En las montañas del Perú, los burros andinos han desarrollado pezuñas extremadamente
+                        duras que les permiten escalar pendientes rocosas donde ni siquiera las llamas pueden transitar.
+                    </p>
+                    <div class="mapa-habitat">
+                        <div id="globo3d" class="container"></div>
+                    </div>
+
+                    <script src="https://unpkg.com/globe.gl"></script>
+                    <script src="../js/Continentes.js"></script>
+                    <script>
+                        const habitats = [
+                            { lat: 2, lng: 21, color: 'yellow', label: 'Africa' },
+                            { lat: 35, lng: 105, color: 'purple', label: 'Asia' }
+                        ];
+                        crearGlobo(habitats);
+                    </script>
+                </section>
+
+                <section>
+                    <h2>Alimentación</h2>
+                    <hr>
+                    <p>
+                        La dieta del asno es un tratado de eficiencia en la adversidad. Capaz de subsistir con
+                        vegetación leñosa, espinosa y de bajo valor nutricional que otros herbívoros rechazan, puede
+                        extraer humedad incluso de plantas aparentemente secas. Su sistema digestivo, más eficiente que
+                        el del caballo, absorbe hasta el 95% del agua disponible en el alimento, permitiéndole defecar
+                        heces casi secas en ambientes desérticos.
+                    </p>
+                    <p>
+                        Lo extraordinario es su selectividad: cuando tiene opción, prefiere hierbas con alto contenido
+                        de taninos y compuestos secundarios que actúan como antihelmínticos naturales, regulando su
+                        carga parasitaria. En las zonas áridas de Mauritania, se ha observado a asnos excavando hasta
+                        medio metro en lechos secos de ríos para alcanzar raíces jugosas y tubérculos subterráneos,
+                        comportamiento que comparte con sus parientes salvajes africanos.
+                        Durante sequías extremas, pueden perder hasta el 30% de su peso corporal y recuperarlo en 2-3
+                        días cuando encuentran agua, una resiliencia metabólica sin parangón entre los équidos.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>Características físicas</h2>
+                    <hr>
+                    <p>
+                        El diseño corporal del asno es una lección de adaptación a la escasez. Sus largas orejas (hasta
+                        25 cm) funcionan como radiadores termorreguladores, conteniendo una red de vasos sanguíneos que
+                        disipan calor cuando aumenta la temperatura corporal. El pelaje corto y claro refleja la
+                        radiación solar, mientras que la piel oscura bajo él protege contra los rayos UV.
+                    </p>
+                    <p>
+                        Sus patas, más cortas y robustas que las del caballo, terminan en pezuñas pequeñas y
+                        extremadamente duras ideales para terrenos pedregosos. El hocico estrecho y móvil le permite
+                        seleccionar brotes tiernos entre vegetación espinosa, y sus labios insensibles a las espinas son
+                        la envidia de los pastores. Los ojos, situados lateralmente, ofrecen un campo visual de casi
+                        350°, con una mácula especializada para detectar movimiento en lontananza -
+                        esencial para avistar depredadores en paisajes abiertos.
+                    </p>
+                    <p>
+                        La cruz baja y la espalda recta lo hacen ideal para cargas pesadas (puede transportar hasta el
+                        50% de su peso corporal), aunque a velocidades moderadas (3-5 km/h). Su resistencia legendaria
+                        le permite trabajar 8-10 horas diarias con solo 3-4 kg de paja y 15 litros de agua, un tercio de
+                        lo que necesitaría un caballo de similar tamaño.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>Comportamiento</h2>
+                    <hr>
+                    <p>
+                        La psicología del asno desafía el estereotipo de "terquedad". Estudios cognitivos han demostrado
+                        que su aparente obstinación es en realidad una forma de evaluación de riesgos: cuando se niega a
+                        avanzar, suele ser porque ha detectado peligros (terreno inestable, depredadores) que los
+                        humanos no perciben. Su memoria espacial es excepcional, recordando rutas y puntos de agua
+                        durante años, y pueden reconocer a otros individuos (humanos incluidos)
+                        tras décadas de separación.
+                    </p>
+                    <p>
+                        La estructura social es flexible: en estado salvaje forman grupos matriarcales liderados por una
+                        hembra experimentada, mientras que los machos adultos son solitarios o forman "clubes de
+                        solteros". Su comunicación incluye no solo los famosos rebuznos (que varían según la urgencia),
+                        sino un complejo lenguaje corporal: orejas erguidas (alerta), labio inferior colgante
+                        (relajación), y el "flehmen" (gesto de olfateo con el labio superior curvado)
+                        para analizar feromonas.
+                    </p>
+                    <p>
+                        En las noches de luna llena, los grupos familiares a menudo se reúnen para acicalarse mutuamente
+                        y dormir en círculo, con los más jóvenes protegidos en el centro. Este comportamiento, observado
+                        en asnos salvajes del desierto de Danakil, sugiere un nivel de cohesión social poco común en
+                        équidos.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>Reproducción</h2>
+                    <hr>
+                    <p>
+                        El ciclo reproductivo del asno está sincronizado con los ritmos de las tierras áridas. Las
+                        hembras pueden retrasar la implantación del óvulo fecundado hasta que las condiciones sean
+                        favorables, un fenómeno conocido como diapausa embrionaria. El celo es discreto (a diferencia de
+                        los caballos), y los machos compiten mediante demostraciones de resistencia más que de fuerza
+                        bruta.
+                    </p>
+                    <p>
+                        La gestación dura 12-14 meses (una de las más largas entre los herbívoros), produciendo
+                        generalmente una sola cría que puede ponerse de pie y mamar dentro de la primera hora de vida.
+                        Los "burritos" permanecen con la madre hasta los 8-12 meses, aprendiendo qué plantas comer y
+                        cómo encontrar agua. La madurez sexual llega a los 2 años en hembras y 3-4 en machos, aunque
+                        alcanzan su pleno desarrollo físico recién a los 5-6 años.
+                    </p>
+                    <p>
+                        En estado salvaje, las hembras suelen parir cada 2-3 años, una tasa reproductiva baja compensada
+                        por la longevidad (30-40 años en cautiverio, 25 en libertad) y la extraordinaria supervivencia
+                        juvenil gracias al cuidado materno intensivo.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>Defensa y depredadores</h2>
+                    <hr>
+                    <p>
+                        En su ambiente natural, los asnos adultos tienen pocos depredadores gracias a su tamaño y
+                        patadas poderosas (pueden romper el cráneo de un lobo de un solo golpe). Las crías son
+                        vulnerables a hienas, leopardos y perros salvajes, contra los cuales el grupo desarrolla
+                        estrategias coordinadas: forman círculos defensivos con las crías en el centro, mientras los
+                        adultos patean hacia fuera.
+                    </p>
+                    <p>
+                        Su principal defensa es la prevención: detectan depredadores a distancias mayores que otros
+                        herbívoros y prefieren huir a terrenos rocosos donde los perseguidores no pueden seguirlos.
+                        Cuando son acorralados, su resistencia les permite correr distancias considerables a buen ritmo,
+                        mientras que su piel gruesa (especialmente en el cuello) los protege contra mordiscos.
+                    </p>
+                    <p>
+                        La mayor amenaza moderna son los cruces indiscriminados con caballos (produciendo mulas y
+                        burdéganos), que diluyen el acervo genético de razas puras. En África, los asnos salvajes sufren
+                        la competencia con ganado doméstico por pastos y agua.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>Datos curiosos</h2>
+                    <hr>
+                    <ul class="lista">
+                        <li>Un asno puede beber 30 litros de agua en menos de 5 minutos.</li>
+                        <li>Sus riñones son tan eficientes que la orina puede ser hasta 3 veces más salada que el agua
+                            de mar.</li>
+                        <li>El burro catalán tiene una alzada de hasta 1.6 metros, siendo una de las razas más grandes.
+                        </li>
+                        <li>En el Antiguo Egipto, los asnos blancos eran considerados sagrados a Seth.</li>
+                        <li>Pueden reconocer su reflejo en espejos, habilidad que comparten con delfines y primates.
+                        </li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Estado de conservación</h2>
+                    <hr>
+                    <p>
+                        Mientras el asno salvaje africano (Equus africanus) está en peligro crítico (quedan menos de 200
+                        en Etiopía y Eritrea), muchas razas domésticas enfrentan también la extinción por la
+                        mecanización agrícola. En Europa, el burro andaluz y el majorero canario han perdido el 80% de
+                        su población en 30 años.
+                    </p>
+                    <p>
+                        Proyectos innovadores como la "donkey therapy" para niños con autismo y el uso de leche de burra
+                        (rica en nutrientes y similar a la humana) para alergias infantiles están revalorizando su
+                        papel. En África, programas de reintroducción del asno salvaje chocan con la expansión humana,
+                        mientras que en América los burros ferales son considerados invasores en ecosistemas desérticos.
+                    </p>
+                    <p>
+                        Estos sabios de las tierras secas, que cargaron los bloques de las pirámides y acompañaron a
+                        Jesucristo a Jerusalén, merecen más que el estereotipo de la terquedad: son maestros de
+                        resiliencia, memoria y adaptación, cualidades que en nuestra era de cambio climático podrían
+                        enseñarnos valiosas lecciones de supervivencia.
+                    </p>
+                    <div class="estado-conservacion" data-estado="CR">
+                        <div class="estado" data-info="Extinto" data-code="EX">EX</div>
+                        <div class="estado" data-info="Extinto en estado silvestre" data-code="EW">EW</div>
+                        <div class="estado" data-info="En peligro crítico" data-code="CR">CR</div>
+                        <div class="estado" data-info="En peligro" data-code="EN">EN</div>
+                        <div class="estado" data-info="Vulnerable" data-code="VU">VU</div>
+                        <div class="estado" data-info="Casi amenazado" data-code="NT">NT</div>
+                        <div class="estado" data-info="Preocupación menor" data-code="LC">LC</div>
+                    </div>
+                </section>
+            </div>
+            <div class="img3D">
+                <h2>Modelo 3D:</h2>
+                <hr>
+                <model-viewer src="../Modelos3D/Asno.glb" alt="Modelo 3D de un animal" auto-rotate camera-controls ar
+                    shadow-intensity="1">
+                </model-viewer>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer-contenedor">
+        <div class="footer-contenido">
+            <div class="footer-con">
+                <div class="footer-logo">
+                    <img src="../../../img/Proyecto%20nuevo.png" alt="Logo de LifeHunter" class="logo-img">
+                </div>
+
+                <button id="btn-dato">¡Curiosidad animal!</button>
+
+                <div id="animal-container" class="hidden">
+                    <img id="animal-img" src="#" alt="Animal animado">
+                    <p id="dato-curioso"></p>
+                </div>
+
+                <div class="footer-communidad">
+                    <h3 class="community-titilo">Comunidad</h3>
+                    <div class="redes-sociales">
+                        <a href="https://discord.com/" class="red-social" target="_blank" rel="noopener noreferrer"
+                            aria-label="Discord">
+                            <img src="../../../img/discordblanco.png" alt="Discord" class="icono-social">
+                        </a>
+                        <a href="https://www.instagram.com/" class="red-social" target="_blank"
+                            rel="noopener noreferrer" aria-label="Instagram">
+                            <img src="../../../img/instagramblanco.png" alt="Instagram" class="icono-social">
+                        </a>
+                        <a href="https://www.youtube.com/" class="red-social" target="_blank" rel="noopener noreferrer"
+                            aria-label="YouTube">
+                            <img src="../../../img/youtubeblanco.png" alt="YouTube" class="icono-social">
+                        </a>
+                        <a href="https://x.com/" class="red-social" target="_blank" rel="noopener noreferrer"
+                            aria-label="Twitter">
+                            <img src="../../../img/xblanco.png" alt="Twitter" class="icono-social">
+                        </a>
+                        <a href="https://www.facebook.com/" class="red-social" target="_blank" rel="noopener noreferrer"
+                            aria-label="Facebook">
+                            <img src="../../../img/facebookblanco.png" alt="Facebook" class="icono-social">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-info">
+                <div class="lugar">
+                    <p>Puedes encontrarnos en:</p>
+                    <a href="https://maps.app.goo.gl/hSpv9RwdGKMLmeew6" target="_blank">Av. Nicolás de Piérola 1221,
+                        Trujillo 13001</a>
+                </div>
+                <div class="contacta">
+                    <a href='../../../contactanos/contacto.html'>Contáctanos</a> <br> <br>
+                    <a href='../../../sitemap/sitemap.html'>Mapa del sitio</a>
+                </div>
+                <div class="telefono">
+                    <p>Teléfono:</p>
+                    <a href="#">+51 910425708</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-divide">
+            <hr class="linea-dividir">
+        </div>
+
+        <div class="copyright">
+            <p class="copyright-texto">LifeHunter © 2025 Grupo 1. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="../js/codigo.js"></script>
+    <script src="session.js"></script>
+
+</body>
+
+
+<!-- Mirrored from lifehunter.netlify.app/reinoanimal/biografiaanimal/codigosa/biografiaasno by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 11 Jan 2026 08:54:28 GMT -->
+</html>

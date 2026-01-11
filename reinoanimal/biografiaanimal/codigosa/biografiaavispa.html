@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="es">
+
+
+<!-- Mirrored from lifehunter.netlify.app/reinoanimal/biografiaanimal/codigosa/biografiaavispa by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 11 Jan 2026 08:54:35 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="../../../../unpkg.com/%40google/model-viewer%404.1.0/dist/model-viewer.min.js"></script>
+    <link rel="stylesheet" href="../css/BiografiaA.css">
+    <style>
+        body {
+            --fondo: url("../css/Fondo/Avispa-Fondo.jpg")
+        }
+    </style>
+    <title>LifeHunter - Avispa</title>
+    <link rel="shortcut icon" href="../imagenes/Fooder/logo1png.png" type="image/x-icon">
+    <link rel="stylesheet" href="../../../css/session.css">
+</head>
+
+<body class="body-abanico">
+    <header>
+        <a class='header-logo-link' href='../../../index.html'>
+            <img src="../../../img/logo.jpg" alt="Logo LifeHunter" class="header-logo">
+        </a>
+        <h1 class="tituloPrincipal">LifeHunter</h1>
+
+        <div class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <nav class="navegacion-principal">
+
+            <a class='nav-enlace' href='../../animal.html'>Regresar</a>
+            <div class="boton-sesion-mobile">Iniciar Sesión</div>
+        </nav>
+
+        <div class="boton-sesion iniciarSesion-btn">Iniciar Sesión</div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="titulo">
+                <h1>AVISPA</h1>
+            </div>
+
+            <div class="info-box">
+                <div class="contenedor">
+                    <div class="taxonomy-block">
+                        <div class="taxonomy">
+                            <div>REINO</div>
+                            <div>CATEGORIA</div>
+                            <div>FILO</div>
+                            <div>CLASE</div>
+                            <div>ORDEN</div>
+                        </div>
+                        <div class="taxonomy2">
+                            <div><a href='../../animal.html'>Animal</a></div>
+                            <div><a href='../../animal0e7d.html?Subfilo=invertebrado'>Invertebrado</a></div>
+                            <div><a href='../../animalfc2b.html?Filo=artropodos'>Artropodo</a></div>
+                            <div><a href='../../animal9065.html?clase=insectos'>Insecto</a></div>
+                            <div><a href='../../animala4fd.html?orden=omnivoros'>Omnívoro</a></div>
+                        </div>
+                        <div class="taxonomy">
+                            <div>REPRODUCCION</div>
+                            <div>HABITAT</div>
+                        </div>
+                        <div class="taxonomy2">
+                            <div><a href='../../animalf411.html?reproduccion=oviparos'>Ovíparo</a></div>
+                            <div><a href='../../animal9e88.html?habitat=mixtos'>Mixto</a></div>
+                        </div>
+                    </div>
+                    <div class="image-container">
+                        <img class="background" src="../imagenes/Avispa/fondo.jpg" alt="Fondo">
+                        <img class="base" src="../imagenes/Avispa/base.jpg" alt="Base">
+                        <img class="main-image" src="../../imagenes/Transparente/AvispaT.png" alt="Avispa">
+                    </div>
+                </div>
+            </div>
+
+            <div class="description">
+                <section>
+                    <h2>Descripción</h2>
+                    <hr>
+                    <p>
+                        Las avispas, esos insectos de cuerpo cincelado en amarillo y negro que han inspirado tanto
+                        admiración como temor, pertenecen al orden Hymenoptera y son maestras de la arquitectura, la
+                        caza cooperativa y la guerra química. Con más de 100,000 especies descritas (y probablemente el
+                        doble por descubrir), estos insectos han perfeccionado el arte de la supervivencia durante 200
+                        millones de años,
+                        desarrollando estrategias que van desde el parasitismo más sutil hasta las sociedades complejas
+                        con división de castas. La avispa común (Vespula vulgaris) que revolotea alrededor de nuestro
+                        almuerzo campestre es apenas un representante de un universo diverso que incluye desde las
+                        solitarias avispas alfareras (Eumeninae) hasta las gigantes Mandarinia asiáticas con
+                        envergaduras de 8 cm.
+                    </p>
+                </section>
+                <section>
+                    <h2>Distribución y hábitat</h2>
+                    <hr>
+                    <p>
+                        Las avispas han colonizado todos los continentes excepto la Antártida, adaptándose a ambientes
+                        tan extremos como los desiertos de Arabia (donde la Ammophila caza bajo arenas a 50°C) hasta las
+                        tundras árticas (donde la Dolichovespula norwegica construye nidos en el suelo para aprovegar el
+                        calor geotérmico). Cada especie ha tallado su nicho ecológico con precisión milimétrica:
+                        las avispas figita (Figitidae) parasitan larvas de mosca dentro de agallas vegetales, mientras
+                        que las Polistes tropicales construyen panales abiertos bajo hojas gigantes que protegen sus
+                        crías de la lluvia.
+                    </p>
+                    <p>
+                        En las ciudades, especies como la avispa alemana (Vespula germanica) han encontrado un paraíso,
+                        construyendo nidos en cavidades de edificios y alimentándose de nuestros desperdicios. Estudios
+                        con marcadores isotópicos han revelado que algunas colonias urbanas obtienen hasta el 80% de sus
+                        proteínas de comida humana, alterando profundamente su dieta natural basada en insectos.
+                    </p>
+                    <div class="mapa-habitat">
+                        <div id="globo3d" class="container"></div>
+                    </div>
+
+                    <script src="https://unpkg.com/globe.gl"></script>
+                    <script src="../js/Continentes.js"></script>
+                    <script>
+                        const habitats = [
+                            { lat: -15, lng: -60, color: 'red', label: 'América del Sur' },
+                            { lat: 10, lng: -85, color: 'orange', label: 'América Central' },
+                            { lat: 45, lng: -100, color: 'green', label: 'América del Norte' },
+                            { lat: 2, lng: 21, color: 'yellow', label: 'Africa' },
+                            { lat: 48, lng: 15, color: 'blue', label: 'Europa' },
+                            { lat: 35, lng: 105, color: 'purple', label: 'Asia' },
+                            { lat: -25, lng: 134, color: 'teal', label: 'Australia' }
+                        ];
+                        crearGlobo(habitats);
+                    </script>
+                </section>
+
+                <section>
+                    <h2>Alimentación</h2>
+                    <hr>
+                    <p>
+                        La dieta de las avispas es tan variada como sus especies. Las sociales (como Vespa crabro) son
+                        cazadoras implacables de otros insectos, que mastican para alimentar a sus larvas, mientras que
+                        los adultos se alimentan de néctar y secreciones azucaradas. Lo fascinante es su selectividad:
+                        una colonia de Vespula vulgaris puede consumir hasta 2 kg de moscas, orugas y arañas
+                        diariamente,
+                        regulando poblaciones de potenciales plagas.
+                    </p>
+                    <p>
+                        Las avispas solitarias como la Ammophila tienen comportamientos de caza especializados:
+                        paralizan presas con precisión neuroquirúrgica, inyectando veneno en ganglios específicos que
+                        las mantienen vivas pero inmóviles para que sus larvas tengan comida fresca. La Philanthus
+                        triangulum (avispa lobo) caza exclusivamente abejas, desarrollando tácticas de emboscada que
+                        eluden sus defensas.
+                    </p>
+                    <p>
+                        Algunas especies han desarrollado mutualismos fascinantes: las Mischocyttarus protegen árboles
+                        de hormigas a cambio de savia azucarada, mientras que las avispas de los higos (Agaonidae) son
+                        las únicas polinizadoras de 900 especies de higueras en los trópicos, en una relación simbiótica
+                        que data de 60 millones de años.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>Características físicas</h2>
+                    <hr>
+                    <p>
+                        La anatomía de la avispa es una obra maestra de la evolución para la caza y defensa. Su cuerpo
+                        está cubierto de una cutícula resistente pero ligera, con bandas de quitina y resilina que le
+                        dan flexibilidad para el vuelo. El aguijón, modificado a partir de un ovipositor, es una jeringa
+                        hipodérmica natural con barbas microscópicas (en algunas especies) que anclan el veneno en la
+                        víctima.
+                    </p>
+                    <p>
+                        Los ojos compuestos, con hasta 6,000 omatidios, detectan movimientos a 300 fotogramas por
+                        segundo (el humano ve a 60), mientras que sus antenas pueden percibir feromonas a kilómetros de
+                        distancia. Las mandíbulas de la avispa asiática gigante (Vespa mandarinia) son tan potentes que
+                        pueden decapitar una abeja en milisegundos, mientras que las patas de la Sceliphron están
+                        adaptadas para moldear
+                        barro como un alfarero experto.
+                    </p>
+                    <p>
+                        El sistema de vuelo, con acoplamiento de alas anteriores y posteriores, permite maniobras aéreas
+                        que desafían las leyes de la física: cambios de dirección en 1/100 de segundo, vuelo
+                        estacionario y cargas útiles que duplican su peso. La avispa esmeralda (Ampulex compressa)
+                        incluso puede caminar hacia atrás mientras arrastra una cucaracha paralizada cuatro veces más
+                        pesada que ella.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>Comportamiento</h2>
+                    <hr>
+                    <p>
+                        La vida social de las avispas varía desde el solitario parasitismo de las Ichneumonidae (que
+                        ponen huevos dentro de otros insectos vivos) hasta las sociedades altamente organizadas de los
+                        véspidos, con reinas, obreras y mecanismos sofisticados de reconocimiento facial.
+                    </p>
+                    <p>
+                        Las Polistes fuscatus pueden distinguir individuos por sus patrones faciales únicos, mientras
+                        que las Vespa orientalis usan vibraciones del nido para comunicar peligros. La construcción del
+                        panal es un prodigio de ingeniería: comienza con fibras de madera masticadas que se convierten
+                        en un papel resistente al agua, formando celdas hexagonales perfectas sin instrumentos de
+                        medición.
+                    </p>
+                    <p>
+                        Algunas especies tropicales como la Protopolybia exigua tienen sociedades "sin reina", donde
+                        todas las hembras se reproducen cooperativamente. En contraste, las Vespa velutina (avispas
+                        asiáticas) ejecutan rituales de dominancia donde las obreras destruyen huevos puestos por
+                        competidoras.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>Reproducción</h2>
+                    <hr>
+                    <p>
+                        El ciclo reproductivo de las avispas sociales es un campo de batalla genético. Al final del
+                        verano, las reinas producen machos (haploides, de huevos no fecundados) y nuevas reinas que se
+                        aparearán en vuelos nupciales espectaculares. Los machos mueren tras el apareamiento, mientras
+                        que las reinas fecundadas buscan refugio invernal, escondidas en cortezas o cavidades,
+                        donde su metabolismo baja al 1% de lo normal.
+                    </p>
+                    <p>
+                        En primavera, cada reina funda una nueva colonia, criando personalmente a la primera generación
+                        de obreras. Lo extraordinario es el control que ejerce sobre el sexo de su progenie: puede
+                        almacenar esperma hasta 10 meses, decidiendo qué huevos fertilizar (hembras) y cuáles no
+                        (machos). Las larvas son alimentadas con insectos regurgitados, recibiendo dietas diferentes
+                        según su destino como obreras o reinas.
+                    </p>
+                    <p>
+                        Las avispas parasitoides como la Cotesia glomerata tienen estrategias aún más macabras: inyectan
+                        huevos junto con virus que suprimen el sistema inmune del huésped, mientras que las
+                        Glyptapanteles obligan a las orugas parasitadas a convertirse en guardaespaldas de sus pupas.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>Defensa y depredadores</h2>
+                    <hr>
+                    <p>
+                        A pesar de sus armas, las avispas enfrentan numerosos enemigos: arañas que tejen redes
+                        especiales para capturarlas, avispas ladronas (Philanthus) que las cazan para sus larvas, y aves
+                        como los abejarucos que las despellejan para evitar el veneno.
+                    </p>
+                    <p>
+                        Sus estrategias defensivas son múltiples: el veneno que mezcla complejas de histaminas,
+                        serotonina y péptidos que causan dolor, pueden realizar ataques coordinados, que las sociales
+                        liberan feromonas de alarma que reclutan refuerzos, el mimetismo que lo poseen las inofensivas
+                        Syrphidae
+                        imitando sus colores y autotomía se refiere a que algunas pueden perder el aguijón y sobrevivir.
+                    </p>
+                    <p>
+                        El mayor peligro actual son pesticidas neonicotinoides que desorientan su navegación, y la
+                        pérdida de hábitats que reduce sus presas naturales.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>Datos curiosos</h2>
+                    <hr>
+                    <ul class="lista">
+                        <li>El veneno de Paraponera clavata (hormiga bala) es el más doloroso entre insectos.</li>
+                        <li>Las avispas papel (Polistes) reconocen rostros mejor que algunos mamíferos.</li>
+                        <li>Algunas especies cultivan hongos en sus nidos como alimento larval.</li>
+                        <li>La Ampulex compressa controla cucarachas como zombies con veneno cerebral.</li>
+                        <li>Las Vespa mandarinia pueden sobrecalentar abejas hasta matarlas con vibraciones.</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Estado de conservación</h2>
+                    <hr>
+                    <p>
+                        Aunque pocas especies están evaluadas, las avispas son cruciales para ecosistemas: polinizan
+                        plantas, controlan plagas y reciclan nutrientes. La avispa de mar (Chrysis) está protegida en
+                        Europa por su papel controlando plagas de madera.
+                    </p>
+                    <p>
+                        Proyectos como "WaspWatch" promueven su conservación, destacando que una colonia elimina hasta
+                        2,000 moscas/mosquitos diarios. Estos arquitectos del veneno, tan temidos como incomprendidos,
+                        merecen reconocimiento como pilares ecológicos y maestros de la evolución. Su futuro está ligado
+                        al nuestro:
+                        en un mundo sin avispas, las plagas y la polinización deficiente serían catastróficas.
+                    </p>
+                    <div class="estado-conservacion" data-estado="LC">
+                        <div class="estado" data-info="Extinto" data-code="EX">EX</div>
+                        <div class="estado" data-info="Extinto en estado silvestre" data-code="EW">EW</div>
+                        <div class="estado" data-info="En peligro crítico" data-code="CR">CR</div>
+                        <div class="estado" data-info="En peligro" data-code="EN">EN</div>
+                        <div class="estado" data-info="Vulnerable" data-code="VU">VU</div>
+                        <div class="estado" data-info="Casi amenazado" data-code="NT">NT</div>
+                        <div class="estado" data-info="Preocupación menor" data-code="LC">LC</div>
+                    </div>
+                </section>
+            </div>
+            <div class="img3D">
+                <h2>Modelo 3D:</h2>
+                <hr>
+                <model-viewer src="../Modelos3D/Avispa.glb" alt="Modelo 3D de un animal" auto-rotate camera-controls ar
+                    shadow-intensity="1">
+                </model-viewer>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer-contenedor">
+        <div class="footer-contenido">
+            <div class="footer-con">
+                <div class="footer-logo">
+                    <img src="../../../img/Proyecto%20nuevo.png" alt="Logo de LifeHunter" class="logo-img">
+                </div>
+
+                <button id="btn-dato">¡Curiosidad animal!</button>
+
+                <div id="animal-container" class="hidden">
+                    <img id="animal-img" src="#" alt="Animal animado">
+                    <p id="dato-curioso"></p>
+                </div>
+
+                <div class="footer-communidad">
+                    <h3 class="community-titilo">Comunidad</h3>
+                    <div class="redes-sociales">
+                        <a href="https://discord.com/" class="red-social" target="_blank" rel="noopener noreferrer"
+                            aria-label="Discord">
+                            <img src="../../../img/discordblanco.png" alt="Discord" class="icono-social">
+                        </a>
+                        <a href="https://www.instagram.com/" class="red-social" target="_blank"
+                            rel="noopener noreferrer" aria-label="Instagram">
+                            <img src="../../../img/instagramblanco.png" alt="Instagram" class="icono-social">
+                        </a>
+                        <a href="https://www.youtube.com/" class="red-social" target="_blank" rel="noopener noreferrer"
+                            aria-label="YouTube">
+                            <img src="../../../img/youtubeblanco.png" alt="YouTube" class="icono-social">
+                        </a>
+                        <a href="https://x.com/" class="red-social" target="_blank" rel="noopener noreferrer"
+                            aria-label="Twitter">
+                            <img src="../../../img/xblanco.png" alt="Twitter" class="icono-social">
+                        </a>
+                        <a href="https://www.facebook.com/" class="red-social" target="_blank" rel="noopener noreferrer"
+                            aria-label="Facebook">
+                            <img src="../../../img/facebookblanco.png" alt="Facebook" class="icono-social">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-info">
+                <div class="lugar">
+                    <p>Puedes encontrarnos en:</p>
+                    <a href="https://maps.app.goo.gl/hSpv9RwdGKMLmeew6" target="_blank">Av. Nicolás de Piérola 1221,
+                        Trujillo 13001</a>
+                </div>
+                <div class="contacta">
+                    <a href='../../../contactanos/contacto.html'>Contáctanos</a> <br> <br>
+                    <a href='../../../sitemap/sitemap.html'>Mapa del sitio</a>
+                </div>
+                <div class="telefono">
+                    <p>Teléfono:</p>
+                    <a href="#">+51 910425708</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-divide">
+            <hr class="linea-dividir">
+        </div>
+
+        <div class="copyright">
+            <p class="copyright-texto">LifeHunter © 2025 Grupo 1. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="../js/codigo.js"></script>
+    <script src="session.js"></script>
+
+</body>
+
+
+<!-- Mirrored from lifehunter.netlify.app/reinoanimal/biografiaanimal/codigosa/biografiaavispa by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 11 Jan 2026 08:54:35 GMT -->
+</html>

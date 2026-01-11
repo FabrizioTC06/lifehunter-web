@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="es">
+
+
+<!-- Mirrored from lifehunter.netlify.app/reinoanimal/biografiaanimal/codigosa/biografiaarmi%C3%B1o by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 11 Jan 2026 08:54:25 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="../../../../unpkg.com/%40google/model-viewer%404.1.0/dist/model-viewer.min.js"></script>
+    <link rel="stylesheet" href="../css/BiografiaA.css">
+    <style>
+        body {
+            --fondo: url("../css/Fondo/Armi%c3%b1o-Fondo.jpg")
+        }
+    </style>
+    <title>LifeHunter - Armiño</title>
+    <link rel="shortcut icon" href="../imagenes/Fooder/logo1png.png" type="image/x-icon">
+    <link rel="stylesheet" href="../../../css/session.css">
+</head>
+
+<body class="body-abanico">
+    <header>
+        <a class='header-logo-link' href='../../../index.html'>
+            <img src="../../../img/logo.jpg" alt="Logo LifeHunter" class="header-logo">
+        </a>
+        <h1 class="tituloPrincipal">LifeHunter</h1>
+
+        <div class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <nav class="navegacion-principal">
+
+            <a class='nav-enlace' href='../../animal.html'>Regresar</a>
+            <div class="boton-sesion-mobile">Iniciar Sesión</div>
+        </nav>
+
+        <div class="boton-sesion iniciarSesion-btn">Iniciar Sesión</div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="titulo">
+                <h1>ARMIÑO</h1>
+            </div>
+
+            <div class="info-box">
+                <div class="contenedor">
+                    <div class="taxonomy-block">
+                        <div class="taxonomy">
+                            <div>REINO</div>
+                            <div>CATEGORIA</div>
+                            <div>FILO</div>
+                            <div>CLASE</div>
+                            <div>ORDEN</div>
+                        </div>
+                        <div class="taxonomy2">
+                            <div><a href='../../animal.html'>Animal</a></div>
+                            <div><a href='../../animale250.html?Subfilo=vertebrado'>Vertebrado</a></div>
+                            <div><a href='../../animalc6cc.html?Filo=cordados'>Cordado</a></div>
+                            <div><a href='../../animal5471.html?clase=mamiferos'>Mamífero</a></div>
+                            <div><a href='../../animal5fd4.html?orden=carnivoros'>Carnívoro</a></div>
+                        </div>
+                        <div class="taxonomy">
+                            <div>REPRODUCCION</div>
+                            <div>HABITAT</div>
+                        </div>
+                        <div class="taxonomy2">
+                            <div><a href='../../animaldfb3.html?reproduccion=viviparos'>Vivíparo</a></div>
+                            <div><a href='../../animal16d8.html?habitat=terrestres'>Terrestre</a></div>
+                        </div>
+                    </div>
+                    <div class="image-container">
+                        <img class="background" src="../imagenes/Armi%c3%b1o/fondo.jpg" alt="Fondo">
+                        <img class="base" src="../imagenes/Armi%c3%b1o/base.jpg" alt="Base">
+                        <img class="main-image" src="../../imagenes/Transparente/Armi%c3%b1oT.png" alt="Armiño">
+                    </div>
+                </div>
+            </div>
+
+            <div class="description">
+                <section>
+                    <h2>Descripción</h2>
+                    <hr>
+                    <p>
+                        El armiño (Mustela erminea), ese pequeño mustélido de mirada penetrante y cuerpo serpentino, es
+                        el maestro del camuflaje estacional que ha conquistado los hábitats boreales y templados del
+                        hemisferio norte. Conocido como "comadreja de cola negra" en muchas regiones, este depredador
+                        hiperactivo es famoso por su transformación invernal: mientras su pelaje veraniego es pardo
+                        rojizo con vientre cremoso,
+                        el traje níveo que adopta en invierno (conservando solo la punta negra de la cola como
+                        contraste) lo convierte en un fantasma entre la nieve. Esta metamorfosis cromática, regulada por
+                        fotoperiodo más que por temperatura, ha inspirado mitos desde las culturas siberianas hasta los
+                        pueblos nórdicos, que veían en su blancura inmaculada un símbolo de pureza y astucia invernal.
+                    </p>
+                </section>
+                <section>
+                    <h2>Distribución y hábitat</h2>
+                    <hr>
+                    <p>
+                        El armiño ostenta una de las distribuciones más amplias entre los carnívoros terrestres,
+                        abarcando desde las tundras árticas de Canadá y Rusia hasta los bosques templados de Europa y
+                        Asia, e introducido en Nueva Zelanda donde se ha convertido en una seria amenaza para aves
+                        nativas. Su adaptabilidad le permite prosperar en casi cualquier ambiente con cobertura vegetal
+                        suficiente:
+                        desde los matorrales alpinos a 3,000 metros de altitud hasta los setos vivos de las granjas
+                        británicas.
+                    </p>
+                    <p>
+                        En los Pirineos, comparte territorio con su primo el armiño ibérico (Mustela erminea aestiva),
+                        de menor tamaño y que no siempre desarrolla el manto invernal blanco. Estudios con radio-collar
+                        han revelado que los individuos en latitudes norteñas (donde la nieve persiste meses) tienen
+                        territorios más extensos (hasta 50 hectáreas) que los sureños (10-20 ha),
+                        siguiendo ciclos poblacionales de 4-5 años ligados a la abundancia de roedores.
+                    </p>
+                    <div class="mapa-habitat">
+                        <div id="globo3d" class="container"></div>
+                    </div>
+
+                    <script src="https://unpkg.com/globe.gl"></script>
+                    <script src="../js/Continentes.js"></script>
+                    <script>
+                        const habitats = [
+                            { lat: 45, lng: -100, color: 'green', label: 'América del Norte' },
+                            { lat: 48, lng: 15, color: 'blue', label: 'Europa' },
+                            { lat: 35, lng: 105, color: 'purple', label: 'Asia' }
+                        ];
+                        crearGlobo(habitats);
+                    </script>
+                </section>
+
+                <section>
+                    <h2>Alimentación</h2>
+                    <hr>
+                    <p>
+                        La dieta del armiño es un tratado de eficiencia predatoria. Aunque especializado en pequeños
+                        roedores (especialmente topillos y ratones de campo), este hipercarnívoro (dieta >70% carne)
+                        caza cualquier presa que no supere su tamaño: desde conejos jóvenes hasta aves, huevos, insectos
+                        grandes e incluso peces en zonas ribereñas. Su técnica de caza combina paciencia acechante con
+                        explosiones de velocidad,
+                        pudiendo seguir rastros de presas bajo la nieve gracias a su agudo olfato.
+                    </p>
+                    <p>
+                        Lo extraordinario es su metabolismo acelerado: debe consumir diariamente el 25-30% de su peso
+                        corporal (equivalente a un humano comiendo 20 kg de carne al día). Cuando abundan las presas,
+                        desarrolla el comportamiento de "sobrematanza", almacenando cadáveres en despensas subterráneas
+                        que marca con secreciones odoríferas. En Nueva Zelanda, donde fue introducido en 1884 para
+                        controlar conejos,
+                        ha desarrollado técnicas para saquear nidos de aves no voladoras como el kiwi, demostrando una
+                        adaptabilidad trófica preocupante.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>Características físicas</h2>
+                    <hr>
+                    <p>
+                        La anatomía del armiño es una obra maestra de la evolución para la persecución en espacios
+                        reducidos. Con un cuerpo que alcanza 25-30 cm (más 8-12 cm de cola) y apenas 200-300 gramos de
+                        peso, puede penetrar en las madrigueras más estrechas. Su columna vertebral extremadamente
+                        flexible le permite girar 180° en plena carrera, mientras que las patas cortas y las garras
+                        semirretráctiles son ideales para excavar y trepar.
+                    </p>
+                    <p>
+                        Los sentidos están hiperdesarrollados: orejas sensibles a los ultrasonidos que emiten los
+                        roedores, bigotes (vibrisas) que detectan vibraciones aéreas, y ojos frontales con visión
+                        binocular para calcular distancias exactas antes del salto. Su dentadura incluye colmillos
+                        afilados para matar por dislocación cervical (técnica que aplica incluso a presas mayores que
+                        él) y molares cortantes capaces de triturar huesos.
+                    </p>
+                    <p>
+                        La piel invernal, con hasta 20,000 pelos por cm² (el triple que en verano), contiene cámaras de
+                        aire que aíslan del frío extremo. La punta negra de la cola, presente todo el año, posiblemente
+                        sirva como señuelo para distraer ataques de depredadores hacia una zona no vital.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>Comportamiento</h2>
+                    <hr>
+                    <p>
+                        La vida del armiño es un torbellino de actividad: caza 5-6 horas diarias en ráfagas intensas
+                        intercaladas con breves descansos en madrigueras que roba a sus presas. Es principalmente
+                        solitario y territorial, marcando su dominio con secreciones de glándulas anales cuyo olor
+                        característico los humanos pueden detectar a metros de distancia.
+                    </p>
+                    <p>
+                        Los machos dominantes controlan territorios que superponen los de varias hembras, patrullando
+                        constantemente sus fronteras. Cuando se encuentran, los armiños ejecutan una "danza"
+                        intimidatoria que incluye arqueos de espalda, saltos laterales y chillidos agudos, raramente
+                        llegando a combates reales. Su repertorio vocal incluye al menos 12 sonidos distintos, desde
+                        gruñidos de amenaza hasta trinos de cortejo.
+                    </p>
+                    <p>
+                        En invierno, reducen actividad pero no hibernan, siguiendo túneles bajo la nieve (el
+                        "subniveum") donde la temperatura se mantiene estable. Algunos individuos en Alaska han sido
+                        observados cazando en plena noche polar, guiándose por el campo magnético terrestre cuando la
+                        visibilidad es nula.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>Reproducción</h2>
+                    <hr>
+                    <p>
+                        El ciclo reproductivo del armiño incluye uno de los fenómenos más asombrosos de la naturaleza:
+                        la implantación diferida. El apareamiento ocurre en verano, pero el óvulo fecundado permanece en
+                        estado latente hasta la primavera siguiente (8-10 meses después), cuando las condiciones son
+                        óptimas para el parto. Este mecanismo asegura que las crías nazcan cuando las presas son
+                        abundantes.
+                    </p>
+                    <p>
+                        Las camadas (4-12 crías) llegan al mundo ciegas y casi calvas, en nidos forrados con pelo de
+                        presas. La madre las amamanta durante 6 semanas antes de introducir carne semi-digerida, y a los
+                        3 meses ya acompañan a la madre en cacerías, aprendiendo técnicas mediante juego. Los jóvenes
+                        dispersan a los 4-5 meses, con machos viajando hasta 15 km para establecer territorios.
+                    </p>
+                    <p>
+                        La madurez sexual llega extraordinariamente pronto: hembras pueden aparearse a los 60-70 días de
+                        vida, antes de estar completamente desarrolladas, una adaptación a su corta esperanza de vida
+                        (rara vez superan 2 años en libertad, aunque pueden vivir 7 en cautiverio).
+                    </p>
+                </section>
+
+                <section>
+                    <h2>Defensa y depredadores</h2>
+                    <hr>
+                    <p>
+                        A pesar de su ferocidad, los armiños ocupan un lugar vulnerable en la cadena alimenticia.
+                        Rapaces como el búho nival y el azor los cazan desde el aire, mientras que zorros y gatos
+                        monteses los acechan en tierra. Sus principales defensas son agilidad extrema (saltos de 1.5 m
+                        en horizontal), emisión de líquidos fétidos de glándulas anales, mordeduras feroces dirigidas a
+                        narices y ojos y
+                        camuflaje estacional perfecto.
+                    </p>
+                    <p>
+                        En Nueva Zelanda, donde carece de depredadores naturales, su población ha explotado,
+                        convirtiéndose en una de las mayores amenazas para la fauna endémica. Programas de control
+                        incluyen trampas específicas que evitan capturar otras especies.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>Datos curiosos</h2>
+                    <hr>
+                    <ul class="lista">
+                        <li>Un armiño puede matar a una liebre 10 veces más pesada que él.</li>
+                        <li>Su metabolismo es tan rápido que digiere una presa en 3 horas.</li>
+                        <li>Los machos no cambian a pelaje blanco antes que las hembras en otoño.</li>
+                        <li>En la Edad Media, su piel invernal era reservada para reyes y nobles.</li>
+                        <li>Pueden nadar hasta 1.5 km entre islas en busca de nuevos territorios.</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Estado de conservación</h2>
+                    <hr>
+                    <p>
+                        Mientras en Europa y Norteamérica las poblaciones son estables (aunque sensibles a pesticidas
+                        que reducen sus presas), en Nueva Zelanda son consideradas plaga nacional, habiendo contribuido
+                        a la extinción de al menos 7 especies de aves endémicas. Proyectos como "Predator Free 2050"
+                        buscan erradicarlos de zonas clave.
+                    </p>
+                    <p>
+                        En Escocia, están protegidos por su papel en el control de plagas de roedores, y su caza está
+                        estrictamente regulada. Estos pequeños fantasmas invernales, que inspiraron los mantos reales y
+                        simbolizan la pureza en heráldica, siguen siendo un recordatorio de que incluso los animales más
+                        pequeños pueden tener impactos ecológicos descomunales, para bien o para mal. Su futuro
+                        dependerá de nuestro
+                        manejo de ese delicado equilibrio entre admiración y control.
+                    </p>
+                    <p>
+                        Mientras tanto, científicos estudian su extraordinaria hemoglobina para aplicaciones médicas en
+                        hipoxia, y su sistema digestivo como modelo para procesar biomasa fibrosa. La alpaca, pues,
+                        sigue tejiendo su hilo dorado entre el pasado precolombino y el futuro sostenible de los Andes.
+                    </p>
+                    <div class="estado-conservacion" data-estado="LC">
+                        <div class="estado" data-info="Extinto" data-code="EX">EX</div>
+                        <div class="estado" data-info="Extinto en estado silvestre" data-code="EW">EW</div>
+                        <div class="estado" data-info="En peligro crítico" data-code="CR">CR</div>
+                        <div class="estado" data-info="En peligro" data-code="EN">EN</div>
+                        <div class="estado" data-info="Vulnerable" data-code="VU">VU</div>
+                        <div class="estado" data-info="Casi amenazado" data-code="NT">NT</div>
+                        <div class="estado" data-info="Preocupación menor" data-code="LC">LC</div>
+                    </div>
+                </section>
+            </div>
+            <div class="img3D">
+                <h2>Modelo 3D:</h2>
+                <hr>
+                <model-viewer src="../Modelos3D/Armi%c3%b1o.glb" alt="Modelo 3D de un animal" auto-rotate camera-controls ar
+                    shadow-intensity="1">
+                </model-viewer>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer-contenedor">
+        <div class="footer-contenido">
+            <div class="footer-con">
+                <div class="footer-logo">
+                    <img src="../../../img/Proyecto%20nuevo.png" alt="Logo de LifeHunter" class="logo-img">
+                </div>
+
+                <button id="btn-dato">¡Curiosidad animal!</button>
+
+                <div id="animal-container" class="hidden">
+                    <img id="animal-img" src="#" alt="Animal animado">
+                    <p id="dato-curioso"></p>
+                </div>
+
+                <div class="footer-communidad">
+                    <h3 class="community-titilo">Comunidad</h3>
+                    <div class="redes-sociales">
+                        <a href="https://discord.com/" class="red-social" target="_blank" rel="noopener noreferrer"
+                            aria-label="Discord">
+                            <img src="../../../img/discordblanco.png" alt="Discord" class="icono-social">
+                        </a>
+                        <a href="https://www.instagram.com/" class="red-social" target="_blank"
+                            rel="noopener noreferrer" aria-label="Instagram">
+                            <img src="../../../img/instagramblanco.png" alt="Instagram" class="icono-social">
+                        </a>
+                        <a href="https://www.youtube.com/" class="red-social" target="_blank" rel="noopener noreferrer"
+                            aria-label="YouTube">
+                            <img src="../../../img/youtubeblanco.png" alt="YouTube" class="icono-social">
+                        </a>
+                        <a href="https://x.com/" class="red-social" target="_blank" rel="noopener noreferrer"
+                            aria-label="Twitter">
+                            <img src="../../../img/xblanco.png" alt="Twitter" class="icono-social">
+                        </a>
+                        <a href="https://www.facebook.com/" class="red-social" target="_blank" rel="noopener noreferrer"
+                            aria-label="Facebook">
+                            <img src="../../../img/facebookblanco.png" alt="Facebook" class="icono-social">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-info">
+                <div class="lugar">
+                    <p>Puedes encontrarnos en:</p>
+                    <a href="https://maps.app.goo.gl/hSpv9RwdGKMLmeew6" target="_blank">Av. Nicolás de Piérola 1221,
+                        Trujillo 13001</a>
+                </div>
+                <div class="contacta">
+                    <a href='../../../contactanos/contacto.html'>Contáctanos</a> <br> <br>
+                    <a href='../../../sitemap/sitemap.html'>Mapa del sitio</a>
+                </div>
+                <div class="telefono">
+                    <p>Teléfono:</p>
+                    <a href="#">+51 910425708</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-divide">
+            <hr class="linea-dividir">
+        </div>
+
+        <div class="copyright">
+            <p class="copyright-texto">LifeHunter © 2025 Grupo 1. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="../js/codigo.js"></script>
+    <script src="session.js"></script>
+
+</body>
+
+
+<!-- Mirrored from lifehunter.netlify.app/reinoanimal/biografiaanimal/codigosa/biografiaarmi%C3%B1o by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 11 Jan 2026 08:54:26 GMT -->
+</html>

@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="es">
+
+
+<!-- Mirrored from lifehunter.netlify.app/reinoanimal/biografiaanimal/codigosa/biografiaalcaravan by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 11 Jan 2026 08:53:33 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="../../../../unpkg.com/%40google/model-viewer%404.1.0/dist/model-viewer.min.js"></script>
+    <link rel="stylesheet" href="../css/BiografiaA.css">
+    <style>
+        body {
+            --fondo: url("../css/Fondo/Alcaravan-Fondo.jpg")
+        }
+    </style>
+    <title>LifeHunter - Alcaraván</title>
+    <link rel="shortcut icon" href="../imagenes/Fooder/logo1png.png" type="image/x-icon">
+    <link rel="stylesheet" href="../../../css/session.css">
+</head>
+
+<body class="body-abanico">
+    <header>
+        <a class='header-logo-link' href='../../../index.html'>
+            <img src="../../../img/logo.jpg" alt="Logo LifeHunter" class="header-logo">
+        </a>
+        <h1 class="tituloPrincipal">LifeHunter</h1>
+
+        <div class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <nav class="navegacion-principal">
+
+            <a class='nav-enlace' href='../../animal.html'>Regresar</a>
+            <div class="boton-sesion-mobile">Iniciar Sesión</div>
+        </nav>
+
+        <div class="boton-sesion iniciarSesion-btn">Iniciar Sesión</div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="titulo">
+                <h1>ALCARAVÁN</h1>
+            </div>
+
+            <div class="info-box">
+                <div class="contenedor">
+                    <div class="taxonomy-block">
+                        <div class="taxonomy">
+                            <div>REINO</div>
+                            <div>CATEGORIA</div>
+                            <div>FILO</div>
+                            <div>CLASE</div>
+                            <div>ORDEN</div>
+                        </div>
+                        <div class="taxonomy2">
+                            <div><a href='../../animal.html'>Animal</a></div>
+                            <div><a href='../../animale250.html?Subfilo=vertebrado'>Vertebrado</a></div>
+                            <div><a href='../../animalc6cc.html?Filo=cordados'>Cordado</a></div>
+                            <div><a href='../../animal6826.html?clase=aves'>Ave</a></div>
+                            <div><a href='../../animala4fd.html?orden=omnivoros'>Omnívoros</a></div>
+                        </div>
+                        <div class="taxonomy">
+                            <div>REPRODUCCION</div>
+                            <div>HABITAT</div>
+                        </div>
+                        <div class="taxonomy2">
+                            <div><a href='../../animalf411.html?reproduccion=oviparos'>Ovíparo</a></div>
+                            <div><a href='../../animal9e88.html?habitat=mixtos'>Mixto</a></div>
+                        </div>
+                    </div>
+                    <div class="image-container">
+                        <img class="background" src="../imagenes/Alcaravan/fondo.jpg" alt="Fondo">
+                        <img class="base" src="../imagenes/Alcaravan/base.jpg" alt="Base">
+                        <img class="main-image" src="../../imagenes/Transparente/Alcarav%c3%a1nT.jpg" alt="Alcaraván">
+                    </div>
+                </div>
+            </div>
+
+            <div class="description">
+                <section>
+                    <h2>Descripción</h2>
+                    <hr>
+                    <p>
+                        El alcaraván (Burhinus oedicnemus), conocido también como darao o chorlito gritón, es un
+                        enigmático habitante de los terrenos abiertos cuyo peculiar canto nocturno ha inspirado
+                        numerosas leyendas campesinas. Perteneciente al orden Charadriiformes y a la familia Burhinidae,
+                        este ave zancuda de hábitos crepusculares representa un fascinante ejemplo de adaptación a
+                        ambientes semiáridos.
+                    </p>
+                    <P>
+                        Su nombre científico oedicnemus (del griego "tobillo hinchado") hace referencia a sus abultadas
+                        articulaciones tarsales, una característica distintiva de este grupo de aves que combinan rasgos
+                        de chorlos y aves de presa. Los alcaravanes han desarrollado estrategias de camuflaje tan
+                        efectivas que pueden volverse literalmente invisibles en terrenos pedregosos, permaneciendo
+                        inmóviles con el cuello estirado,
+                        confundiéndose perfectamente con el entorno.
+                    </P>
+                </section>
+                <section>
+                    <h2>Distribución y hábitat</h2>
+                    <hr>
+                    <p>
+                        El alcaraván común tiene una distribución paleártica que abarca desde las Islas Canarias y el
+                        norte de África hasta el centro de Asia, con poblaciones aisladas en la India. En Europa, su
+                        área de distribución se ha contraído notablemente en las últimas décadas, especialmente en las
+                        regiones norteñas.
+                    </p>
+                    <p>
+                        Estos maestros del camuflaje prefieren terrenos abiertos con vegetación dispersa como estepas,
+                        pastizales semiáridos, barbechos, saladares y áreas volcánicas. Su adaptabilidad les permite
+                        prosperar en ambientes aparentemente inhóspitos, desde los jables (campos de arena) canarios
+                        hasta los badlands ibéricos, siempre que dispongan de zonas despejadas para detectar
+                        depredadores y suelos blandos para anidar.
+                    </p>
+                    <p>
+                        Curiosamente, muchas poblaciones ibéricas realizan migraciones altitudinales en invierno,
+                        bajando de las parameras a los valles más cálidos.
+                    </p>
+                    <div class="mapa-habitat">
+                        <div id="globo3d" class="container"></div>
+                    </div>
+
+                    <script src="https://unpkg.com/globe.gl"></script>
+                    <script src="../js/Continentes.js"></script>
+                    <script>
+                        const habitats = [
+                            { lat: 2, lng: 21, color: 'yellow', label: 'Africa' },
+                            { lat: 48, lng: 15, color: 'blue', label: 'Europa' },
+                            { lat: 35, lng: 105, color: 'purple', label: 'Asia' }
+                        ];
+                        crearGlobo(habitats);
+                    </script>
+                </section>
+
+                <section>
+                    <h2>Alimentación</h2>
+                    <hr>
+                    <p>
+                        La dieta del alcaraván refleja su naturaleza oportunista y su adaptación a ambientes con
+                        recursos limitados. Estos depredadores crepusculares se alimentan principalmente de
+                        invertebrados como escarabajos tenebriónidos (especialmente adaptados a ambientes áridos),
+                        grillos, saltamontes, arañas y caracoles. También capturan pequeños vertebrados incluyendo
+                        lagartijas, roedores y polluelos de otras aves.
+                    </p>
+                    <p>
+                        Sus técnicas de caza son variadas: desde el picoteo rápido en superficie hasta carreras cortas
+                        persiguiendo presas, pasando por el revolcado en el suelo para desenterrar larvas. Sus grandes
+                        ojos amarillos, proporcionalmente más grandes que los de las lechuzas en relación a su tamaño
+                        corporal, les confieren una visión excepcional para cazar en condiciones de baja luminosidad.
+                    </p>
+                    <p>
+                        Estudios estomacales revelan que pueden ingerir hasta 2,000 artrópodos diarios durante la
+                        temporada de cría, jugando un papel crucial en el control de plagas agrícolas.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>Características físicas</h2>
+                    <hr>
+                    <p>
+                        El diseño corporal del alcaraván es un prodigio de adaptación al camuflaje. Su plumaje críptico
+                        combina tonos arena, grisáceos y pardos con finas estrías negras que se funden perfectamente con
+                        los terrenos pedregosos.
+                    </p>
+                    <p>
+                        Mide entre 40-44 cm de longitud, con una envergadura alar de 77-85 cm y un peso de 300-500
+                        gramos. Sus largas patas amarillas terminan en dedos relativamente cortos pero fuertes, ideales
+                        para correr velozmente. El pico, corto y robusto con la punta negra, recuerda al de las
+                        gaviotas, mientras que sus prominentes ojos amarillos con pupila negra le dan una expresión
+                        penetrante.
+                    </p>
+                    <p>
+                        Las alas, anchas y redondeadas, muestran un llamativo patrón blanco y negro visible solo en
+                        vuelo. Una peculiaridad anatómica es su articulación tibiotarsal (el "tobillo") inusualmente
+                        gruesa, que contiene una bolsa sinovial adaptada para soportar largas horas de inmovilidad en
+                        posiciones de vigilancia.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>Comportamiento</h2>
+                    <hr>
+                    <p>
+                        La etología del alcaraván despliega un fascinante repertorio de adaptaciones anti-depredatorias.
+                        Durante el día, permanece inmóvil en lo que se conoce como "postura de congelación", con el
+                        cuerpo aplastado contra el suelo y el cuello estirado, confundiéndose con las piedras del
+                        entorno. Al sentirse amenazado, puede realizar espectaculares vuelos de distracción fingiendo
+                        estar
+                        herido para alejar intrusos del nido. Su vocalización más característica - un lastimero
+                        "cur-lee" o "tu-lí" repetitivo que resuena en la noche - sirve tanto para demarcar territorio
+                        como para comunicación entre parejas.
+                    </p>
+                    <p>
+                        Estudios de radioseguimiento han demostrado que los individuos pueden permanecer en la misma
+                        área durante años, mostrando una fidelidad extraordinaria a sus territorios de alimentación. En
+                        invierno, algunas poblaciones forman pequeños grupos familiares, aunque generalmente son aves
+                        solitarias fuera de la temporada de cría.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>Reproducción</h2>
+                    <hr>
+                    <p>
+                        El ciclo reproductivo del alcaraván está perfectamente sincronizado con los ritmos de los
+                        ecosistemas áridos. Las paradas nupciales incluyen carreras circulares, vuelos bajos con aleteos
+                        rígidos y duetos vocales que pueden escucharse a kilómetros de distancia.
+                    <p>
+                        La hembra pone normalmente 2 huevos (excepcionalmente 3) en una simple depresión del suelo sin
+                        apenas material de nido, frecuentemente junto a una piedra o mata de hierba que sirve de
+                        referencia. El patrón críptico de los huevos - color crema con manchas grises y negras - los
+                        hace casi indistinguibles del terreno. Ambos padres incuban durante 24-26 días,
+                        con turnos especialmente intensos al atardecer y amanecer.
+                    </p>
+                    <p>
+                        Los pollos son nidífugos, abandonando el nido a las pocas horas de nacer, ya cubiertos de un
+                        plumón mimético y capaces de correr velozmente. A las 5-6 semanas alcanzan el tamaño adulto,
+                        aunque permanecen con los padres aprendiendo técnicas de camuflaje y caza hasta los 2-3 meses.
+                        La madurez sexual llega a los 2 años,
+                        con una longevidad máxima registrada de 17 años en estado salvaje.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>Defensa y depredadores</h2>
+                    <hr>
+                    <p>
+                        El principal mecanismo de defensa del alcaraván es su extraordinario camuflaje, complementado
+                        con comportamientos de distracción. Cuando los depredadores se acercan al nido, los adultos
+                        pueden realizar el "rodete herido", arrastrando un ala como si estuviesen lesionados para atraer
+                        la atención lejos de los huevos o polluelos.
+                    <p>
+                        Entre sus principales enemigos naturales se encuentran zorros, jabalíes, córvidos grandes como
+                        cuervos, y rapaces nocturnas como los búhos reales. Las crías son particularmente vulnerables a
+                        mustélidos como tejones y garduñas. En las últimas décadas, la proliferación de perros
+                        asilvestrados y gatos callejeros ha aumentado la presión depredadora.
+                    </p>
+                    <p>
+                        Curiosamente, en algunas regiones ibéricas los alcaravanes han desarrollado la costumbre de
+                        anidar cerca de colonias de abejarucos, beneficiándose de la protección que estas aves más
+                        agresivas brindan contra los depredadores aéreos.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>Datos curiosos</h2>
+                    <hr>
+                    <ul class="lista">
+                        <li>En las Islas Canarias, los alcaravanes son llamados "pedrotes" y su llegada coincidía
+                            tradicionalmente con el inicio de la siembra.</li>
+                        <li>Un estudio en Francia reveló que los alcaravanes pueden detectar vibraciones sísmicas
+                            minutos antes que los humanos, anticipándose a terremotos.</li>
+                        <li>Su nombre en inglés "thick-knee" (rodilla gruesa) alude a sus abultadas articulaciones, que
+                            contienen un líquido sinovial especial para soportar largas inmovilizaciones.</li>
+                        <li>En el antiguo Egipto, aparecen representados en jeroglíficos como símbolo de vigilancia
+                            nocturna.</li>
+                        <li>Algunos individuos en Marruecos han aprendido a seguir tractores agrícolas para capturar
+                            insectos y roedores perturbados por el arado.</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Estado de conservación</h2>
+                    <hr>
+                    <p>
+                        El alcaraván común está catalogado como "Casi Amenazado" a nivel global por la UICN, con
+                        poblaciones europeas en marcado declive (especialmente en el norte y centro del continente). En
+                        España, aunque sigue siendo relativamente común en regiones como Extremadura, Castilla-La Mancha
+                        y Andalucía, ha desaparecido de muchas áreas agrícolas intensivas.
+                    </p>
+                    <p>
+                        Las principales amenazas incluyen la intensificación agrícola (pérdida de barbechos), el uso de
+                        pesticidas que reducen sus presas, la urbanización de zonas esteparias y la colisión con
+                        tendidos eléctricos. Programas de conservación exitosos han demostrado que medidas simples como
+                        mantener linderos sin cultivar, retrasar las cosechas hasta julio
+                        y crear pequeñas zonas pedregosas artificiales pueden revertir localmente el declive.
+                    </p>
+                    <p>
+                        En Portugal, el proyecto "Alcaravão" ha logrado aumentar las poblaciones en un 30% en áreas
+                        piloto mediante acuerdos con agricultores. El futuro de este fantasma de las llanuras dependerá
+                        de nuestra capacidad para preservar los paisajes agrícolas tradicionales que han sido su hogar
+                        durante milenios.
+                    </p>
+                    <div class="estado-conservacion" data-estado="NT">
+                        <div class="estado" data-info="Extinto" data-code="EX">EX</div>
+                        <div class="estado" data-info="Extinto en estado silvestre" data-code="EW">EW</div>
+                        <div class="estado" data-info="En peligro crítico" data-code="CR">CR</div>
+                        <div class="estado" data-info="En peligro" data-code="EN">EN</div>
+                        <div class="estado" data-info="Vulnerable" data-code="VU">VU</div>
+                        <div class="estado" data-info="Casi amenazado" data-code="NT">NT</div>
+                        <div class="estado" data-info="Preocupación menor" data-code="LC">LC</div>
+                    </div>
+                </section>
+            </div>
+            <div class="img3D">
+                <h2>Modelo 3D:</h2>
+                <hr>
+                <model-viewer src="../Modelos3D/Alcaravan.glb" alt="Modelo 3D de un animal" auto-rotate camera-controls
+                    ar shadow-intensity="1">
+                </model-viewer>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer-contenedor">
+        <div class="footer-contenido">
+            <div class="footer-con">
+                <div class="footer-logo">
+                    <img src="../../../img/Proyecto%20nuevo.png" alt="Logo de LifeHunter" class="logo-img">
+                </div>
+
+                <button id="btn-dato">¡Curiosidad animal!</button>
+
+                <div id="animal-container" class="hidden">
+                    <img id="animal-img" src="#" alt="Animal animado">
+                    <p id="dato-curioso"></p>
+                </div>
+
+                <div class="footer-communidad">
+                    <h3 class="community-titilo">Comunidad</h3>
+                    <div class="redes-sociales">
+                        <a href="https://discord.com/" class="red-social" target="_blank" rel="noopener noreferrer"
+                            aria-label="Discord">
+                            <img src="../../../img/discordblanco.png" alt="Discord" class="icono-social">
+                        </a>
+                        <a href="https://www.instagram.com/" class="red-social" target="_blank"
+                            rel="noopener noreferrer" aria-label="Instagram">
+                            <img src="../../../img/instagramblanco.png" alt="Instagram" class="icono-social">
+                        </a>
+                        <a href="https://www.youtube.com/" class="red-social" target="_blank" rel="noopener noreferrer"
+                            aria-label="YouTube">
+                            <img src="../../../img/youtubeblanco.png" alt="YouTube" class="icono-social">
+                        </a>
+                        <a href="https://x.com/" class="red-social" target="_blank" rel="noopener noreferrer"
+                            aria-label="Twitter">
+                            <img src="../../../img/xblanco.png" alt="Twitter" class="icono-social">
+                        </a>
+                        <a href="https://www.facebook.com/" class="red-social" target="_blank" rel="noopener noreferrer"
+                            aria-label="Facebook">
+                            <img src="../../../img/facebookblanco.png" alt="Facebook" class="icono-social">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-info">
+                <div class="lugar">
+                    <p>Puedes encontrarnos en:</p>
+                    <a href="https://maps.app.goo.gl/hSpv9RwdGKMLmeew6" target="_blank">Av. Nicolás de Piérola 1221,
+                        Trujillo 13001</a>
+                </div>
+                <div class="contacta">
+                    <a href='../../../contactanos/contacto.html'>Contáctanos</a> <br> <br>
+                    <a href='../../../sitemap/sitemap.html'>Mapa del sitio</a>
+                </div>
+                <div class="telefono">
+                    <p>Teléfono:</p>
+                    <a href="#">+51 910425708</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-divide">
+            <hr class="linea-dividir">
+        </div>
+
+        <div class="copyright">
+            <p class="copyright-texto">LifeHunter © 2025 Grupo 1. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="../js/codigo.js"></script>
+    <script src="session.js"></script>
+
+</body>
+
+
+<!-- Mirrored from lifehunter.netlify.app/reinoanimal/biografiaanimal/codigosa/biografiaalcaravan by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 11 Jan 2026 08:53:33 GMT -->
+</html>

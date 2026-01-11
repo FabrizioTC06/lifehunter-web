@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="es">
+
+
+<!-- Mirrored from lifehunter.netlify.app/reinoplantae/plantae?habitat=terrestre by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 11 Jan 2026 09:48:55 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dise%c3%b1oB.css">
+    <title>LifeHunter - Reino Plantae</title>
+    <link rel="shortcut icon" href="../img/logo1png.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/session.css">
+</head>
+
+<body>
+    <header>
+        <a class='header-logo-link' href='../index.html'>
+            <img src="../img/logo.jpg" alt="Logo LifeHunter" class="header-logo">
+        </a>
+        <h1 class="tituloPrincipal">LifeHunter</h1>
+
+        <div class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <nav class="navegacion-principal">
+            <a class='nav-enlace' href='../reinoanimal/animal.html'>Reino Animal</a>
+            <a href="../reinofungi%202/fungi2.html" class="nav-enlace">Reino Fungi</a>
+            <a class='nav-enlace' href='../reinoprotista/protista.html'>Reino Protista</a>
+            <a class='nav-enlace' href='../reinomonera/monera.html'>Reino Monera</a>
+        </nav>
+
+        <nav class="navegacion-principal">
+            <a href="javascript:history.back()" class="nav-enlace separador">Regresar</a>
+            <div class="boton-sesion-mobile">Iniciar Sesión</div>
+        </nav>
+
+        <div class="boton-sesion iniciarSesion-btn">Iniciar Sesión</div>
+    </header>
+
+    <main>
+        <section class="hero-section">
+            <h1>Reino Plantae</h1>
+            <p>Encuentra información detallada sobre cualquier planta.</p>
+        </section>
+
+        <section class="seccion-opciones">
+            <div class="filtros" id="filtros">
+                <input type="text" placeholder="Buscar..." id="buscar">
+
+                <select id="filo" aria-label="Filtrar por Filo">
+                    <option value="">Filo</option>
+                    <option value="angiospermas">Angiospermas</option>
+                    <option value="antocerotas">Antocerotas</option>
+                    <option value="briofitas">Briofitas</option>
+                    <option value="cicadas">Cícadas</option>
+                    <option value="coniferas">Coníferas</option>
+                    <option value="ginkgos">Ginkgos</option>
+                    <option value="gnetofitas">Gnetófitas</option>
+                    <option value="pteridofitas">Pteridofitas</option>
+                    <option value="hepaticas">Hepáticas</option>
+                    <option value="licopodios">Licopodios</option>
+                </select>
+
+                <select id="habitat" aria-label="Filtrar por Habitat">
+                    <option value="">Hábitat</option>
+                    <option value="acuatico">Acuático (dulceacuícola, marino)</option>
+                    <option value="epifita">Epífita (sobre otras plantas)</option>
+                    <option value="halofita">Halófita (suelos salinos)</option>
+                    <option value="terrestre">Terrestre (bosques, praderas)</option>
+                    <option value="xerofita">Xerófita (zonas áridas)</option>
+                </select>
+
+                <select id="ciclo" aria-label="Filtrar por Ciclo de vida">
+                    <option value="">Ciclo de vida</option>
+                    <option value="anual">Anual</option>
+                    <option value="bienal">Bienal</option>
+                    <option value="perenne">Perenne</option>
+                </select>
+
+                <select id="habito" aria-label="Filtrar por Habito de crecimiento">
+                    <option value="">Hábito de crecimiento</option>
+                    <option value="arbusto">Arbusto</option>
+                    <option value="arbol">Árbol</option>
+                    <option value="epifita">Epífita</option>
+                    <option value="hierba">Hierba</option>
+                    <option value="liana">Liana/enredadera</option>
+                    <option value="parasita">Parásita</option>
+                </select>
+
+                <select id="reproduccion" aria-label="Filtrar por Reproduccion">
+                    <option value="">Reproducción</option>
+                    <option value="angio-mono">Angiospermas — Monocotiledóneas</option>
+                    <option value="angio-dico">Angiospermas — Dicotiledóneas</option>
+                    <option value="esporas">Esporas (musgos, helechos)</option>
+                    <option value="gimnospermas">Gimnospermas (semillas desnudas)</option>
+                </select>
+
+                <select id="uso" aria-label="Filtrar por Uso principal">
+                    <option value="">Uso principal</option>
+                    <option value="alimenticio">Alimenticio</option>
+                    <option value="industrial">Industrial</option>
+                    <option value="medicinal">Medicinal</option>
+                    <option value="ornamental">Ornamental</option>
+                </select>
+                <button class="boton_reinicia">Reiniciar</button>
+            </div>
+        </section>
+
+        <section class="planta-grid">
+            <a href='biografiaplantae/codigos/html/biografiaabetorojo.html'>
+                <div class="planta" data-nombre="abeto-rojo" data-filo="coniferas" data-habitat="terrestre"
+                    data-ciclo="perenne" data-habito="arbol" data-reproduccion="gimnospermas" data-uso="ornamental">
+                    <article class="planta-card">
+                        <img class="imagen" src="imagenes/AbetoRojo.jpg" alt="Abeto Rojo">
+                        <img class="imagen-transparente" src="imagenes/Transparente/AbetoRojoT.png"
+                            alt="Abeto Rojo Transparente">
+                        <div class="nombre">Abeto rojo</div>
+                    </article>
+                </div>
+            </a>
+
+            <a href='biografiaplantae/codigos/html/biografiaalbahaca.html'>
+                <div class="planta" data-nombre="albahaca" data-filo="angiospermas" data-habitat="terrestre"
+                    data-ciclo="anual" data-habito="hierba" data-reproduccion="angio-dico" data-uso="alimenticio">
+                    <article class="planta-card">
+                        <img class="imagen" src="imagenes/Albahaca.jpg" alt="Albahaca">
+                        <img class="imagen-transparente" src="imagenes/Transparente/AlbahacaT.png"
+                            alt="Albahaca Transparente">
+                        <div class="nombre">Albahaca</div>
+                    </article>
+                </div>
+            </a>
+
+            <a href='biografiaplantae/codigos/html/biografiaantocero.html'>
+                <div class="planta" data-nombre="antocero" data-filo="antocerotas" data-habitat="terrestre"
+                    data-ciclo="perenne" data-habito="hierba" data-reproduccion="esporas" data-uso="ornamental">
+                    <article class="planta-card">
+                        <img class="imagen" src="imagenes/Antocero.jpg" alt="Antócero">
+                        <img class="imagen-transparente" src="imagenes/Transparente/AntoceroT.png"
+                            alt="Antócero Transparente">
+                        <div class="nombre">Antócero</div>
+                    </article>
+                </div>
+            </a>
+
+            <a href='biografiaplantae/codigos/html/biografiacedrodellibano.html'>
+                <div class="planta" data-nombre="cedro-del-libano" data-filo="coniferas" data-habitat="terrestre"
+                    data-ciclo="perenne" data-habito="arbol" data-reproduccion="gimnospermas" data-uso="ornamental">
+                    <article class="planta-card">
+                        <img class="imagen" src="imagenes/CedroDelLibano.jpg" alt="Cedro del Líbano">
+                        <img class="imagen-transparente" src="imagenes/Transparente/CedroDelLibanoT.png"
+                            alt="Cedro del Líbano Transparente">
+                        <div class="nombre">Cedro del Líbano</div>
+                    </article>
+                </div>
+            </a>
+
+            <a href='biografiaplantae/codigos/html/biografiaciprescomun.html'>
+                <div class="planta" data-nombre="cipres-comun" data-filo="coniferas" data-habitat="terrestre"
+                    data-ciclo="perenne" data-habito="arbol" data-reproduccion="gimnospermas" data-uso="ornamental">
+                    <article class="planta-card">
+                        <img class="imagen" src="imagenes/CipresComun.jpg" alt="Ciprés común">
+                        <img class="imagen-transparente" src="imagenes/Transparente/CipresComunT.png"
+                            alt="Ciprés común Transparente">
+                        <div class="nombre">Ciprés común</div>
+                    </article>
+                </div>
+            </a>
+
+            <a href='biografiaplantae/codigos/html/biografiaculantrillo.html'>
+                <div class="planta" data-nombre="culantrillo" data-filo="pteridofitas" data-habitat="acuatico"
+                    data-ciclo="perenne" data-habito="hierba" data-reproduccion="esporas" data-uso="ornamental">
+                    <article class="planta-card">
+                        <img class="imagen" src="imagenes/Culantrillo.jpg" alt="Culantrillo">
+                        <img class="imagen-transparente" src="imagenes/Transparente/CulantrilloT.png"
+                            alt="Culantrillo Transparente">
+                        <div class="nombre">Culantrillo</div>
+                    </article>
+                </div>
+            </a>
+
+            <a href='biografiaplantae/codigos/html/biografiaefedra.html'>
+                <div class="planta" data-nombre="efedra" data-filo="gnetofitas" data-habitat="xerofita"
+                    data-ciclo="perenne" data-habito="arbusto" data-reproduccion="gimnospermas" data-uso="medicinal">
+                    <article class="planta-card">
+                        <img class="imagen" src="imagenes/Efedra.jpg" alt="Efedra">
+                        <img class="imagen-transparente" src="imagenes/Transparente/EfedraT.png"
+                            alt="Efedra Transparente">
+                        <div class="nombre">Efedra</div>
+                    </article>
+                </div>
+            </a>
+
+            <a href='biografiaplantae/codigos/html/biografiaginkgo.html'>
+                <div class="planta" data-nombre="ginkgo" data-filo="ginkgos" data-habitat="terrestre"
+                    data-ciclo="perenne" data-habito="arbol" data-reproduccion="gimnospermas" data-uso="ornamental">
+                    <article class="planta-card">
+                        <img class="imagen" src="imagenes/Ginkgo.jpg" alt="Ginkgo">
+                        <img class="imagen-transparente" src="imagenes/Transparente/GinkgoT.png"
+                            alt="Ginkgo Transparente">
+                        <div class="nombre">Ginkgo</div>
+                    </article>
+                </div>
+            </a>
+
+            <a href='biografiaplantae/codigos/html/biografiagirasol.html'>
+                <div class="planta" data-nombre="girasol" data-filo="angiospermas" data-habitat="terrestre"
+                    data-ciclo="anual" data-habito="hierba" data-reproduccion="angio-dico" data-uso="alimenticio">
+                    <article class="planta-card">
+                        <img class="imagen" src="imagenes/Girasol.jpg" alt="Girasol">
+                        <img class="imagen-transparente" src="imagenes/Transparente/GirasolT.png"
+                            alt="Girasol Transparente">
+                        <div class="nombre">Girasol</div>
+                    </article>
+                </div>
+            </a>
+
+            <a href='biografiaplantae/codigos/html/biografiagnetum.html'>
+                <div class="planta" data-nombre="gnetum" data-filo="gnetofitas" data-habitat="terrestre"
+                    data-ciclo="perenne" data-habito="liana" data-reproduccion="gimnospermas" data-uso="alimenticio">
+                    <article class="planta-card">
+                        <img class="imagen" src="imagenes/Gnetum.jpg" alt="Gnetum">
+                        <img class="imagen-transparente" src="imagenes/Transparente/GnetumT.png"
+                            alt="Gnetum Transparente">
+                        <div class="nombre">Gnetum</div>
+                    </article>
+                </div>
+            </a>
+
+            <a href='biografiaplantae/codigos/html/biografiahelechocomun.html'>
+                <div class="planta" data-nombre="helecho-comun" data-filo="pteridofitas" data-habitat="terrestre"
+                    data-ciclo="perenne" data-habito="hierba" data-reproduccion="esporas" data-uso="ornamental">
+                    <article class="planta-card">
+                        <img class="imagen" src="imagenes/HelechoComun.jpg" alt="Helecho común">
+                        <img class="imagen-transparente" src="imagenes/Transparente/HelechoComunT.png"
+                            alt="Helecho común Transparente">
+                        <div class="nombre">Helecho común</div>
+                    </article>
+                </div>
+            </a>
+
+            <a href='biografiaplantae/codigos/html/biografiahelechoespada.html'>
+                <div class="planta" data-nombre="helecho-espada" data-filo="pteridofitas" data-habitat="terrestre"
+                    data-ciclo="perenne" data-habito="hierba" data-reproduccion="esporas" data-uso="ornamental">
+                    <article class="planta-card">
+                        <img class="imagen" src="imagenes/HelechoEspada.jpg" alt="Helecho espada">
+                        <img class="imagen-transparente" src="imagenes/Transparente/HelechoEspadaT.png"
+                            alt="Helecho espada Transparente">
+                        <div class="nombre">Helecho espada</div>
+                    </article>
+                </div>
+            </a>
+
+            <a href='biografiaplantae/codigos/html/biografiaisoetes.html'>
+                <div class="planta" data-nombre="isoetes" data-filo="licopodios" data-habitat="acuatico"
+                    data-ciclo="perenne" data-habito="hierba" data-reproduccion="esporas" data-uso="ornamental">
+                    <article class="planta-card">
+                        <img class="imagen" src="imagenes/Isoetes.jpg" alt="Isoetes">
+                        <img class="imagen-transparente" src="imagenes/Transparente/IsoetesT.png"
+                            alt="Isoetes Transparente">
+                        <div class="nombre">Isoetes</div>
+                    </article>
+                </div>
+            </a>
+
+            <!--<a href="BiografiaPlantae/codigos/html/BiografiaLechuga.html">
+                <div class="planta" data-nombre="lechuga" data-filo="angiospermas" data-habitat="terrestre"
+                    data-ciclo="anual" data-habito="hierba" data-reproduccion="angio-dico" data-uso="alimenticio">
+                    <article class="planta-card">
+                        <img class="imagen" src="imagenes/Lechuga.jpeg" alt="Lechuga">
+                        <img class="imagen-transparente" src="imagenes/Transparente/LechugaT.png"
+                            alt="Lechuga Transparente">
+                        <div class="nombre">Lechuga</div>
+                    </article>
+                </div>
+            </a>-->
+
+            <a href='biografiaplantae/codigos/html/biografialicopodio.html'>
+                <div class="planta" data-nombre="licopodio" data-filo="licopodios" data-habitat="terrestre"
+                    data-ciclo="perenne" data-habito="hierba" data-reproduccion="esporas" data-uso="ornamental">
+                    <article class="planta-card">
+                        <img class="imagen" src="imagenes/Licopodio.jpg" alt="Licopodio">
+                        <img class="imagen-transparente" src="imagenes/Transparente/LicopodioT.png"
+                            alt="Licopodio Transparente">
+                        <div class="nombre">Licopodio</div>
+                    </article>
+                </div>
+            </a>
+
+            <a href='biografiaplantae/codigos/html/biografiamanzano.html'>
+                <div class="planta" data-nombre="manzano" data-filo="angiospermas" data-habitat="terrestre"
+                    data-ciclo="perenne" data-habito="arbol" data-reproduccion="angio-dico" data-uso="alimenticio">
+                    <article class="planta-card">
+                        <img class="imagen" src="imagenes/Manzano.jpg" alt="Manzano">
+                        <img class="imagen-transparente" src="imagenes/Transparente/ManzanoT.png"
+                            alt="Manzano Transparente">
+                        <div class="nombre">Manzano</div>
+                    </article>
+                </div>
+            </a>
+
+            <a href='biografiaplantae/codigos/html/biografiamarchantia.html'>
+                <div class="planta" data-nombre="marchantia" data-filo="hepaticas" data-habitat="terrestre"
+                    data-ciclo="perenne" data-habito="hierba" data-reproduccion="esporas" data-uso="ornamental">
+                    <article class="planta-card">
+                        <img class="imagen" src="imagenes/Marchantia.jpg" alt="Marchantia">
+                        <img class="imagen-transparente" src="imagenes/Transparente/MarchantiaT.png"
+                            alt="Marchantia Transparente">
+                        <div class="nombre">Marchantia</div>
+                    </article>
+                </div>
+            </a>
+
+            <a href='biografiaplantae/codigos/html/biografiamaiz.html'>
+                <div class="planta" data-nombre="maiz" data-filo="angiospermas" data-habitat="terrestre"
+                    data-ciclo="anual" data-habito="hierba" data-reproduccion="angio-mono" data-uso="alimenticio">
+                    <article class="planta-card">
+                        <img class="imagen" src="imagenes/Maiz.jpg" alt="Maíz">
+                        <img class="imagen-transparente" src="imagenes/Transparente/MaizT.png" alt="Maíz Transparente">
+                        <div class="nombre">Maíz</div>
+                    </article>
+                </div>
+            </a>
+
+            <a href='biografiaplantae/codigos/html/biografiamenta.html'>
+                <div class="planta" data-nombre="menta" data-filo="angiospermas" data-habitat="terrestre"
+                    data-ciclo="perenne" data-habito="hierba" data-reproduccion="angio-dico" data-uso="medicinal">
+                    <article class="planta-card">
+                        <img class="imagen" src="imagenes/Menta.jpg" alt="Menta">
+                        <img class="imagen-transparente" src="imagenes/Transparente/MentaT.png"
+                            alt="Menta Transparente">
+                        <div class="nombre">Menta</div>
+                    </article>
+                </div>
+            </a>
+
+            <a href='biografiaplantae/codigos/html/biografiamusgocomun.html'>
+                <div class="planta" data-nombre="musgo-comun" data-filo="briofitas" data-habitat="terrestre"
+                    data-ciclo="perenne" data-habito="hierba" data-reproduccion="esporas" data-uso="ornamental">
+                    <article class="planta-card">
+                        <img class="imagen" src="imagenes/MusgoComun.jpg" alt="Musgo común">
+                        <img class="imagen-transparente" src="imagenes/Transparente/MusgoComunT.png"
+                            alt="Musgo común Transparente">
+                        <div class="nombre">Musgo común</div>
+                    </article>
+                </div>
+            </a>
+
+            <a href='biografiaplantae/codigos/html/biografiamusgodepelo.html'>
+                <div class="planta" data-nombre="musgo-de-pelo" data-filo="briofitas" data-habitat="terrestre"
+                    data-ciclo="perenne" data-habito="hierba" data-reproduccion="esporas" data-uso="ornamental">
+                    <article class="planta-card">
+                        <img class="imagen" src="imagenes/MusgoDePelo.jpg" alt="Musgo de pelo">
+                        <img class="imagen-transparente" src="imagenes/Transparente/MusgoDePeloT.png"
+                            alt="Musgo de pelo Transparente">
+                        <div class="nombre">Musgo de pelo</div>
+                    </article>
+                </div>
+            </a>
+
+            <a href='biografiaplantae/codigos/html/biografiamusgodeturbera.html'>
+                <div class="planta" data-nombre="musgo-de-turbera" data-filo="briofitas" data-habitat="acuatico"
+                    data-ciclo="perenne" data-habito="hierba" data-reproduccion="esporas" data-uso="ornamental">
+                    <article class="planta-card">
+                        <img class="imagen" src="imagenes/MusgoDeTurbera.jpg" alt="Musgo de turbera">
+                        <img class="imagen-transparente" src="imagenes/Transparente/MusgoDeTurberaT.png"
+                            alt="Musgo de turbera Transparente">
+                        <div class="nombre">Musgo de turbera</div>
+                    </article>
+                </div>
+            </a>
+
+            <a href='biografiaplantae/codigos/html/biografianaranjo.html'>
+                <div class="planta" data-nombre="naranjo" data-filo="angiospermas" data-habitat="terrestre"
+                    data-ciclo="perenne" data-habito="arbol" data-reproduccion="angio-dico" data-uso="alimenticio">
+                    <article class="planta-card">
+                        <img class="imagen" src="imagenes/Naranjo.jpg" alt="Naranjo">
+                        <img class="imagen-transparente" src="imagenes/Transparente/NaranjoT.png"
+                            alt="Naranjo Transparente">
+                        <div class="nombre">Naranjo</div>
+                    </article>
+                </div>
+            </a>
+
+            <a href='biografiaplantae/codigos/html/biografiaorquidea.html'>
+                <div class="planta" data-nombre="orquidea" data-filo="angiospermas" data-habitat="epifita"
+                    data-ciclo="perenne" data-habito="epifita" data-reproduccion="angio-mono" data-uso="ornamental">
+                    <article class="planta-card">
+                        <img class="imagen" src="imagenes/Orquidea.jpg" alt="Orquídea">
+                        <img class="imagen-transparente" src="imagenes/Transparente/OrquideaT.png"
+                            alt="Orquídea Transparente">
+                        <div class="nombre">Orquídea</div>
+                    </article>
+                </div>
+            </a>
+
+            <a href='biografiaplantae/codigos/html/biografiapalmadesagu.html'>
+                <div class="planta" data-nombre="palma-de-sagu" data-filo="cicadas" data-habitat="terrestre"
+                    data-ciclo="perenne" data-habito="arbol" data-reproduccion="gimnospermas" data-uso="ornamental">
+                    <article class="planta-card">
+                        <img class="imagen" src="imagenes/PalmaDeSagu.jpg" alt="Palma de sagú">
+                        <img class="imagen-transparente" src="imagenes/Transparente/PalmaDeSaguT.png"
+                            alt="Palma de sagú Transparente">
+                        <div class="nombre">Palma de sagú</div>
+                    </article>
+                </div>
+            </a>
+
+            <!--<a href="BiografiaPlantae/codigos/html/BiografiaPinoPinonero.html">
+                <div class="planta" data-nombre="pino-pinonero" data-filo="coniferas" data-habitat="terrestre"
+                    data-ciclo="perenne" data-habito="arbol" data-reproduccion="gimnospermas" data-uso="alimenticio">
+                    <article class="planta-card">
+                        <img class="imagen" src="imagenes/PinoPiñonero.jpeg" alt="Pino piñonero">
+                        <img class="imagen-transparente" src="imagenes/Transparente/PinoPiñoneroT.png"
+                            alt="Pino piñonero Transparente">
+                        <div class="nombre">Pino piñonero</div>
+                    </article>
+                </div>
+            </a>-->
+            <a href='biografiaplantae/codigos/html/biografiariccia.html'>
+                <div class="planta" data-nombre="riccia" data-filo="hepaticas" data-habitat="acuatico"
+                    data-ciclo="perenne" data-habito="hierba" data-reproduccion="esporas" data-uso="ornamental">
+                    <article class="planta-card">
+                        <img class="imagen" src="imagenes/Riccia.jpg" alt="Riccia">
+                        <img class="imagen-transparente" src="imagenes/Transparente/RicciaT.png"
+                            alt="Riccia Transparente">
+                        <div class="nombre">Riccia</div>
+                    </article>
+                </div>
+            </a>
+
+            <a href='biografiaplantae/codigos/html/biografiarosa.html'>
+                <div class="planta" data-nombre="rosa" data-filo="angiospermas" data-habitat="terrestre"
+                    data-ciclo="perenne" data-habito="arbusto" data-reproduccion="angio-dico" data-uso="ornamental">
+                    <article class="planta-card">
+                        <img class="imagen" src="imagenes/Rosa.jpg" alt="Rosa">
+                        <img class="imagen-transparente" src="imagenes/Transparente/RosaT.png" alt="Rosa Transparente">
+                        <div class="nombre">Rosa</div>
+                    </article>
+                </div>
+            </a>
+
+            <a href='biografiaplantae/codigos/html/biografiaselaginela.html'>
+                <div class="planta" data-nombre="selaginela" data-filo="licopodios" data-habitat="terrestre"
+                    data-ciclo="perenne" data-habito="hierba" data-reproduccion="esporas" data-uso="ornamental">
+                    <article class="planta-card">
+                        <img class="imagen" src="imagenes/Selaginela.jpg" alt="Selaginela">
+                        <img class="imagen-transparente" src="imagenes/Transparente/SelaginelaT.png"
+                            alt="Selaginela Transparente">
+                        <div class="nombre">Selaginela</div>
+                    </article>
+                </div>
+            </a>
+
+            <a href='biografiaplantae/codigos/html/biografiatomatera.html'>
+                <div class="planta" data-nombre="tomatera" data-filo="angiospermas" data-habitat="terrestre"
+                    data-ciclo="anual" data-habito="hierba" data-reproduccion="angio-dico" data-uso="alimenticio">
+                    <article class="planta-card">
+                        <img class="imagen" src="imagenes/Tomatera.jpg" alt="Tomatera">
+                        <img class="imagen-transparente" src="imagenes/Transparente/TomateraT.png"
+                            alt="Tomatera Transparente">
+                        <div class="nombre">Tomatera</div>
+                    </article>
+                </div>
+            </a>
+
+            <a href='biografiaplantae/codigos/html/biografiatrigo.html'>
+                <div class="planta" data-nombre="trigo" data-filo="angiospermas" data-habitat="terrestre"
+                    data-ciclo="anual" data-habito="hierba" data-reproduccion="angio-dico" data-uso="alimenticio">
+                    <article class="planta-card">
+                        <img class="imagen" src="imagenes/Trigo.jpg" alt="Trigo">
+                        <img class="imagen-transparente" src="imagenes/Transparente/TrigoT.png"
+                            alt="Trigo Transparente">
+                        <div class="nombre">Trigo</div>
+                    </article>
+                </div>
+            </a>
+
+            <a href='biografiaplantae/codigos/html/biografiawelwitschia.html'>
+                <div class="planta" data-nombre="welwitschia" data-filo="gnetofitas" data-habitat="xerofita"
+                    data-ciclo="perenne" data-habito="hierba" data-reproduccion="gimnospermas" data-uso="ornamental">
+                    <article class="planta-card">
+                        <img class="imagen" src="imagenes/Welwitschia.jpg" alt="Welwitschia">
+                        <img class="imagen-transparente" src="imagenes/Transparente/WeleitschiaT.png"
+                            alt="Welwitschia Transparente">
+                        <div class="nombre">Welwitschia</div>
+                    </article>
+                </div>
+            </a>
+
+            <a href='biografiaplantae/codigos/html/biografiazamia.html'>
+                <div class="planta" data-nombre="zamia" data-filo="cicadas" data-habitat="terrestre"
+                    data-ciclo="perenne" data-habito="arbusto" data-reproduccion="gimnospermas" data-uso="ornamental">
+                    <article class="planta-card">
+                        <img class="imagen" src="imagenes/Zamia.jpg" alt="Zamia">
+                        <img class="imagen-transparente" src="imagenes/Transparente/ZamiaT.png"
+                            alt="Zamia Transparente">
+                        <div class="nombre">Zamia</div>
+                    </article>
+                </div>
+            </a>
+
+        </section>
+    </main>
+
+    <footer class="footer-contenedor">
+        <div class="footer-contenido">
+            <div class="footer-con">
+                <div class="footer-logo">
+                    <img src="../img/Proyecto%20nuevo.png" alt="Logo de LifeHunter" class="logo-img">
+                </div>
+
+                <button id="btn-dato">¡Curiosidad animal!</button>
+
+                <div id="animal-container" class="hidden">
+                    <img id="animal-img" src="#" alt="Animal animado">
+                    <p id="dato-curioso"></p>
+                </div>
+
+                <div class="footer-communidad">
+                    <h3 class="community-titilo">Comunidad</h3>
+                    <div class="redes-sociales">
+                        <a href="https://discord.com/" class="red-social" target="_blank" rel="noopener noreferrer"
+                            aria-label="Discord">
+                            <img src="../img/discordblanco.png" alt="Discord" class="icono-social">
+                        </a>
+                        <a href="https://www.instagram.com/" class="red-social" target="_blank"
+                            rel="noopener noreferrer" aria-label="Instagram">
+                            <img src="../img/instagramblanco.png" alt="Instagram" class="icono-social">
+                        </a>
+                        <a href="https://www.youtube.com/" class="red-social" target="_blank" rel="noopener noreferrer"
+                            aria-label="YouTube">
+                            <img src="../img/youtubeblanco.png" alt="YouTube" class="icono-social">
+                        </a>
+                        <a href="https://x.com/" class="red-social" target="_blank" rel="noopener noreferrer"
+                            aria-label="Twitter">
+                            <img src="../img/xblanco.png" alt="Twitter" class="icono-social">
+                        </a>
+                        <a href="https://www.facebook.com/" class="red-social" target="_blank" rel="noopener noreferrer"
+                            aria-label="Facebook">
+                            <img src="../img/facebookblanco.png" alt="Facebook" class="icono-social">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-info">
+                <div class="lugar">
+                    <p>Puedes encontrarnos en:</p>
+                    <a href="https://maps.app.goo.gl/hSpv9RwdGKMLmeew6" target="_blank">Av. Nicolás de Piérola 1221,
+                        Trujillo 13001</a>
+                </div>
+                <div class="contacta">
+                    <a href='../contactanos/contacto.html'>Contáctanos</a> <br> <br>
+                    <a href='../sitemap/sitemap.html'>Mapa del sitio</a>
+                </div>
+                <div class="telefono">
+                    <p>Teléfono:</p>
+                    <a href="#">+51 910425708</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-divide">
+            <hr class="linea-dividir">
+        </div>
+
+        <div class="copyright">
+            <p class="copyright-texto">LifeHunter © 2025 Grupo 1. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="busquedaPlanta.js"></script>
+    <script src="../js/session.js"></script>
+</body>
+
+
+<!-- Mirrored from lifehunter.netlify.app/reinoplantae/plantae?habitat=terrestre by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 11 Jan 2026 09:48:55 GMT -->
+</html>

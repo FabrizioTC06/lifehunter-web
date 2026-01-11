@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="es">
+
+
+<!-- Mirrored from lifehunter.netlify.app/reinoanimal/biografiaanimal/codigosa/biografiaaguila by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 11 Jan 2026 08:52:32 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="../../../../unpkg.com/%40google/model-viewer%404.1.0/dist/model-viewer.min.js"></script>
+    <link rel="stylesheet" href="../css/BiografiaA.css">
+    <link rel="stylesheet" href="../../../css/session.css">
+    <style>
+        body {
+            --fondo: url("../css/Fondo/Aguila-Fondo.jpg")
+        }
+    </style>
+    <title>LifeHunter - Águila</title>
+    <link rel="shortcut icon" href="../imagenes/Fooder/logo1png.png" type="image/x-icon">
+</head>
+
+<body class="body-abanico">
+    <header>
+        <a class='header-logo-link' href='../../../index.html'>
+            <img src="../../../img/logo.jpg" alt="Logo LifeHunter" class="header-logo">
+        </a>
+        <h1 class="tituloPrincipal">LifeHunter</h1>
+
+        <div class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <nav class="navegacion-principal">
+
+            <a class='nav-enlace' href='../../animal.html'>Regresar</a>
+            <div class="boton-sesion-mobile">Iniciar Sesión</div>
+        </nav>
+
+        <div class="boton-sesion iniciarSesion-btn">Iniciar Sesión</div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="titulo">
+                <h1>ÁGUILA</h1>
+            </div>
+
+            <div class="info-box">
+                <div class="contenedor">
+                    <div class="taxonomy-block">
+                        <div class="taxonomy">
+                            <div>REINO</div>
+                            <div>CATEGORIA</div>
+                            <div>FILO</div>
+                            <div>CLASE</div>
+                            <div>ORDEN</div>
+                        </div>
+                        <div class="taxonomy2">
+                            <div><a href='../../animal.html'>Animal</a></div>
+                            <div><a href='../../animale250.html?Subfilo=vertebrado'>Vertebrado</a></div>
+                            <div><a href='../../animalc6cc.html?Filo=cordados'>Cordado</a></div>
+                            <div><a href='../../animal6826.html?clase=aves'>Ave</a></div>
+                            <div><a href='../../animal5fd4.html?orden=carnivoros'>Carnívoro</a></div>
+                        </div>
+                        <div class="taxonomy">
+                            <div>REPRODUCCION</div>
+                            <div>HABITAT</div>
+                        </div>
+                        <div class="taxonomy2">
+                            <div><a href='../../animalf411.html?reproduccion=oviparos'>Ovíparo</a></div>
+                            <div><a href='../../animal111b.html?habitat=aereos'>Aéreo</a></div>
+                        </div>
+                    </div>
+                    <div class="image-container">
+                        <img class="background" src="../imagenes/Aguila/fondo.jpg" alt="Fondo">
+                        <img class="base" src="../imagenes/Aguila/base.jpg" alt="Base">
+                        <img class="main-image" src="../../imagenes/Transparente/AguilaT.png" alt="Águila">
+                    </div>
+                </div>
+            </div>
+
+            <div class="description">
+                <section>
+                    <h2>Descripción</h2>
+                    <hr>
+                    <p>
+                        Las águilas representan el pináculo de la evolución aviar como depredadores aéreos,
+                        pertenecientes a la familia Accipitridae. Estas majestuosas rapaces dominan los cielos con su
+                        imponente envergadura alar que puede superar los 2.5 metros en las especies más grandes como el
+                        águila harpía.
+                    <P>
+                        Su diseño aerodinámico combina potencia y elegancia, con cuerpos robustos adaptados para la caza
+                        y vuelos de gran altitud. Existen más de 60 especies distribuidas globalmente, desde las gélidas
+                        tundras árticas hasta las selvas tropicales, cada una perfectamente adaptada a su entorno
+                        ecológico particular.
+                    </P>
+                </section>
+                <section>
+                    <h2>Distribución y hábitat</h2>
+                    <hr>
+                    <p>
+                        Las águilas muestran una distribución cosmopolita, ausentes solo en la Antártida y algunas islas
+                        oceánicas remotas. El águila real (Aquila chrysaetos) ocupa extensas áreas montañosas del
+                        hemisferio norte, desde las Rocallosas americanas hasta los Alpes europeos y las estepas
+                        asiáticas.
+                    </p>
+                    <p>
+                        Su prima cercana, el águila imperial ibérica (Aquila adalberti), se restringe a los bosques
+                        mediterráneos de la Península Ibérica, siendo uno de los rapaces más emblemáticos de Europa. En
+                        las selvas neotropicales, el águila harpía (Harpia harpyja) reina como el depredador aéreo más
+                        poderoso,
+                        mientras que el águila calva (Haliaeetus leucocephalus) prefiere ambientes acuáticos cerca de
+                        costas y grandes ríos en Norteamérica.
+                    </p>
+                    <p>
+                        Estos hábitats variados comparten características comunes: abundancia de presas, posaderos
+                        elevados para vigilancia y territorios extensos sin perturbación humana significativa.
+                    </p>
+                    <div class="mapa-habitat">
+                        <div id="globo3d" class="container"></div>
+                    </div>
+
+                    <script src="https://unpkg.com/globe.gl"></script>
+                    <script src="../js/Continentes.js"></script>
+                    <script>
+                        const habitats = [
+                            { lat: -15, lng: -60, color: 'red', label: 'América del Sur' },
+                            { lat: 10, lng: -85, color: 'orange', label: 'América Central' },
+                            { lat: 45, lng: -100, color: 'green', label: 'América del Norte' },
+                            { lat: 2, lng: 21, color: 'yellow', label: 'Africa' },
+                            { lat: 48, lng: 15, color: 'blue', label: 'Europa' },
+                            { lat: 35, lng: 105, color: 'purple', label: 'Asia' },
+                            { lat: -25, lng: 134, color: 'teal', label: 'Australia' }
+                        ];
+                        crearGlobo(habitats);
+                    </script>
+                </section>
+
+                <section>
+                    <h2>Alimentación</h2>
+                    <hr>
+                    <p>
+                        Como superdepredadores aéreos, las águilas ocupan la cima de la pirámide trófica. Su dieta
+                        refleja una notable adaptación a los recursos disponibles en cada ecosistema.
+                    </p>
+                    <p>
+                        Las águilas de zonas montañosas como la real se especializan en mamíferos medianos (marmotas,
+                        liebres, incluso crías de venado), mientras que las especies forestales como la harpía cazan
+                        principalmente primates y perezosos en el dosel selvático.
+                    </p>
+                    <p>
+                        Las águilas pescadoras, representadas por el género Ichthyophaga en Asia y África, han
+                        desarrollado garras especializadas para extraer peces de aguas superficiales.
+                    </p>
+                    <p>
+                        Su técnica de caza combina vuelos de reconocimiento a gran altura, donde su aguda visión les
+                        permite detectar presas a kilómetros de distancia, seguidos de picados que pueden superar los
+                        200 km/h en algunas especies. La potencia de sus garras
+                        (que ejercen presión varias veces superior a la mordida de un lobo) les permite matar
+                        instantáneamente incluso a presas grandes.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>Características físicas</h2>
+                    <hr>
+                    <p>
+                        La morfología del águila representa la perfección evolutiva para la depredación aérea. Su
+                        esqueleto ligero pero extremadamente resistente representa menos del 10% de su peso total,
+                        permitiendo vuelos prolongados sin sacrificar fuerza.
+                    </p>
+                    <p>
+                        El sistema visual es particularmente notable: con una densidad de fotorreceptores retinales
+                        cinco veces mayor que la humana, pueden detectar un conejo a 3 km de distancia, además de poseer
+                        visión tetracromática que incluye el espectro ultravioleta. Sus alas anchas y profundamente
+                        digitadas proporcionan sustentación incluso en corrientes térmicas débiles, mientras que el
+                        diseño aerodinámico de las plumas remeras reduce la turbulencia.
+                    </p>
+                    <p>
+                        El pico ganchudo, compuesto de queratina dura, actúa como eficaz herramienta de despiece, capaz
+                        de desarticular presas con precisión quirúrgica. Las patas emplumadas hasta los dedos en
+                        especies de clima frío funcionan como aislantes térmicos, mientras que las garras curvadas
+                        (especialmente el dedo posterior oponible) forman tenazas mortíferas que pueden ejercer
+                        presiones de más de 200 psi.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>Comportamiento</h2>
+                    <hr>
+                    <p>
+                        La etología de las águilas revela complejos patrones de conducta. La mayoría de especies son
+                        territoriales y solitarias, excepto durante la época reproductiva.
+                    </p>
+                    <p>
+                        Algunas, como el águila calva, muestran cierto grado de sociabilidad en áreas con abundancia de
+                        alimento, congregándose en dormideros comunales durante el invierno. Su sistema de comunicación
+                        incluye vocalizaciones territoriales (el característico chillido agudo que muchas películas
+                        atribuyen erróneamente al halcón peregrino)
+                        y un elaborado lenguaje corporal durante el cortejo, que incluye espectaculares vuelos en tándem
+                        y demostraciones aéreas.
+                    </p>
+                    <p>
+                        La memoria espacial les permite recordar la ubicación de fuentes de alimento estacionales y
+                        territorios de caza que pueden abarcar cientos de kilómetros cuadrados. Estudios recientes han
+                        demostrado capacidad para resolver problemas complejos, como desarticular presas en posiciones
+                        específicas para facilitar su transporte.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>Reproducción</h2>
+                    <hr>
+                    <p>
+                        La reproducción en las águilas es un proceso exigente que refleja su estrategia vital
+                        K-seleccionada. Las parejas, generalmente monógamas y longevas (algunas permanecen juntas más de
+                        20 años), realizan elaborados rituales de cortejo que refuerzan el vínculo de pareja.
+                    <p>
+                        Los nidos, llamados harpías, son estructuras masivas que pueden superar los 2 metros de diámetro
+                        y pesar media tonelada, siendo reutilizados y ampliados año tras año. La puesta, normalmente de
+                        1-3 huevos (dependiendo de la disponibilidad trófica), es incubada principalmente por la hembra
+                        durante 35-45 días,
+                        mientras el macho provee alimento. El fenómeno de cainismo (donde el hermano mayor mata al
+                        menor) es común en especies como el águila real, estrategia evolutiva que asegura la
+                        supervivencia del más fuerte cuando los recursos son limitados. Los polluelos permanecen en el
+                        nido entre 70-120 días, dependiendo de la especie, recibiendo cuidados parentales incluso
+                        después de emplumar mientras perfeccionan sus técnicas de vuelo y caza.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>Defensa y depredadores</h2>
+                    <hr>
+                    <p>
+                        Las águilas son depredadores tope o superdepredadores en la mayoría de sus ecosistemas. Esto
+                        significa que, una vez adultas, prácticamente no tienen depredadores naturales que las cacen
+                        como alimento.
+                    <p>
+                        Su posición en la cima de la cadena alimentaria se debe a sus impresionantes características ya
+                        sea por su vista aguda, garras y pico fuertes, velocidad y agilidad en vuelo, comportamiento
+                        territorial,
+                        y la protección de sus crías.
+                </section>
+
+                <section>
+                    <h2>Datos curiosos</h2>
+                    <hr>
+                    <ul class="lista">
+                        <li>El águila arpía posee garras más largas que las de un oso pardo, capaces de ejercer 500 psi
+                            de presión.</li>
+                        <li>Un águila real puede divisar un conejo a 3.2 km de distancia, gracias a una retina con 1
+                            millón de conos por mm².</li>
+                        <li>Las águilas pescadoras giran sus garras 180° durante el ataque para maximizar la eficiencia
+                            de captura.</li>
+                        <li>El águila filipina es uno de los rapaces más raros, con menos de 400 individuos en libertad.
+                        </li>
+                        <li>Algunas águilas almacenan comida en "neveras naturales" - grietas rocosas donde la baja
+                            temperatura preserva las presas.</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Estado de conservación</h2>
+                    <hr>
+                    <p>
+                        El estado de conservación del "águila" en general es complejo, ya que existen muchas especies
+                        diferentes de águilas en el mundo, y cada una tiene su propio estatus según la Unión
+                        Internacional para la Conservación de la Naturaleza (UICN). Algunas especies están bien
+                        conservadas,
+                        mientras que otras enfrentan serias amenazas.
+                    </p>
+                    <div class="estado-conservacion" data-estado="">
+                        <div class="estado" data-info="Extinto" data-code="EX">EX</div>
+                        <div class="estado" data-info="Extinto en estado silvestre" data-code="EW">EW</div>
+                        <div class="estado" data-info="En peligro crítico" data-code="CR">CR</div>
+                        <div class="estado" data-info="En peligro" data-code="EN">EN</div>
+                        <div class="estado" data-info="Vulnerable" data-code="VU">VU</div>
+                        <div class="estado" data-info="Casi amenazado" data-code="NT">NT</div>
+                        <div class="estado" data-info="Preocupación menor" data-code="LC">LC</div>
+                    </div>
+                </section>
+            </div>
+            <div class="img3D">
+                <h2>Modelo 3D:</h2>
+                <hr>
+                <model-viewer src="../Modelos3D/Aguila.glb" alt="Modelo 3D de un animal" auto-rotate camera-controls ar
+                    shadow-intensity="1">
+                </model-viewer>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer-contenedor">
+        <div class="footer-contenido">
+            <div class="footer-con">
+                <div class="footer-logo">
+                    <img src="../../../img/Proyecto%20nuevo.png" alt="Logo de LifeHunter" class="logo-img">
+                </div>
+
+                <button id="btn-dato">¡Curiosidad animal!</button>
+
+                <div id="animal-container" class="hidden">
+                    <img id="animal-img" src="#" alt="Animal animado">
+                    <p id="dato-curioso"></p>
+                </div>
+
+                <div class="footer-communidad">
+                    <h3 class="community-titilo">Comunidad</h3>
+                    <div class="redes-sociales">
+                        <a href="https://discord.com/" class="red-social" target="_blank" rel="noopener noreferrer"
+                            aria-label="Discord">
+                            <img src="../../../img/discordblanco.png" alt="Discord" class="icono-social">
+                        </a>
+                        <a href="https://www.instagram.com/" class="red-social" target="_blank"
+                            rel="noopener noreferrer" aria-label="Instagram">
+                            <img src="../../../img/instagramblanco.png" alt="Instagram" class="icono-social">
+                        </a>
+                        <a href="https://www.youtube.com/" class="red-social" target="_blank" rel="noopener noreferrer"
+                            aria-label="YouTube">
+                            <img src="../../../img/youtubeblanco.png" alt="YouTube" class="icono-social">
+                        </a>
+                        <a href="https://x.com/" class="red-social" target="_blank" rel="noopener noreferrer"
+                            aria-label="Twitter">
+                            <img src="../../../img/xblanco.png" alt="Twitter" class="icono-social">
+                        </a>
+                        <a href="https://www.facebook.com/" class="red-social" target="_blank" rel="noopener noreferrer"
+                            aria-label="Facebook">
+                            <img src="../../../img/facebookblanco.png" alt="Facebook" class="icono-social">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-info">
+                <div class="lugar">
+                    <p>Puedes encontrarnos en:</p>
+                    <a href="https://maps.app.goo.gl/hSpv9RwdGKMLmeew6" target="_blank">Av. Nicolás de Piérola 1221,
+                        Trujillo 13001</a>
+                </div>
+                <div class="contacta">
+                    <a href='../../../contactanos/contacto.html'>Contáctanos</a> <br> <br>
+                    <a href='../../../sitemap/sitemap.html'>Mapa del sitio</a>
+                </div>
+                <div class="telefono">
+                    <p>Teléfono:</p>
+                    <a href="#">+51 910425708</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-divide">
+            <hr class="linea-dividir">
+        </div>
+
+        <div class="copyright">
+            <p class="copyright-texto">LifeHunter © 2025 Grupo 1. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="../js/codigo.js"></script>
+    <script src="session.js"></script>
+
+</body>
+
+
+<!-- Mirrored from lifehunter.netlify.app/reinoanimal/biografiaanimal/codigosa/biografiaaguila by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 11 Jan 2026 08:52:32 GMT -->
+</html>

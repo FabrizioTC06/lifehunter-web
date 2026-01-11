@@ -1,0 +1,273 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(beautiful-full-moon-q1k8i2g2m4y8phgo.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+
+.contenedor {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    transition: all .5s ease-out;
+    padding: 1rem;
+}
+
+.bienvenidoRegreso {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    order: 2;
+    margin-top: 2rem;
+}
+
+img {
+    height: 35px;
+}
+
+.mensajes {
+    padding: 1rem;
+}
+
+.texto-titulo {
+    color: red;
+    font-size: 1.5rem;
+}
+
+.mensajes h2 {
+    font-size: 1.3rem;
+    padding: 1rem 0;
+}
+
+.mensajes button {
+    padding: 0.8rem;
+    font-weight: 400;
+    background-color: #4a4aee;
+    border-radius: 2rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: .9rem;
+    margin-top: 1rem;
+    transition: all .3s ease-in;
+    color: #fff;
+    width: 60%;
+}
+
+.mensajes button:hover {
+    background-color: #6464f8;
+}
+
+.formulario {
+        width: 100%;
+    padding: 1rem;
+    margin: 1rem 0;
+    background-color: rgba(51, 51, 51, 0.602);
+    text-align: center;
+    border-radius: 10px;
+    order: 1;
+}
+
+.text-crear-cuenta {
+    padding: 1.5rem 0;
+    font-size: 1.5rem;
+}
+
+.iconos {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: auto;
+}
+
+.bordes-iconos {
+    height: 20px;
+    width: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.2rem;
+    border: solid thin #fff;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    transition: all .3s ease-in;
+}
+
+.bordes-iconos:hover {
+    background-color: #4a4aee;
+    cursor: pointer;
+}
+
+.cuenta-gratis,
+.cuenta {
+    padding: 1rem 0;
+}
+
+.formulario input {
+    width: 90%;
+    display: block;
+    margin: auto;
+    margin-bottom: 1.5rem;
+    background-color: transparent;
+    border: none;
+    border-bottom: #fff thin solid;
+    text-align: center;
+    outline: none;
+    padding: .5rem 0;
+    font-size: .9rem;
+    color: #fff;
+}
+
+.btn-registrarse {
+    width: 80%;
+    margin: 2rem auto 1rem;
+    padding: 0.8rem;
+    border-radius: 2rem;
+    background-color: #4a4aee;
+    color: white;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: block;
+}
+
+.btn-registrarse:hover {
+    background-color: #6464f8;
+}
+
+.iniciarSesion-btn,
+.registro {
+    width: 80%;
+    margin: auto;
+    border: solid thin #fff;
+    padding: .7rem;
+    border-radius: 2rem;
+    background-color: #fff;
+    font-weight: 600;
+    margin-top: 2rem;
+    font-size: .8rem;
+    cursor: pointer;
+    color: #222;
+    transition: all .3s ease-in;
+}
+
+.iniciarSesion-btn:hover,
+.registro:hover {
+     background-color: #6464f8;
+     border: solid thin #222;
+}
+
+.resgistrarseSesion {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.resgistrarseSesion.activa {
+    opacity: 1;
+    visibility: visible;
+}
+
+.iniciarSesion.activa {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.regresar a{
+    color: #fff;
+}
+
+@media (min-width: 768px) {
+    .contenedor {
+        width: 90%;
+        height: auto;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .bienvenidoRegreso {
+        order: 0;
+        margin-top: 0;
+        width: 40%;
+    }
+
+    .formulario {
+        width: 50%;
+        order: 0;
+    }
+
+    .texto-titulo {
+        font-size: 1.8rem;
+    }
+
+    .mensajes h2 {
+        font-size: 1.5rem;
+    }
+
+    .formulario input {
+        width: 80%;
+    }
+
+    .btn-registrarse {
+        width: 60%;
+        margin: 3rem auto 1rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .contenedor {
+        width: 90%;
+        height: 90vh;
+    }
+
+    .texto-titulo {
+        font-size: 2rem;
+    }
+
+    .mensajes h2 {
+        font-size: 1.7rem;
+    }
+
+    .formulario {
+        width: 400px;
+        margin: 2rem;
+    }
+
+    .text-crear-cuenta {
+        padding: 2.7rem 0;
+        font-size: 1.7rem;
+    }
+
+    .iconos {
+        width: 200px;
+    }
+
+    .formulario input {
+        width: 70%;
+    }
+
+    .iniciarSesion-btn,
+    .registro {
+        width: 60%;
+    }
+
+    .mensajes button {
+        width: auto;
+        padding: 1rem;
+    }
+}

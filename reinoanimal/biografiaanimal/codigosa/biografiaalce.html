@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="es">
+
+
+<!-- Mirrored from lifehunter.netlify.app/reinoanimal/biografiaanimal/codigosa/biografiaalce by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 11 Jan 2026 08:53:33 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="../../../../unpkg.com/%40google/model-viewer%404.1.0/dist/model-viewer.min.js"></script>
+    <link rel="stylesheet" href="../css/BiografiaA.css">
+    <style>
+        body {
+            --fondo: url("../css/Fondo/Alce-Fondo.jpg")
+        }
+    </style>
+    <title>LifeHunter - Alce</title>
+    <link rel="shortcut icon" href="../imagenes/Fooder/logo1png.png" type="image/x-icon">
+    <link rel="stylesheet" href="../../../css/session.css">
+</head>
+
+<body class="body-abanico">
+    <header>
+        <a class='header-logo-link' href='../../../index.html'>
+            <img src="../../../img/logo.jpg" alt="Logo LifeHunter" class="header-logo">
+        </a>
+        <h1 class="tituloPrincipal">LifeHunter</h1>
+
+        <div class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <nav class="navegacion-principal">
+
+            <a class='nav-enlace' href='../../animal.html'>Regresar</a>
+            <div class="boton-sesion-mobile">Iniciar Sesión</div>
+        </nav>
+
+        <div class="boton-sesion iniciarSesion-btn">Iniciar Sesión</div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="titulo">
+                <h1>ALCE</h1>
+            </div>
+
+            <div class="info-box">
+                <div class="contenedor">
+                    <div class="taxonomy-block">
+                        <div class="taxonomy">
+                            <div>REINO</div>
+                            <div>CATEGORIA</div>
+                            <div>FILO</div>
+                            <div>CLASE</div>
+                            <div>ORDEN</div>
+                        </div>
+                        <div class="taxonomy2">
+                            <div><a href='../../animal.html'>Animal</a></div>
+                            <div><a href='../../animale250.html?Subfilo=vertebrado'>Vertebrado</a></div>
+                            <div><a href='../../animalc6cc.html?Filo=cordados'>Cordado</a></div>
+                            <div><a href='../../animal5471.html?clase=mamiferos'>Mamíferos</a></div>
+                            <div><a href='../../animal594a.html?orden=hervivoros'>Herbívoro</a></div>
+                        </div>
+                        <div class="taxonomy">
+                            <div>REPRODUCCION</div>
+                            <div>HABITAT</div>
+                        </div>
+                        <div class="taxonomy2">
+                            <div><a href='../../animaldfb3.html?reproduccion=viviparos'>Vivíparos</a></div>
+                            <div><a href='../../animal16d8.html?habitat=terrestres'>Terrestre</a></div>
+                        </div>
+                    </div>
+                    <div class="image-container">
+                        <img class="background" src="../imagenes/Alce/fondo.jpg" alt="Fondo">
+                        <img class="base" src="../imagenes/Alce/base.jpg" alt="Base">
+                        <img class="main-image" src="../../imagenes/Transparente/AlceT.png" alt="Alce">
+                    </div>
+                </div>
+            </div>
+
+            <div class="description">
+                <section>
+                    <h2>Descripción</h2>
+                    <hr>
+                    <p>
+                        El alce (Alces alces), conocido como moose en América del Norte y elk en Europa, es el miembro
+                        más imponente de la familia Cervidae, superando en tamaño a todos sus parientes cercanos como
+                        ciervos y venados. Este coloso de los bosques septentrionales ha cautivado la imaginación humana
+                        desde la prehistoria, apareciendo en pinturas rupestres
+                        y mitologías nórdicas y siberianas como símbolo de fuerza y abundancia.
+                    </p>
+                    <P>
+                        Su extraordinaria adaptación a climas fríos lo ha convertido en un ingeniero ecológico clave de
+                        los ecosistemas boreales, capaz de modificar la estructura forestal y crear microhábitats para
+                        otras especies a través de sus hábitos alimenticios y movimientos migratorios.
+                    </P>
+                </section>
+                <section>
+                    <h2>Distribución y hábitat</h2>
+                    <hr>
+                    <p>
+                        El alce posee una distribución circumpolar que abarca los bosques templados y boreales del
+                        hemisferio norte, desde Escandinavia y Rusia hasta Alaska, Canadá y el norte de Estados Unidos.
+                        Su área de distribución histórica se ha contraído significativamente en Europa debido a la caza
+                        excesiva y la pérdida de hábitat,
+                        aunque poblaciones saludables persisten en Noruega, Suecia, Finlandia y la Rusia europea. En
+                        América del Norte, ocupa un territorio más extenso, llegando tan al sur como Colorado en las
+                        Montañas Rocosas y Pennsylvania en los Apalaches.
+                    </p>
+                    <p>
+                        Estos gigantes prefieren mosaicos de bosques mixtos con abundantes pantanos, lagos y zonas
+                        ribereñas, donde encuentran tanto alimento como refugio. Durante el invierno, migran a "patios
+                        de invierno" en elevaciones más bajas con menor acumulación de nieve, siguiendo rutas
+                        tradicionales que pueden abarcar cientos de kilómetros.
+                        Un estudio en Alaska reveló que algunos individuos recorren hasta 300 km entre sus territorios
+                        estivales e invernales, mostrando una fidelidad extraordinaria a estas rutas generacionales.
+                    </p>
+                    <div class="mapa-habitat">
+                        <div id="globo3d" class="container"></div>
+                    </div>
+
+                    <script src="https://unpkg.com/globe.gl"></script>
+                    <script src="../js/Continentes.js"></script>
+                    <script>
+                        const habitats = [
+                            { lat: 45, lng: -100, color: 'green', label: 'América del Norte' }
+                        ];
+                        crearGlobo(habitats);
+                    </script>
+                </section>
+
+                <section>
+                    <h2>Alimentación</h2>
+                    <hr>
+                    <p>
+                        Como herbívoro ramoneador, el alce posee una dieta estacional extraordinariamente variada que
+                        incluye más de 200 especies de plantas. En primavera y verano, se convierte en un experto
+                        buceador, sumergiéndose hasta 5 metros para arrancar plantas acuáticas como nenúfares y
+                        potamogeton, que constituyen hasta el 30% de su ingesta estival
+                        y le proporcionan sodio esencial. Sus labios prensiles extraordinariamente móviles y su
+                        capacidad para cerrar las fosas nasales bajo el agua lo convierten en el único ciervo
+                        verdaderamente anfibio.
+                    </p>
+                    <p>
+                        Durante los meses fríos, cambia a brotes leñosos de sauces, álamos y abedules, consumiendo
+                        diariamente 15-20 kg de vegetación (equivalente a unas 60,000 calorías). Su sistema digestivo
+                        altamente especializado incluye un rumen de 100 litros de capacidad y una microbiota intestinal
+                        que le permite digerir taninos y otras toxinas vegetales.
+                        Investigaciones recientes han descubierto que los alces de Yellowstone siguen rutas de
+                        alimentación que coinciden con antiguos lechos de ceniza volcánica, donde las plantas contienen
+                        niveles más altos de minerales esenciales.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>Características físicas</h2>
+                    <hr>
+                    <p>
+                        El alce es el cérvido más grande del planeta, con machos adultos que alcanzan 2.3 m de altura a
+                        la cruz y pesos de 500-700 kg (excepcionalmente hasta 820 kg). Su diseño corporal es una
+                        maravilla de adaptación al frío: piernas largas que reducen la pérdida de calor corporal en la
+                        nieve, un hocico alargado con senos nasales especializados para calentar el aire inhalado,
+                        y un pelaje hueco que atrapa el aire como aislante.
+                    </p>
+                    <p>
+                        La cornamenta de los machos, que puede superar los 2 metros de envergadura y pesar 30 kg, es la
+                        más grande de cualquier mamífero terrestre actual y se renueva anualmente, creciendo hasta 2 cm
+                        por día durante el verano. Estudios con cámaras térmicas han revelado que hasta el 15% del flujo
+                        sanguíneo de un macho en verano se destina al crecimiento de esta estructura ósea,
+                        requiriendo enormes cantidades de calcio y fósforo. Las hembras, aunque carecen de cornamenta,
+                        desarrollan un cuello y hombros excepcionalmente musculosos para proteger a sus crías.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>Comportamiento</h2>
+                    <hr>
+                    <p>
+                        Contrario a la mayoría de cérvidos, los alces son animales predominantemente solitarios que solo
+                        forman grupos temporales en invierno o durante el celo. Su sistema social se basa en complejas
+                        interacciones olfativas: utilizan glándulas odoríferas en las patas, orina y una "campana"
+                        (colgajo de piel bajo la garganta) para marcar territorio y comunicar estado reproductivo.
+                    </p>
+                    <p>
+                        Durante la temporada de apareamiento (el "rut" en septiembre-octubre), los machos emiten
+                        profundos bramidos que resuenan a 3 km de distancia y participan en violentos combates donde
+                        chocan sus astas a velocidades de 35 km/h. Investigaciones con acelerómetros han medido impactos
+                        equivalentes a 1,500 newtons de fuerza durante estos enfrentamientos. Fuera de esta época,
+                        muestran una notable inteligencia espacial, recordando la ubicación exacta de fuentes de
+                        alimento y refugio en territorios de hasta 50 km².
+                    </p>
+                </section>
+
+                <section>
+                    <h2>Reproducción</h2>
+                    <hr>
+                    <p>
+                        El ciclo reproductivo del alce está finamente sincronizado con las duras condiciones boreales.
+                        Las hembras entran en celo solo durante 24-36 horas al año, tiempo durante el cual pueden
+                        aparearse con múltiples machos. Tras 8 meses de gestación (incluyendo implantación diferida del
+                        óvulo fecundado), dan a luz en mayo-junio a una o dos crías (excepcionalmente tres) que pesan
+                        11-16 kg al nacer.
+                    <p>
+                        Los cervatillos desarrollan habilidades extraordinarias en sus primeras horas: pueden seguir a
+                        su madre a los 30 minutos, nadar a las 12 horas y correr más rápido que un humano adulto a los 5
+                        días. Las madres muestran comportamientos protectores intensos, incluyendo ataques a
+                        depredadores (incluso osos y manadas de lobos), con registros documentados de alces que han
+                        matado osos pardos en defensa de sus crías.
+                        Los jóvenes permanecen con la madre hasta la siguiente temporada de parto, aprendiendo rutas
+                        migratorias y sitios de alimentación clave.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>Defensa y depredadores</h2>
+                    <hr>
+                    <p>
+                        A pesar de su enorme tamaño, los alces enfrentan diversas amenazas naturales. Los lobos son sus
+                        principales depredadores, especialmente durante inviernos con nieve profunda donde cazan en
+                        manada aislando individuos jóvenes o enfermos. Los osos pardos y negros capturan crías en
+                        primavera, mientras que las manadas de coyotes pueden acosar a adultos heridos.
+                    </p>
+                    <p>
+                        Su sistema defensivo combina una poderosa patada lateral (capaz de romper huesos de lobo),
+                        velocidades de hasta 56 km/h en distancias cortas y una sorprendente agilidad en terrenos
+                        pantanosos donde los depredadores se atascan. En invierno, forman "círculos defensivos" con las
+                        crías en el centro cuando son acechados por manadas de lobos. Sin embargo,
+                        la mayor amenaza moderna son los vehículos automotores, con más de 7,000 colisiones anuales solo
+                        en Canadá, causando tanto muertes humanas como de alces.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>Datos curiosos</h2>
+                    <hr>
+                    <ul class="lista">
+                        <li>Un alce adulto puede sumergirse hasta 5 minutos bajo el agua en busca de plantas acuáticas.
+                        </li>
+                        <li>Sus patas producen un chasquido característico al caminar, causado por tendones
+                            especializados que ayudan en terrenos nevados.</li>
+                        <li>En invierno, su frecuencia cardíaca baja de 50 a apenas 30 latidos por minuto para conservar
+                            energía.</li>
+                        <li>Los machos pueden perder hasta 100 kg durante la temporada de apareamiento por el estrés y
+                            la falta de alimentación.</li>
+                        <li>Su nombre científico Alces alces deriva del término protoindoeuropeo h₁élḱis, uno de los
+                            nombres animales más antiguos conocidos.</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Estado de conservación</h2>
+                    <hr>
+                    <p>
+                        Aunque globalmente catalogado como "Preocupación Menor" por la UICN, muchas poblaciones de alce
+                        enfrentan graves amenazas. En Europa, la fragmentación de hábitats y la caza furtiva han
+                        reducido su distribución histórica en un 60%. En América del Norte, enfermedades emergentes como
+                        el gusano cerebral (Parelaphostrongylus tenuis) y el cambio climático
+                        (que favorece garrapatas invernales) están causando declives poblacionales del 50% en regiones
+                        como Minnesota y New Hampshire.
+                    </p>
+                    <p>
+                        Proyectos innovadores como pasos de fauna refrigerados en Suecia y programas de reintroducción
+                        en Polonia muestran resultados prometedores. En Rusia, la creación del "Parque Pleistoceno"
+                        intenta restaurar el ecosistema estepario-tundra donde los alces jugaban un papel ecológico
+                        clave junto a bisontes y mamuts.
+                        El futuro de este icono boreal dependerá de nuestra capacidad para mantener corredores
+                        migratorios funcionales y mitigar los impactos del calentamiento global en los ecosistemas
+                        norteños.
+                    </p>
+                    <div class="estado-conservacion" data-estado="LC">
+                        <div class="estado" data-info="Extinto" data-code="EX">EX</div>
+                        <div class="estado" data-info="Extinto en estado silvestre" data-code="EW">EW</div>
+                        <div class="estado" data-info="En peligro crítico" data-code="CR">CR</div>
+                        <div class="estado" data-info="En peligro" data-code="EN">EN</div>
+                        <div class="estado" data-info="Vulnerable" data-code="VU">VU</div>
+                        <div class="estado" data-info="Casi amenazado" data-code="NT">NT</div>
+                        <div class="estado" data-info="Preocupación menor" data-code="LC">LC</div>
+                    </div>
+                </section>
+            </div>
+            <div class="img3D">
+                <h2>Modelo 3D:</h2>
+                <hr>
+                <model-viewer src="../Modelos3D/Alce.glb" alt="Modelo 3D de un animal" auto-rotate camera-controls ar
+                    shadow-intensity="1">
+                </model-viewer>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer-contenedor">
+        <div class="footer-contenido">
+            <div class="footer-con">
+                <div class="footer-logo">
+                    <img src="../../../img/Proyecto%20nuevo.png" alt="Logo de LifeHunter" class="logo-img">
+                </div>
+
+                <button id="btn-dato">¡Curiosidad animal!</button>
+
+                <div id="animal-container" class="hidden">
+                    <img id="animal-img" src="#" alt="Animal animado">
+                    <p id="dato-curioso"></p>
+                </div>
+
+                <div class="footer-communidad">
+                    <h3 class="community-titilo">Comunidad</h3>
+                    <div class="redes-sociales">
+                        <a href="https://discord.com/" class="red-social" target="_blank" rel="noopener noreferrer"
+                            aria-label="Discord">
+                            <img src="../../../img/discordblanco.png" alt="Discord" class="icono-social">
+                        </a>
+                        <a href="https://www.instagram.com/" class="red-social" target="_blank"
+                            rel="noopener noreferrer" aria-label="Instagram">
+                            <img src="../../../img/instagramblanco.png" alt="Instagram" class="icono-social">
+                        </a>
+                        <a href="https://www.youtube.com/" class="red-social" target="_blank" rel="noopener noreferrer"
+                            aria-label="YouTube">
+                            <img src="../../../img/youtubeblanco.png" alt="YouTube" class="icono-social">
+                        </a>
+                        <a href="https://x.com/" class="red-social" target="_blank" rel="noopener noreferrer"
+                            aria-label="Twitter">
+                            <img src="../../../img/xblanco.png" alt="Twitter" class="icono-social">
+                        </a>
+                        <a href="https://www.facebook.com/" class="red-social" target="_blank" rel="noopener noreferrer"
+                            aria-label="Facebook">
+                            <img src="../../../img/facebookblanco.png" alt="Facebook" class="icono-social">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-info">
+                <div class="lugar">
+                    <p>Puedes encontrarnos en:</p>
+                    <a href="https://maps.app.goo.gl/hSpv9RwdGKMLmeew6" target="_blank">Av. Nicolás de Piérola 1221,
+                        Trujillo 13001</a>
+                </div>
+                <div class="contacta">
+                    <a href='../../../contactanos/contacto.html'>Contáctanos</a> <br> <br>
+                    <a href='../../../sitemap/sitemap.html'>Mapa del sitio</a>
+                </div>
+                <div class="telefono">
+                    <p>Teléfono:</p>
+                    <a href="#">+51 910425708</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-divide">
+            <hr class="linea-dividir">
+        </div>
+
+        <div class="copyright">
+            <p class="copyright-texto">LifeHunter © 2025 Grupo 1. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="../js/codigo.js"></script>
+    <script src="session.js"></script>
+
+</body>
+
+
+<!-- Mirrored from lifehunter.netlify.app/reinoanimal/biografiaanimal/codigosa/biografiaalce by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 11 Jan 2026 08:53:33 GMT -->
+</html>

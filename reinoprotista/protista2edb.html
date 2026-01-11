@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="es">
+
+
+<!-- Mirrored from lifehunter.netlify.app/reinoprotista/protista?nutricion=heterotrofo by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 11 Jan 2026 09:51:03 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dise%c3%b1oB.css">
+    <title>LifeHunter - Reino Protista</title>
+    <link rel="shortcut icon" href="../img/logo1png.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/session.css">
+</head>
+
+<body>
+    <header>
+        <a class='header-logo-link' href='../index.html'>
+            <img src="../img/logo.jpg" alt="Logo LifeHunter" class="header-logo">
+        </a>
+        <h1 class="tituloPrincipal">LifeHunter</h1>
+
+        <div class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <nav class="navegacion-principal">
+            <a class='nav-enlace' href='../reinoanimal/animal.html'>Reino Animal</a>
+            <a href="../reinofungi%202/fungi2.html" class="nav-enlace">Reino Fungi</a>
+            <a class='nav-enlace' href='../reinoplantae/plantae.html'>Reino Plantae</a>
+            <a class='nav-enlace' href='../reinomonera/monera.html'>Reino Monera</a>
+        </nav>
+
+        <nav class="navegacion-principal">
+            <a href="javascript:history.back()" class="nav-enlace separador">Regresar</a>
+            <div class="boton-sesion-mobile">Iniciar Sesión</div>
+        </nav>
+
+        <div class="boton-sesion iniciarSesion-btn">Iniciar Sesión</div>
+    </header>
+
+    <main>
+        <section class="hero-section">
+            <h1>Reino Protista</h1>
+            <p>Explora información detallada sobre los organismos del Reino Protista.</p>
+        </section>
+
+        <section class="seccion-opciones">
+            <div class="filtros" id="filtros">
+                <input type="text" placeholder="Buscar..." id="buscar">
+
+                <!-- Filtro: Subgrupo -->
+                <select id="subgrupo" aria-label="Filtrar por Subgrupo">
+                    <option value="">Subgrupo</option>
+                    <option value="protozoo">Protozoos</option>
+                    <option value="algaprotista">Algas protistas</option>
+                    <option value="mohomucilaginoso">Mohos mucilaginosos</option>
+                </select>
+
+                <!-- Filtro: Tipo celular -->
+                <select id="tipocelular" aria-label="Filtrar por Tipo Celular">
+                    <option value="">Tipo celular</option>
+                    <option value="unicelular">Unicelular</option>
+                    <option value="pluricelular">Pluricelular</option>
+                </select>
+
+                <!-- Filtro: Modo de nutrición -->
+                <select id="nutricion" aria-label="Filtrar por Modo de Nutrición">
+                    <option value="">Modo de nutrición</option>
+                    <option value="autotrofo">Autótrofo</option>
+                    <option value="heterotrofo">Heterótrofo</option>
+                    <option value="mixotrofo">Mixótrofo</option>
+                </select>
+
+                <!-- Filtro: Tipo de locomoción -->
+                <select id="locomocion" aria-label="Filtrar por Tipo de Locomoción">
+                    <option value="">Tipo de locomoción</option>
+                    <option value="flagelos">Flagelos</option>
+                    <option value="cilios">Cilios</option>
+                    <option value="pseudopodos">Pseudópodos</option>
+                    <option value="sinlocomocion">Sin locomoción</option>
+                </select>
+
+                <!-- Filtro: Reproducción -->
+                <select id="reproduccion" aria-label="Filtrar por Reproducción">
+                    <option value="">Reproducción</option>
+                    <option value="asexual">Asexual</option>
+                    <option value="sexual">Sexual</option>
+                    <option value="ambas">Ambas</option>
+                </select>
+
+                <!-- Filtro: Hábitat -->
+                <select id="habitat" aria-label="Filtrar por Hábitat">
+                    <option value="">Hábitat</option>
+                    <option value="aguadulce">Agua dulce</option>
+                    <option value="aguasalada">Agua salada</option>
+                    <option value="terrestre">Terrestre</option>
+                    <option value="parasito">Parásito</option>
+                </select>
+
+                <button class="boton_reinicia">Reiniciar</button>
+            </div>
+        </section>
+
+        <section class="planta-grid">
+            <a href='biografiaprotista/codigos/html/biografiaachlya.html'>
+                <div class="planta" data-nombre="achlya" data-subgrupo="mohomucilaginoso"
+                    data-tipocelular="pluricelular" data-nutricion="heterotrofo" data-locomocion="sinlocomocion"
+                    data-reproduccion="asexual" data-habitat="aguadulce">
+                    <article class="planta-card">
+                        <img class="imagen" src="imagenes/Achlya.webp" alt="Achlya">
+                        <img class="imagen-transparente" src="imagenes/Transparente/AchlyaT.webp"
+                            alt="Achlya Transparente">
+                        <div class="nombre">Achlya</div>
+                    </article>
+                </div>
+            </a>
+
+            <a href='biografiaprotista/codigos/html/biografiaactinophryssol.html'>
+                <div class="planta" data-nombre="actinophryssol" data-subgrupo="protozoo" data-tipocelular="unicelular"
+                    data-nutricion="heterotrofo" data-locomocion="pseudopodos" data-reproduccion="asexual"
+                    data-habitat="aguadulce">
+                    <article class="planta-card">
+                        <img class="imagen" src="imagenes/ActinophrysSol.webp" alt="Actinophrys Sol">
+                        <img class="imagen-transparente" src="imagenes/Transparente/ActinophrysSolT.webp"
+                            alt="Actinophrys Sol Transparente">
+                        <div class="nombre">Actinophrys Sol</div>
+                    </article>
+                </div>
+            </a>
+
+            <a href='biografiaprotista/codigos/html/biografiaamoebaproteus.html'>
+                <div class="planta" data-nombre="amoebaproteus" data-subgrupo="protozoo" data-tipocelular="unicelular"
+                    data-nutricion="heterotrofo" data-locomocion="pseudopodos" data-reproduccion="asexual"
+                    data-habitat="aguadulce">
+                    <article class="planta-card">
+                        <img class="imagen" src="imagenes/AmoebaProteus.webp" alt="Amoeba Proteus">
+                        <img class="imagen-transparente" src="imagenes/Transparente/AmoebaProteusT.webp"
+                            alt="Amoeba Proteus Transparente">
+                        <div class="nombre">Amoeba Proteus</div>
+                    </article>
+                </div>
+            </a>
+
+            <a href='biografiaprotista/codigos/html/biografiabalantidiumcoli.html'>
+                <div class="planta" data-nombre="balantidiumcolif" data-subgrupo="protozoo"
+                    data-tipocelular="unicelular" data-nutricion="heterotrofo" data-locomocion="cilios"
+                    data-reproduccion="asexual" data-habitat="parasito">
+                    <article class="planta-card">
+                        <img class="imagen" src="imagenes/BalantidiumColi.webp" alt="Balantidium Coli">
+                        <img class="imagen-transparente" src="imagenes/Transparente/BalantidiumColiT.webp"
+                            alt="Balantidium Coli Transparente">
+                        <div class="nombre">Balantidium Coli</div>
+                    </article>
+                </div>
+            </a>
+
+            <a href='biografiaprotista/codigos/html/biografiachlamydomonas.html'>
+                <div class="planta" data-nombre="chlamydomonas" data-subgrupo="algaprotista"
+                    data-tipocelular="unicelular" data-nutricion="autotrofo" data-locomocion="flagelos"
+                    data-reproduccion="ambas" data-habitat="aguadulce">
+                    <article class="planta-card">
+                        <img class="imagen" src="imagenes/Chlamydomonas.webp" alt="Chlamydomonas">
+                        <img class="imagen-transparente" src="imagenes/Transparente/ChlamydomonasT.png"
+                            alt="Chlamydomonas Transparente">
+                        <div class="nombre">Chlamydomonas</div>
+                    </article>
+                </div>
+            </a>
+
+            <a href='biografiaprotista/codigos/html/biografiadiatoms.html'>
+                <div class="planta" data-nombre="diatoms" data-subgrupo="algaprotista" data-tipocelular="unicelular"
+                    data-nutricion="autotrofo" data-locomocion="sinlocomocion" data-reproduccion="asexual"
+                    data-habitat="aguasalada">
+                    <article class="planta-card">
+                        <img class="imagen" src="imagenes/Diatoms.webp" alt="Diatoms">
+                        <img class="imagen-transparente" src="imagenes/Transparente/DiatomsT.webp"
+                            alt="Diatoms Transparente">
+                        <div class="nombre">Diatoms</div>
+                    </article>
+                </div>
+            </a>
+            
+            <a href='biografiaprotista/codigos/html/biografiadinoflagellates.html'>
+                <div class="planta" data-nombre="dinoflagellates" data-subgrupo="algaprotista"
+                    data-tipocelular="unicelular" data-nutricion="autotrofo" data-locomocion="flagelos"
+                    data-reproduccion="asexual" data-habitat="aguasalada">
+                    <article class="planta-card">
+                        <img class="imagen" src="imagenes/Dinoflagellates.webp" alt="Dinoflagellates">
+                        <img class="imagen-transparente" src="imagenes/Transparente/DinoflagellatesT.webp"
+                            alt="Dinoflagellates Transparente">
+                        <div class="nombre">Dinoflagellates</div>
+                    </article>
+                </div>
+            </a>
+
+            <a href='biografiaprotista/codigos/html/biografiaentamoebahistolytica.html'>
+                <div class="planta" data-nombre="entamoebahistolytica" data-subgrupo="protozoo"
+                    data-tipocelular="unicelular" data-nutricion="heterotrofo" data-locomocion="pseudopodos"
+                    data-reproduccion="asexual" data-habitat="parasito">
+                    <article class="planta-card">
+                        <img class="imagen" src="imagenes/EntamoebaHistolytica.webp" alt="Entamoeba Histolytica">
+                        <img class="imagen-transparente" src="imagenes/Transparente/EntamoebaHistolyticaT.webp"
+                            alt="Entamoeba Histolytica Transparente">
+                        <div class="nombre">Entamoeba Histolytica</div>
+                    </article>
+                </div>
+            </a>
+
+            <a href='biografiaprotista/codigos/html/biografiaeuglenagracilis.html'>
+                <div class="planta" data-nombre="euglenagracilis" data-subgrupo="protozoo" data-tipocelular="unicelular"
+                    data-nutricion="mixotrofo" data-locomocion="flagelos" data-reproduccion="asexual"
+                    data-habitat="aguadulce">
+                    <article class="planta-card">
+                        <img class="imagen" src="imagenes/EuglenaGracilis.webp" alt="Euglena Gracilis">
+                        <img class="imagen-transparente" src="imagenes/Transparente/EuglenaGracilisT.webp"
+                            alt="Euglena Gracilis Transparente">
+                        <div class="nombre">Euglena Gracilis</div>
+                    </article>
+                </div>
+            </a>
+
+            <a href='biografiaprotista/codigos/html/biografiaeuglenozoakinetoplastida.html'>
+                <div class="planta" data-nombre="euglenozoakinetoplastida" data-subgrupo="protozoo"
+                    data-tipocelular="unicelular" data-nutricion="heterotrofo" data-locomocion="flagelos"
+                    data-reproduccion="asexual" data-habitat="parasito">
+                    <article class="planta-card">
+                        <img class="imagen" src="imagenes/EuglenozoaKinetoplastida.webp"
+                            alt="Euglenozoa Kinetoplastida">
+                        <img class="imagen-transparente" src="imagenes/Transparente/EuglenozoaKinetoplastidaT.webp"
+                            alt="Euglenozoa Kinetoplastida Transparente">
+                        <div class="nombre">Euglenozoa Kinetoplastida</div>
+                    </article>
+                </div>
+            </a>
+
+            <a href='biografiaprotista/codigos/html/biografiagiardialamblia.html'>
+                <div class="planta" data-nombre="giardialamblia" data-subgrupo="protozoo" data-tipocelular="unicelular"
+                    data-nutricion="heterotrofo" data-locomocion="flagelos" data-reproduccion="asexual"
+                    data-habitat="parasito">
+                    <article class="planta-card">
+                        <img class="imagen" src="imagenes/GiardiaLamblia.webp" alt="Giardia Lamblia">
+                        <img class="imagen-transparente" src="imagenes/Transparente/GiardiaLambliaT.webp"
+                            alt="Giardia Lamblia Transparente">
+                        <div class="nombre">Giardia Lamblia</div>
+                    </article>
+                </div>
+            </a>
+
+            <a href='biografiaprotista/codigos/html/biografialaminariadigitata.html'>
+                <div class="planta" data-nombre="laminariadigitata" data-subgrupo="algaprotista"
+                    data-tipocelular="pluricelular" data-nutricion="autotrofo" data-locomocion="sinlocomocion"
+                    data-reproduccion="sexual" data-habitat="aguasalada">
+                    <article class="planta-card">
+                        <img class="imagen" src="imagenes/LaminariaDigitata.webp" alt="Laminaria Digitata">
+                        <img class="imagen-transparente" src="imagenes/Transparente/LaminariaDigitataT.webp"
+                            alt="Laminaria Digitata Transparente">
+                        <div class="nombre">Laminaria Digitata</div>
+                    </article>
+                </div>
+            </a>
+
+            <a href='biografiaprotista/codigos/html/biografiaparameciumcaudatum.html'>
+                <div class="planta" data-nombre="parameciumcaudatum" data-subgrupo="protozoo"
+                    data-tipocelular="unicelular" data-nutricion="heterotrofo" data-locomocion="cilios"
+                    data-reproduccion="asexual" data-habitat="aguadulce">
+                    <article class="planta-card">
+                        <img class="imagen" src="imagenes/ParameciumCaudatum.webp" alt="Paramecium Caudatum">
+                        <img class="imagen-transparente" src="imagenes/Transparente/ParameciumCaudatumT.webp"
+                            alt="Paramecium Caudatum Transparente">
+                        <div class="nombre">Paramecium Caudatum</div>
+                    </article>
+                </div>
+            </a>
+
+            <a href='biografiaprotista/codigos/html/biografiaphaeophyta.html'>
+                <div class="planta" data-nombre="phaeophyta" data-subgrupo="algaprotista"
+                    data-tipocelular="pluricelular" data-nutricion="autotrofo" data-locomocion="sinlocomocion"
+                    data-reproduccion="sexual" data-habitat="aguasalada">
+                    <article class="planta-card">
+                        <img class="imagen" src="imagenes/Phaeophyta.webp" alt="Phaeophyta">
+                        <img class="imagen-transparente" src="imagenes/Transparente/PhaeophytaT.webp"
+                            alt="Phaeophyta Transparente">
+                        <div class="nombre">Phaeophyta</div>
+                    </article>
+                </div>
+            </a>
+
+            <a href='biografiaprotista/codigos/html/biografiaphysarumpolycephalum.html'>
+                <div class="planta" data-nombre="physarumpolycephalum" data-subgrupo="mohomucilaginoso"
+                    data-tipocelular="pluricelular" data-nutricion="heterotrofo" data-locomocion="pseudopodos"
+                    data-reproduccion="ambas" data-habitat="terrestre">
+                    <article class="planta-card">
+                        <img class="imagen" src="imagenes/PhysarumPolycephalum.webp" alt="Physarum Polycephalum">
+                        <img class="imagen-transparente" src="imagenes/Transparente/PhysarumPolycephalumT.webp"
+                            alt="Physarum Polycephalum Transparente">
+                        <div class="nombre">Physarum Polycephalum</div>
+                    </article>
+                </div>
+            </a>
+
+            <a href='biografiaprotista/codigos/html/biografiaphytophthorainfestans.html'>
+                <div class="planta" data-nombre="phytophthorainfestans" data-subgrupo="mohomucilaginoso"
+                    data-tipocelular="pluricelular" data-nutricion="heterotrofo" data-locomocion="sinlocomocion"
+                    data-reproduccion="asexual" data-habitat="terrestre">
+                    <article class="planta-card">
+                        <img class="imagen" src="imagenes/PhytophthoraInfestans.webp" alt="Phytophthora Infestans">
+                        <img class="imagen-transparente" src="imagenes/Transparente/PhytophthoraInfestansT.webp"
+                            alt="Phytophthora Infestans Transparente">
+                        <div class="nombre">Phytophthora Infestans</div>
+                    </article>
+                </div>
+            </a>
+
+            <a href='biografiaprotista/codigos/html/biografiaplasmodiumvivax.html'>
+                <div class="planta" data-nombre="plasmodiumvivax" data-subgrupo="protozoo" data-tipocelular="unicelular"
+                    data-nutricion="heterotrofo" data-locomocion="sinlocomocion" data-reproduccion="asexual"
+                    data-habitat="parasito">
+                    <article class="planta-card">
+                        <img class="imagen" src="imagenes/PlasmodiumVivax.webp" alt="Plasmodium Vivax">
+                        <img class="imagen-transparente" src="imagenes/Transparente/PlasmodiumVivaxT.webp"
+                            alt="Plasmodium Vivax Transparente">
+                        <div class="nombre">Plasmodium Vivax</div>
+                    </article>
+                </div>
+            </a>
+
+            <a href='biografiaprotista/codigos/html/biografiaradiolaria.html'>
+                <div class="planta" data-nombre="radiolaria" data-subgrupo="protozoo" data-tipocelular="unicelular"
+                    data-nutricion="heterotrofo" data-locomocion="pseudopodos" data-reproduccion="asexual"
+                    data-habitat="aguasalada">
+                    <article class="planta-card">
+                        <img class="imagen" src="imagenes/Radiolaria.webp" alt="Radiolaria">
+                        <img class="imagen-transparente" src="imagenes/Transparente/RadiolariaT.webp"
+                            alt="Radiolaria Transparente">
+                        <div class="nombre">Radiolaria</div>
+                    </article>
+                </div>
+            </a>
+
+            <a href='biografiaprotista/codigos/html/biografiarhodophyta.html'>
+                <div class="planta" data-nombre="rhodophyta" data-subgrupo="algaprotista"
+                    data-tipocelular="pluricelular" data-nutricion="autotrofo" data-locomocion="sinlocomocion"
+                    data-reproduccion="sexual" data-habitat="aguasalada">
+                    <article class="planta-card">
+                        <img class="imagen" src="imagenes/Rhodophyta.webp" alt="Rhodophyta">
+                        <img class="imagen-transparente" src="imagenes/Transparente/RhodophytaT.webp"
+                            alt="Rhodophyta Transparente">
+                        <div class="nombre">Rhodophyta</div>
+                    </article>
+                </div>
+            </a>
+
+            <a href='biografiaprotista/codigos/html/biografiasargassum.html'>
+                <div class="planta" data-nombre="sargassum" data-subgrupo="algaprotista" data-tipocelular="pluricelular"
+                    data-nutricion="autotrofo" data-locomocion="sinlocomocion" data-reproduccion="sexual"
+                    data-habitat="aguasalada">
+                    <article class="planta-card">
+                        <img class="imagen" src="imagenes/Sargassum.webp" alt="Sargassum">
+                        <img class="imagen-transparente" src="imagenes/Transparente/SargassumT.webp"
+                            alt="Sargassum Transparente">
+                        <div class="nombre">Sargassum</div>
+                    </article>
+                </div>
+            </a>
+
+            <a href='biografiaprotista/codigos/html/biografiaspirogyra.html'>
+                <div class="planta" data-nombre="spirogyra" data-subgrupo="algaprotista" data-tipocelular="pluricelular"
+                    data-nutricion="autotrofo" data-locomocion="sinlocomocion" data-reproduccion="sexual"
+                    data-habitat="aguadulce">
+                    <article class="planta-card">
+                        <img class="imagen" src="imagenes/Spirogyra.webp" alt="Spirogyra">
+                        <img class="imagen-transparente" src="imagenes/Transparente/SpirogyraT.webp"
+                            alt="Spirogyra Transparente">
+                        <div class="nombre">Spirogyra</div>
+                    </article>
+                </div>
+            </a>
+
+            <a href='biografiaprotista/codigos/html/biografiastentor.html'>
+                <div class="planta" data-nombre="stentor" data-subgrupo="protozoo" data-tipocelular="unicelular"
+                    data-nutricion="heterotrofo" data-locomocion="cilios" data-reproduccion="asexual"
+                    data-habitat="aguadulce">
+                    <article class="planta-card">
+                        <img class="imagen" src="imagenes/Stentor.webp" alt="Stentor">
+                        <img class="imagen-transparente" src="imagenes/Transparente/StentorT.webp"
+                            alt="Stentor Transparente">
+                        <div class="nombre">Stentor</div>
+                    </article>
+                </div>
+            </a>
+
+            <a href='biografiaprotista/codigos/html/biografiatrypanosomacruzi.html'>
+                <div class="planta" data-nombre="trypanosomacruzi" data-subgrupo="protozoo"
+                    data-tipocelular="unicelular" data-nutricion="heterotrofo" data-locomocion="flagelos"
+                    data-reproduccion="asexual" data-habitat="parasito">
+                    <article class="planta-card">
+                        <img class="imagen" src="imagenes/TrypanosomaCruzi.webp" alt="Trypanosoma Cruzi">
+                        <img class="imagen-transparente" src="imagenes/Transparente/TrypanosomaCruziT.webp"
+                            alt="Trypanosoma Cruzi Transparente">
+                        <div class="nombre">Trypanosoma Cruzi</div>
+                    </article>
+                </div>
+            </a>
+
+            <a href='biografiaprotista/codigos/html/biografiaulva.html'>
+                <div class="planta" data-nombre="ulva" data-subgrupo="algaprotista" data-tipocelular="pluricelular"
+                    data-nutricion="autotrofo" data-locomocion="sinlocomocion" data-reproduccion="sexual"
+                    data-habitat="aguasalada">
+                    <article class="planta-card">
+                        <img class="imagen" src="imagenes/Ulva.webp" alt="Ulva">
+                        <img class="imagen-transparente" src="imagenes/Transparente/UlvaT.webp" alt="Ulva Transparente">
+                        <div class="nombre">Ulva</div>
+                    </article>
+                </div>
+            </a>
+
+            <a href='biografiaprotista/codigos/html/biografiavolvoxglobator.html'>
+                <div class="planta" data-nombre="volvoxglobator" data-subgrupo="algaprotista"
+                    data-tipocelular="pluricelular" data-nutricion="autotrofo" data-locomocion="flagelos"
+                    data-reproduccion="ambas" data-habitat="aguadulce">
+                    <article class="planta-card">
+                        <img class="imagen" src="imagenes/VolvoxGlobator.webp" alt="Volvox Globator">
+                        <img class="imagen-transparente" src="imagenes/Transparente/VolvoxGlobatorT.webp"
+                            alt="Volvox Globator Transparente">
+                        <div class="nombre">Volvox Globator</div>
+                    </article>
+                </div>
+            </a>
+
+            <a href='biografiaprotista/codigos/html/biografiaxanthophyta.html'>
+                <div class="planta" data-nombre="xanthophyta" data-subgrupo="algaprotista"
+                    data-tipocelular="pluricelular" data-nutricion="autotrofo" data-locomocion="sinlocomocion"
+                    data-reproduccion="asexual" data-habitat="aguadulce">
+                    <article class="planta-card">
+                        <img class="imagen" src="imagenes/Xanthophyta.webp" alt="Xanthophyta">
+                        <img class="imagen-transparente" src="imagenes/Transparente/XanthophytaT.webp"
+                            alt="Xanthophyta Transparente">
+                        <div class="nombre">Xanthophyta</div>
+                    </article>
+                </div>
+            </a>
+
+        </section>
+    </main>
+
+    <footer class="footer-contenedor">
+        <div class="footer-contenido">
+            <div class="footer-con">
+                <div class="footer-logo">
+                    <img src="../img/Proyecto%20nuevo.png" alt="Logo de LifeHunter" class="logo-img">
+                </div>
+
+                <button id="btn-dato">¡Curiosidad animal!</button>
+
+                <div id="animal-container" class="hidden">
+                    <img id="animal-img" src="#" alt="Animal animado">
+                    <p id="dato-curioso"></p>
+                </div>
+
+                <div class="footer-communidad">
+                    <h3 class="community-titilo">Comunidad</h3>
+                    <div class="redes-sociales">
+                        <a href="https://discord.com/" class="red-social" target="_blank" rel="noopener noreferrer"
+                            aria-label="Discord">
+                            <img src="../img/discordblanco.png" alt="Discord" class="icono-social">
+                        </a>
+                        <a href="https://www.instagram.com/" class="red-social" target="_blank"
+                            rel="noopener noreferrer" aria-label="Instagram">
+                            <img src="../img/instagramblanco.png" alt="Instagram" class="icono-social">
+                        </a>
+                        <a href="https://www.youtube.com/" class="red-social" target="_blank" rel="noopener noreferrer"
+                            aria-label="YouTube">
+                            <img src="../img/youtubeblanco.png" alt="YouTube" class="icono-social">
+                        </a>
+                        <a href="https://x.com/" class="red-social" target="_blank" rel="noopener noreferrer"
+                            aria-label="Twitter">
+                            <img src="../img/xblanco.png" alt="Twitter" class="icono-social">
+                        </a>
+                        <a href="https://www.facebook.com/" class="red-social" target="_blank" rel="noopener noreferrer"
+                            aria-label="Facebook">
+                            <img src="../img/facebookblanco.png" alt="Facebook" class="icono-social">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-info">
+                <div class="lugar">
+                    <p>Puedes encontrarnos en:</p>
+                    <a href="https://maps.app.goo.gl/hSpv9RwdGKMLmeew6" target="_blank">Av. Nicolás de Piérola 1221,
+                        Trujillo 13001</a>
+                </div>
+                <div class="contacta">
+                    <a href='../contactanos/contacto.html'>Contáctanos</a> <br> <br>
+                    <a href='../sitemap/sitemap.html'>Mapa del sitio</a>
+                </div>
+                <div class="telefono">
+                    <p>Teléfono:</p>
+                    <a href="#">+51 910425708</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-divide">
+            <hr class="linea-dividir">
+        </div>
+
+        <div class="copyright">
+            <p class="copyright-texto">LifeHunter © 2025 Grupo 1. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="busquedaProtista.js"></script>
+    <script src="../js/session.js"></script>
+</body>
+
+
+<!-- Mirrored from lifehunter.netlify.app/reinoprotista/protista?nutricion=heterotrofo by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 11 Jan 2026 09:51:03 GMT -->
+</html>

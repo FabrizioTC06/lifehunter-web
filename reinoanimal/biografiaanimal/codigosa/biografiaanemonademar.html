@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="es">
+
+
+<!-- Mirrored from lifehunter.netlify.app/reinoanimal/biografiaanimal/codigosa/biografiaanemonademar by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 11 Jan 2026 08:53:45 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="../../../../unpkg.com/%40google/model-viewer%404.1.0/dist/model-viewer.min.js"></script>
+    <link rel="stylesheet" href="../css/BiografiaA.css">
+    <style>
+        body {
+            --fondo: url("../css/Fondo/Anemona-Fondo.jpg")
+        }
+    </style>
+    <title>LifeHunter - Anémona de Mar</title>
+    <link rel="shortcut icon" href="../imagenes/Fooder/logo1png.png" type="image/x-icon">
+    <link rel="stylesheet" href="../../../css/session.css">
+</head>
+
+<body class="body-abanico">
+    <header>
+        <a class='header-logo-link' href='../../../index.html'>
+            <img src="../../../img/logo.jpg" alt="Logo LifeHunter" class="header-logo">
+        </a>
+        <h1 class="tituloPrincipal">LifeHunter</h1>
+
+        <div class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <nav class="navegacion-principal">
+
+            <a class='nav-enlace' href='../../animal.html'>Regresar</a>
+            <div class="boton-sesion-mobile">Iniciar Sesión</div>
+        </nav>
+
+        <div class="boton-sesion iniciarSesion-btn">Iniciar Sesión</div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="titulo">
+                <h1>ANÉMONA DE MAR</h1>
+            </div>
+
+            <div class="info-box">
+                <div class="contenedor">
+                    <div class="taxonomy-block">
+                        <div class="taxonomy">
+                            <div>REINO</div>
+                            <div>CATEGORIA</div>
+                            <div>FILO</div>
+                            <div>CLASE</div>
+                            <div>ORDEN</div>
+                        </div>
+                        <div class="taxonomy2">
+                            <div><a href='../../animal.html'>Animal</a></div>
+                            <div><a href='../../animal0e7d.html?Subfilo=invertebrado'>Invertebrado</a></div>
+                            <div><a href='../../animalfb2b.html?Filo=cnidarios'>Cnidario</a></div>
+                            <div><a href='../../animal63ed.html?clase=anthozoa'>Anthozoa</a></div>
+                            <div><a href='../../animal5fd4.html?orden=carnivoros'>Carnívoro</a></div>
+                        </div>
+                        <div class="taxonomy">
+                            <div>REPRODUCCION</div>
+                            <div>HABITAT</div>
+                        </div>
+                        <div class="taxonomy2">
+                            <div><a href='../../animalf411.html?reproduccion=oviparos'>Ovíparo</a></div>
+                            <div><a href='../../animal0f84.html?habitat=acuaticos'>Acuático</a></div>
+                        </div>
+                    </div>
+                    <div class="image-container">
+                        <img class="background" src="../imagenes/Anemona%20de%20mar/fondo.jpg" alt="Fondo">
+                        <img class="base" src="../imagenes/Anemona%20de%20mar/base.jpg" alt="Base">
+                        <img class="main-image" src="../../imagenes/Transparente/An%c3%a9monaDeMarT.png" alt="AnémonaDeMar">
+                    </div>
+                </div>
+            </div>
+
+            <div class="description">
+                <section>
+                    <h2>Descripción</h2>
+                    <hr>
+                    <p>
+                        La anémona de mar, ese ser aparentemente vegetal que en realidad es un sofisticado depredador
+                        marino, pertenece al orden Actiniaria dentro de la clase Anthozoa, siendo pariente cercana de
+                        corales y medusas. Estos animales que desafían categorías simples han perfeccionado el arte de
+                        la supervivencia durante más de 500 millones de años, desarrollando estrategias que mezclan la
+                        delicadeza de un pétalo con la letalidad de un cazador submarino.
+                        Sus tentáculos urticantes, cargados de células especializadas llamadas cnidocitos, despliegan un
+                        arsenal bioquímico que paraliza a sus presas en milisegundos, mientras que su base adhesiva se
+                        ancla con tal fuerza a las rocas que puede resistir el embate de las olas más violentas. La
+                        anémona es un mundo contradictorio: inmóvil pero mortal, simple en apariencia pero compleja en
+                        su ecología, solitaria pero en simbiosis con múltiples especies.
+                    </p>
+                </section>
+                <section>
+                    <h2>Distribución y hábitat</h2>
+                    <hr>
+                    <p>
+                        Desde las gélidas aguas del Ártico hasta los cálidos arrecifes tropicales, las anémonas han
+                        colonizado prácticamente todos los nichos marinos costeros. Algunas especies como Metridium
+                        senile prosperan en muelles y puertos, resistiendo aguas contaminadas que matarían a otros
+                        organismos, mientras que Stichodactyla haddoni prefiere los arrecifes coralinos del
+                        Indo-Pacífico, donde sus discos orales de medio metro de diámetro forman alfombras coloridas en
+                        el lecho marino.
+                        Las anémonas de tubo (Ceriantharia) han desarrollado la singular habilidad de construir
+                        madrigueras verticales en fondos blandos, secretando un material mucilaginoso que se endurece
+                        formando un tubo protector. Estudios en la Gran Barrera de Coral han revelado que ciertas
+                        especies realizan migraciones verticales estacionales, desplazándose a mayores profundidades
+                        durante los meses cálidos para evitar el estrés térmico.
+                    </p>
+                    <div class="mapa-habitat">
+                        <div id="globo3d" class="container"></div>
+                    </div>
+
+                    <script src="https://unpkg.com/globe.gl"></script>
+                    <script src="../js/Continentes.js"></script>
+                    <script>
+                        const habitats = [
+                            { lat: 0, lng: -160, color: '#00bfff', label: 'Océano Pacífico' },
+                            { lat: 0, lng: -30, color: '#1e90ff', label: 'Océano Atlántico' },
+                            { lat: -20, lng: 80, color: '#4682b4', label: 'Océano Índico' },
+                            { lat: 85, lng: 0, color: '#b0e0e6', label: 'Océano Ártico' },
+                            { lat: -75, lng: 0, color: '#5f9ea0', label: 'Océano Antártico' }
+                        ];
+                        crearGlobo(habitats);
+                    </script>
+                </section>
+
+                <section>
+                    <h2>Alimentación</h2>
+                    <hr>
+                    <p>
+                        La estrategia alimenticia de las anémonas es un ballet de precisión química. Por el día, sus
+                        tentáculos se mecen al ritmo de las corrientes, esperando que peces pequeños, crustáceos o
+                        incluso plancton queden atrapados en sus células urticantes. Cada cnidocito contiene un
+                        nematocisto - una cápsula microscópica que dispara un arpón venenoso a la increíble velocidad de
+                        2 metros por segundo, inyectando toxinas como la actinoporina que paralizan a la presa en
+                        segundos. Por la noche,
+                        muchas especies cambian de táctica, extendiendo sus tentáculos más largamente para capturar
+                        organismos que ascienden en la columna de agua. Algunas anémonas como Urticina piscivora han
+                        desarrollado preferencias específicas, especializándose en pequeños peces que atraen con
+                        sustancias químicas miméticas.
+                    </p>
+                    <p>
+                        Lo fascinante es su capacidad para alternar entre depredación activa y agricultura microscópica:
+                        las zooxantelas (algas simbiontes) que habitan sus tejidos realizan fotosíntesis, proporcionando
+                        hasta el 90% de sus necesidades energéticas en aguas tropicales claras. Cuando las condiciones
+                        son adversas, pueden sobrevivir meses sin comer, reduciendo su metabolismo hasta límites
+                        extremos, y algunas especies de aguas profundas han desarrollado relaciones mutualistas con
+                        bacterias quimiosintéticas que transforman sulfuros en nutrientes.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>Características físicas</h2>
+                    <hr>
+                    <p>
+                        El diseño corporal de la anémona es engañosamente simple: un saco cilíndrico coronado por un
+                        disco oral rodeado de tentáculos y una base adhesiva en el extremo opuesto. Sin embargo, esta
+                        aparente simplicidad esconde complejidades asombrosas. Su cavidad gastrovascular, dividida en
+                        cámaras por septos radiales, funciona simultáneamente como estómago, sistema circulatorio y
+                        esqueleto hidrostático. El "pie" basal secreta un adhesivo tan potente que ha inspirado
+                        investigaciones en biomateriales quirúrgicos,
+                        mientras que su capacidad para contraerse a una décima parte de su tamaño cuando es amenazada
+                        desafía las leyes de la física de los tejidos blandos.
+                    <p>
+                        Los tentáculos, que varían desde unos pocos hasta varios cientos según la especie, están armados
+                        con hasta 25 tipos distintos de nematocistos, cada uno especializado para diferentes funciones -
+                        desde los que inyectan toxinas hasta los que segregan sustancias pegajosas. La anémona gigante
+                        (Stichodactyla gigantea) puede alcanzar 1 metro de diámetro con tentáculos de 15 cm, mientras
+                        que las especies del género Nematostella apenas superan los 2 cm. Su espectro cromático abarca
+                        todos los colores imaginables,
+                        desde el rojo sangre de Actinia equina hasta el verde fluorescente de Anthopleura elegantissima,
+                        pigmentación que proviene tanto de sus propias proteínas como de las algas simbiontes que
+                        albergan.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>Comportamiento</h2>
+                    <hr>
+                    <p>
+                        A pesar de carecer de sistema nervioso centralizado, las anémonas exhiben comportamientos
+                        complejos que desafían nuestra comprensión de la cognición animal. Cuando dos anémonas de la
+                        misma especie entran en contacto, pueden reconocerse químicamente y cesar sus ataques, un
+                        fenómeno llamado "tolerancia al contacto". Algunas especies como Anthopleura sola libran
+                        verdaderas guerras territoriales, usando tentáculos especializados cargados con nematocistos
+                        particularmente potentes para atacar a vecinos de otras colonias.
+                    </p>
+                    <p>
+                        Durante las mareas bajas, muchas especies retraen sus tentáculos y se cubren con fragmentos de
+                        conchas y arena para evitar la desecación, un comportamiento que requiere memoria ambiental.
+                        Estudios recientes han demostrado que pueden aprender asociaciones simples entre estímulos
+                        luminosos y la disponibilidad de alimento, modificando sus patrones de extensión tentacular en
+                        consecuencia. La anémona de mar Nematostella vectensis, un modelo importante en investigación
+                        genética, ha mostrado capacidad para regenerar completamente su disco oral y tentáculos en menos
+                        de dos semanas tras una lesión,
+                        un proceso controlado por redes génicas extremadamente conservadas evolutivamente.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>Reproducción</h2>
+                    <hr>
+                    <p>
+                        El ciclo reproductivo de las anémonas es tan versátil como sus formas. La mayoría son
+                        hermafroditas secuenciales, cambiando de sexo según las condiciones ambientales, aunque algunas
+                        especies tienen sexos separados. Su reproducción sexual es un espectáculo sincronizado: liberan
+                        gametos al agua en eventos masivos coordinados por fases lunares y temperaturas específicas,
+                        donde óvulos y espermatozoides se encuentran en la columna de agua. Las larvas planulares
+                        resultantes nadan libremente antes de asentarse y metamorfosearse en pólipos juveniles.
+                    <p>
+                        Pero el verdadero prodigio es su reproducción asexual: algunas especies como Metridium pueden
+                        dividirse longitudinalmente en dos individuos completos, mientras que Haliplanella se reproduce
+                        mediante "laceración pedal", donde fragmentos del pie desprendidos regeneran un organismo
+                        completo. La anémona joya (Corynactis viridis) incluso practica una forma de "brote" similar a
+                        las plantas, produciendo pequeñas réplicas en la base de su cuerpo. Esta plasticidad
+                        reproductiva les permite colonizar rápidamente nuevos hábitats - un solo individuo puede
+                        convertirse en una colonia de cientos en cuestión de meses bajo condiciones favorables.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>Defensa y depredadores</h2>
+                    <hr>
+                    <p>
+                        A pesar de sus armas venenosas, las anémonas enfrentan numerosos depredadores especializados.
+                        Los nudibranquios como Aeolidia papillosa no solo son inmunes a sus toxinas, sino que almacenan
+                        los nematocistos ingeridos en sus propias papilas dorsales como defensa propia. Los peces
+                        mariposa (Chaetodontidae) han desarrollado técnicas para arrancar trozos de tentáculos sin ser
+                        picados, mientras que los cangrejos boxer (Lybia tessellata) portan pequeñas anémonas en sus
+                        pinzas como si fueran pompones venenosos.
+                    </p>
+                    <p>
+                        La estrategia defensiva de las anémonas es múltiple: toxinas en sus tentáculos, capacidad de
+                        retracción rápida, producción de sustancias repelentes e incluso relaciones mutualistas con
+                        peces payaso (Amphiprion) que defienden su territorio a cambio de protección. Algunas especies
+                        tropicales albergan microalgas que producen compuestos tóxicos para depredadores, mientras que
+                        las de aguas templadas como Anthopleura xanthogrammica concentran toxinas paralizantes en sus
+                        tentáculos más externos.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>Datos curiosos</h2>
+                    <hr>
+                    <ul class="lista">
+                        <li>La toxina de Stichodactyla helianthus es 100 veces más potente que el veneno de cobra.</li>
+                        <li>Algunas anémonas pueden vivir más de 80 años, entre los invertebrados más longevos.</li>
+                        <li>Las anémonas de fuego (Actinodendron) producen picaduras tan dolorosas que pueden
+                            hospitalizar humanos.</li>
+                        <li>En el Mediterráneo, la anémona Anemonia viridis es cultivada como delicatessen
+                            (ortiguillas).</li>
+                        <li>Su adhesivo natural ha inspirado pegamentos quirúrgicos que sellan heridas en tejidos
+                            húmedos.</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Estado de conservación</h2>
+                    <hr>
+                    <p>
+                        Aunque no existen evaluaciones globales de conservación para la mayoría de especies de anémonas,
+                        son consideradas bioindicadores clave de la salud marina. Especialmente vulnerables a la
+                        acidificación oceánica (que disuelve sus estructuras calcáreas) y al blanqueamiento por estrés
+                        térmico (cuando expulsan sus algas simbiontes), muchas poblaciones están disminuyendo en
+                        arrecifes tropicales.
+                    </p>
+                    <p>
+                        Proyectos de restauración en el Caribe utilizan anémonas como especies pioneras para recolonizar
+                        arrecifes dañados, aprovechando su rápido crecimiento y capacidad para albergar peces juveniles.
+                        En acuarios científicos, se estudia su extraordinaria resistencia a la radiación y capacidad
+                        regenerativa para aplicaciones médicas. Estas flores animales, testigos silenciosos de la
+                        evolución marina,
+                        continúan revelando secretos sobre la vida en los océanos mientras enfrentan los desafíos de un
+                        mundo cambiante.
+                    </p>
+                    <div class="estado-conservacion" data-estado="LC">
+                        <div class="estado" data-info="Extinto" data-code="EX">EX</div>
+                        <div class="estado" data-info="Extinto en estado silvestre" data-code="EW">EW</div>
+                        <div class="estado" data-info="En peligro crítico" data-code="CR">CR</div>
+                        <div class="estado" data-info="En peligro" data-code="EN">EN</div>
+                        <div class="estado" data-info="Vulnerable" data-code="VU">VU</div>
+                        <div class="estado" data-info="Casi amenazado" data-code="NT">NT</div>
+                        <div class="estado" data-info="Preocupación menor" data-code="LC">LC</div>
+                    </div>
+                </section>
+            </div>
+            <div class="img3D">
+                <h2>Modelo 3D:</h2>
+                <hr>
+                <model-viewer src="../Modelos3D/Anemona%20de%20Mar.glb" alt="Modelo 3D de un animal" auto-rotate
+                    camera-controls ar shadow-intensity="1">
+                </model-viewer>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer-contenedor">
+        <div class="footer-contenido">
+            <div class="footer-con">
+                <div class="footer-logo">
+                    <img src="../../../img/Proyecto%20nuevo.png" alt="Logo de LifeHunter" class="logo-img">
+                </div>
+
+                <button id="btn-dato">¡Curiosidad animal!</button>
+
+                <div id="animal-container" class="hidden">
+                    <img id="animal-img" src="#" alt="Animal animado">
+                    <p id="dato-curioso"></p>
+                </div>
+
+                <div class="footer-communidad">
+                    <h3 class="community-titilo">Comunidad</h3>
+                    <div class="redes-sociales">
+                        <a href="https://discord.com/" class="red-social" target="_blank" rel="noopener noreferrer"
+                            aria-label="Discord">
+                            <img src="../../../img/discordblanco.png" alt="Discord" class="icono-social">
+                        </a>
+                        <a href="https://www.instagram.com/" class="red-social" target="_blank"
+                            rel="noopener noreferrer" aria-label="Instagram">
+                            <img src="../../../img/instagramblanco.png" alt="Instagram" class="icono-social">
+                        </a>
+                        <a href="https://www.youtube.com/" class="red-social" target="_blank" rel="noopener noreferrer"
+                            aria-label="YouTube">
+                            <img src="../../../img/youtubeblanco.png" alt="YouTube" class="icono-social">
+                        </a>
+                        <a href="https://x.com/" class="red-social" target="_blank" rel="noopener noreferrer"
+                            aria-label="Twitter">
+                            <img src="../../../img/xblanco.png" alt="Twitter" class="icono-social">
+                        </a>
+                        <a href="https://www.facebook.com/" class="red-social" target="_blank" rel="noopener noreferrer"
+                            aria-label="Facebook">
+                            <img src="../../../img/facebookblanco.png" alt="Facebook" class="icono-social">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-info">
+                <div class="lugar">
+                    <p>Puedes encontrarnos en:</p>
+                    <a href="https://maps.app.goo.gl/hSpv9RwdGKMLmeew6" target="_blank">Av. Nicolás de Piérola 1221,
+                        Trujillo 13001</a>
+                </div>
+                <div class="contacta">
+                    <a href='../../../contactanos/contacto.html'>Contáctanos</a> <br> <br>
+                    <a href='../../../sitemap/sitemap.html'>Mapa del sitio</a>
+                </div>
+                <div class="telefono">
+                    <p>Teléfono:</p>
+                    <a href="#">+51 910425708</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-divide">
+            <hr class="linea-dividir">
+        </div>
+
+        <div class="copyright">
+            <p class="copyright-texto">LifeHunter © 2025 Grupo 1. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="../js/codigo.js"></script>
+    <script src="session.js"></script>
+
+</body>
+
+
+<!-- Mirrored from lifehunter.netlify.app/reinoanimal/biografiaanimal/codigosa/biografiaanemonademar by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 11 Jan 2026 08:53:46 GMT -->
+</html>

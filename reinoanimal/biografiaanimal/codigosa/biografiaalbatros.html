@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="es">
+
+
+<!-- Mirrored from lifehunter.netlify.app/reinoanimal/biografiaanimal/codigosa/biografiaalbatros by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 11 Jan 2026 08:53:32 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="../../../../unpkg.com/%40google/model-viewer%404.1.0/dist/model-viewer.min.js"></script>
+    <link rel="stylesheet" href="../css/BiografiaA.css">
+    <style>
+        body {
+            --fondo: url("../css/Fondo/Albatros-Fondo.jpg")
+        }
+    </style>
+    <title>LifeHunter - Albatros</title>
+    <link rel="shortcut icon" href="../imagenes/Fooder/logo1png.png" type="image/x-icon">
+    <link rel="stylesheet" href="../../../css/session.css">
+</head>
+
+<body class="body-abanico">
+    <header>
+        <a class='header-logo-link' href='../../../index.html'>
+            <img src="../../../img/logo.jpg" alt="Logo LifeHunter" class="header-logo">
+        </a>
+        <h1 class="tituloPrincipal">LifeHunter</h1>
+
+        <div class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <nav class="navegacion-principal">
+
+            <a class='nav-enlace' href='../../animal.html'>Regresar</a>
+            <div class="boton-sesion-mobile">Iniciar Sesión</div>
+        </nav>
+
+        <div class="boton-sesion iniciarSesion-btn">Iniciar Sesión</div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="titulo">
+                <h1>ALBATROS</h1>
+            </div>
+
+            <div class="info-box">
+                <div class="contenedor">
+                    <div class="taxonomy-block">
+                        <div class="taxonomy">
+                            <div>REINO</div>
+                            <div>CATEGORIA</div>
+                            <div>FILO</div>
+                            <div>CLASE</div>
+                            <div>ORDEN</div>
+                        </div>
+                        <div class="taxonomy2">
+                            <div><a href='../../animal.html'>Animal</a></div>
+                            <div><a href='../../animale250.html?Subfilo=vertebrado'>Vertebrado</a></div>
+                            <div><a href='../../animalc6cc.html?Filo=cordados'>Cordado</a></div>
+                            <div><a href='../../animal6826.html?clase=aves'>Ave</a></div>
+                            <div><a href='../../animal5fd4.html?orden=carnivoros'>Carnívoro</a></div>
+                        </div>
+                        <div class="taxonomy">
+                            <div>REPRODUCCION</div>
+                            <div>HABITAT</div>
+                        </div>
+                        <div class="taxonomy2">
+                            <div><a href='../../animalf411.html?reproduccion=oviparos'>Ovíparo</a></div>
+                            <div><a href='../../animal111b.html?habitat=aereos'>Aéreo</a></div>
+                        </div>
+                    </div>
+                    <div class="image-container">
+                        <img class="background" src="../imagenes/Albatros/fondo.jpg" alt="Fondo">
+                        <img class="base" src="../imagenes/Albatros/base.jpg" alt="Base">
+                        <img class="main-image" src="../../imagenes/Transparente/AlbatrosT.png" alt="Albatros">
+                    </div>
+                </div>
+            </div>
+
+            <div class="description">
+                <section>
+                    <h2>Descripción</h2>
+                    <hr>
+                    <p>
+                        El albatros representa uno de los ejemplos más extraordinarios de adaptación al medio marino en
+                        el reino animal. Estas aves, pertenecientes al orden Procellariiformes y a la familia
+                        Diomedeidae, han evolucionado durante millones de años para dominar los vastos espacios
+                        oceánicos con una eficiencia que desafía la imaginación.
+                    </p>
+                    <P>
+                        Su fisiología, comportamiento y ciclo vital están finamente ajustados a una existencia nómada,
+                        donde el viento y las olas son sus únicos compañeros constantes. La relación simbiótica entre
+                        los albatros y el océano es tan profunda que estas aves solo tocan tierra firme para
+                        reproducirse, pasando el 90% de su vida adulta volando sobre las aguas abiertas,
+                        donde duermen, se alimentan e incluso beben agua marina gracias a glándulas especializadas que
+                        excretan el exceso de sal.
+                    </P>
+                </section>
+                <section>
+                    <h2>Distribución y hábitat</h2>
+                    <hr>
+                    <p>
+                        La distribución geográfica de los albatros abarca principalmente el hemisferio sur, donde
+                        dominan los "rugientes cuarenta" y "furiosos cincuenta", zonas de vientos constantes entre los
+                        40° y 60° de latitud sur que les permiten planear con mínimo esfuerzo. Las 22 especies
+                        reconocidas se agrupan en cuatro géneros principales,
+                        con el género Diomedea incluyendo los albatros más grandes.
+                    </p>
+                    <p>
+                        Sus colonias de cría se concentran en remotas islas subantárticas como Georgia del Sur, las
+                        Islas Crozet y las Islas Antípodas, lugares elegidos por su aislamiento y ausencia de
+                        depredadores terrestres.
+                    </p>
+                    <p>
+                        El albatros de Laysan (Phoebastria immutabilis) es una excepción notable, anidando en el
+                        Pacífico Norte, particularmente en las Islas Hawai. Estos sitios de nidificación, aunque
+                        protegidos, son extremadamente vulnerables al cambio climático, ya que el aumento del nivel del
+                        mar podría borrar del mapa muchos de estos frágiles territorios insulares.
+                    </p>
+                    <div class="mapa-habitat">
+                        <div id="globo3d" class="container"></div>
+                    </div>
+
+                    <script src="https://unpkg.com/globe.gl"></script>
+                    <script src="../js/Continentes.js"></script>
+                    <script>
+                        const habitats = [
+                            { lat: -15, lng: -60, color: 'red', label: 'América del Sur' },
+                            { lat: 0, lng: -160, color: '#00bfff', label: 'Océano Pacífico' },
+                            { lat: 0, lng: -30, color: '#1e90ff', label: 'Océano Atlántico' },
+                        ];
+                        crearGlobo(habitats);
+                    </script>
+                </section>
+
+                <section>
+                    <h2>Alimentación</h2>
+                    <hr>
+                    <p>
+                        La dieta de los albatros es un testimonio de su versatilidad como depredadores marinos. Se
+                        especializan en capturar calamares (que constituyen hasta el 85% de su dieta en algunas
+                        especies), peces voladores y crustáceos como el krill. Sus técnicas de caza varían desde el
+                        "surface seizing" (arrebatar presas en la superficie) hasta el "plunge diving"
+                        (zambullidas superficiales).
+                    </p>
+                    <p>
+                        Recientes estudios con transmisores satelitales han revelado que algunas especies como el
+                        albatros errante (Diomedea exulans) pueden recorrer más de 15,000 km en un solo viaje de
+                        alimentación, utilizando sistemas de navegación que combinan el olfato (pueden detectar el olor
+                        de krill a 20 km de distancia), la posición del sol y probablemente el magnetismo terrestre.
+                        La trágica paradoja es que este agudo sentido del olfato las lleva a confundir plásticos
+                        flotantes con comida, causando una de las mayores amenazas a su supervivencia.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>Características físicas</h2>
+                    <hr>
+                    <p>
+                        Los agapornis presentan un conjunto de características anatómicas particulares que los
+                        distinguen dentro de la familia de los loros. En cuanto a tamaño y peso, estos pájaros
+                        generalmente miden entre 13 y 17 centímetros de longitud incluyendo su cola, con una envergadura
+                        alar que oscila entre 20 y 24 centímetros, y un peso corporal que varía de 40 a 60 gramos
+                        dependiendo de la especie específica.
+                    </p>
+                    <p>
+                        La morfología del albatros es un prodigio de evolución aerodinámica. Sus alas ultra largas
+                        (proporcionalmente las más largas de cualquier ave) presentan una especialización única: la
+                        presencia de una "cerradura alar" (tendón especializado) que permite bloquear las alas en
+                        posición extendida sin esfuerzo muscular.
+                    </p>
+                    <p>
+                        Su esqueleto ligero pero resistente representa solo el 15% de su peso total (frente al 25% en
+                        aves terrestres), mientras que sus plumas de vuelo pueden superar los 50 cm de longitud. El
+                        sistema circulatorio incluye adaptaciones especiales como válvulas en las arterias de las patas
+                        que regulan el flujo sanguíneo durante largos periodos de vuelo.
+                    </p>
+                    <p>
+                        Curiosamente, aunque son aves enormes (algunas superan los 12 kg), su peso relativo es bajo
+                        gracias a huesos neumáticos y bolsas de aire internas que les dan flotabilidad adicional en el
+                        agua.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>Comportamiento</h2>
+                    <hr>
+                    <p>
+                        La vida social de los albatros desafía las convenciones aviares. Aunque pasan años en solitario
+                        cruzando océanos, mantienen lazos de pareja extraordinariamente fuertes. Los rituales de cortejo
+                        son elaborados ballet de movimientos sincronizados que incluyen el "sky pointing" (señalar al
+                        cielo con el pico), el "bill clapping" (chasquido de picos) y complejas vocalizaciones que
+                        varían entre especies.
+                    </p>
+                    <p>
+                        Investigaciones recientes demuestran que estas aves pueden reconocer individualmente a sus
+                        compañeros tras años de separación. Su sistema de navegación es tan preciso que un albatros
+                        liberado artificialmente a 5,000 km de su ruta normal puede reorientarse y regresar a su curso
+                        original en cuestión de días. Estudios de telemetría han revelado que algunas especies como el
+                        albatros de las Galápagos (Phoebastria irrorata)
+                        siguen rutas casi idénticas año tras año en sus migraciones circumpolares.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>Reproducción</h2>
+                    <hr>
+                    <p>
+                        El ciclo reproductivo del albatros es una lección de inversión parental. Las parejas, que pueden
+                        permanecer unidas por décadas, realizan una sincronizada danza de reencuentro cada temporada de
+                        cría. La incubación del único huevo (que pesa hasta 500g en especies grandes) requiere unos 80
+                        días de turnos rigurosos entre los padres.
+                    <p>
+                        El polluelo nace cubierto por un plumón espeso que gradualmente es reemplazado por plumas
+                        juveniles. Durante la fase de crianza (que puede extenderse 9 meses en especies grandes), los
+                        padres realizan viajes de alimentación de hasta 15,000 km para regurgitar una mezcla de aceite
+                        estomacal rico en nutrientes y comida parcialmente digerida. Este aceite,
+                        producido en una glándula especial, permite transportar energía eficientemente y tiene
+                        propiedades antibacterianas que protegen al polluelo.
+                    </p>
+                    <p>
+                        La madurez sexual llega tarde (entre los 5-15 años dependiendo de la especie), compensada por
+                        una longevidad excepcional que puede superar los 60 años.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>Defensa y depredadores</h2>
+                    <hr>
+                    <p>
+                        El tamaño adulto del albatros lo pone a salvo de la mayoría de depredadores oceánicos, pero sus
+                        etapas tempranas de vida enfrentan múltiples amenazas. En las colonias de cría, los skúas
+                        (Stercorarius spp.) y los petreles gigantes (Macronectes spp.) aprovechan cualquier descuido
+                        para robar huevos o polluelos.
+                    <p>
+                        La introducción de ratas, gatos y cerdos en islas de anidación ha causado extinciones locales de
+                        algunas poblaciones. Sin embargo, la amenaza más insidiosa proviene de la pesca industrial: cada
+                        año, más de 100,000 albatros mueren enanzuelos de palangre, ahogándose al intentar robar cebos.
+                    </p>
+                    <p>
+                        Su sistema de defensa natural - el vuelo eterno - se vuelve inútil contra estas trampas
+                        invisibles. Recientes innovaciones como anzuelos teñidos de azul (menos visibles para las aves)
+                        y líneas de pesca con peso para hundirse rápidamente han demostrado reducir hasta en un 85%
+                        estas capturas accidentales.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>Datos curiosos</h2>
+                    <hr>
+                    <ul class="lista">
+                        <li>Un albatros errante puede circunnavegar la Antártida tres veces en un año, volando el
+                            equivalente a ir a la Luna y volver durante su vida.</li>
+                        <li>El corazón de un albatros en vuelo late a solo 100-120 ppm (frente a 300 ppm en aves
+                            pequeñas), demostrando su eficiencia energética.</li>
+                        <li>Estudios con GPS han registrado vuelos ininterrumpidos de 15,000 km que duran más de 45 días
+                            sin tocar tierra.</li>
+                        <li>Los marineros chinos consideraban sus huesos huecos como talismanes contra ahogamiento,
+                            mientras que los maoríes usaban sus plumas en mantos ceremoniales.</li>
+                        <li>El albatros de Ámsterdam (Diomedea amsterdamensis) es una de las aves más raras, con solo
+                            unos 100 individuos restringidos a una pequeña isla francesa.</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Estado de conservación</h2>
+                    <hr>
+                    <p>
+                        La situación actual del albatros representa una de las crisis de conservación más urgentes en el
+                        mundo aviar. Según la UICN, 15 de las 22 especies están en peligro de extinción, siendo el
+                        albatros de Tristan (Diomedea dabbenena) y el albatros de las Galápagos los más críticos.
+                    </p>
+                    <p>
+                        El Acuerdo para la Conservación de Albatros y Petreles (ACAP), ratificado por 13 países,
+                        coordina esfuerzos internacionales que incluyen la eliminación de especies invasoras en islas de
+                        cría y la regulación de artes de pesca. Tecnologías innovadoras como anzuelos circulares y
+                        sistemas de disuasión magnética están siendo implementadas.
+                    </p>
+                    <p>
+                        Sin embargo, desafíos como la contaminación plástica (el 90% de los polluelos de algunas
+                        colonias tienen plástico en el estómago) y el cambio en la distribución de presas debido al
+                        calentamiento global requieren soluciones más complejas. Proyectos de restauración de hábitat
+                        como los realizados en la Isla Midway (Hawái)
+                        demuestran que con esfuerzos concertados es posible revertir el declive, habiendo aumentado allí
+                        la población de albatros de Laysan de 18,000 a más de 600,000 parejas en 50 años.
+                    </p>
+                    <p>
+                        El destino de estas majestuosas aves sigue siendo un testamento de nuestra capacidad para
+                        coexistir con los grandes navegantes del océano.
+                    </p>
+                    <div class="estado-conservacion" data-estado="EN">
+                        <div class="estado" data-info="Extinto" data-code="EX">EX</div>
+                        <div class="estado" data-info="Extinto en estado silvestre" data-code="EW">EW</div>
+                        <div class="estado" data-info="En peligro crítico" data-code="CR">CR</div>
+                        <div class="estado" data-info="En peligro" data-code="EN">EN</div>
+                        <div class="estado" data-info="Vulnerable" data-code="VU">VU</div>
+                        <div class="estado" data-info="Casi amenazado" data-code="NT">NT</div>
+                        <div class="estado" data-info="Preocupación menor" data-code="LC">LC</div>
+                    </div>
+                </section>
+            </div>
+            <div class="img3D">
+                <h2>Modelo 3D:</h2>
+                <hr>
+                <model-viewer src="../Modelos3D/Albatros.glb" alt="Modelo 3D de un animal" auto-rotate camera-controls
+                    ar shadow-intensity="1">
+                </model-viewer>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer-contenedor">
+        <div class="footer-contenido">
+            <div class="footer-con">
+                <div class="footer-logo">
+                    <img src="../../../img/Proyecto%20nuevo.png" alt="Logo de LifeHunter" class="logo-img">
+                </div>
+
+                <button id="btn-dato">¡Curiosidad animal!</button>
+
+                <div id="animal-container" class="hidden">
+                    <img id="animal-img" src="#" alt="Animal animado">
+                    <p id="dato-curioso"></p>
+                </div>
+
+                <div class="footer-communidad">
+                    <h3 class="community-titilo">Comunidad</h3>
+                    <div class="redes-sociales">
+                        <a href="https://discord.com/" class="red-social" target="_blank" rel="noopener noreferrer"
+                            aria-label="Discord">
+                            <img src="../../../img/discordblanco.png" alt="Discord" class="icono-social">
+                        </a>
+                        <a href="https://www.instagram.com/" class="red-social" target="_blank"
+                            rel="noopener noreferrer" aria-label="Instagram">
+                            <img src="../../../img/instagramblanco.png" alt="Instagram" class="icono-social">
+                        </a>
+                        <a href="https://www.youtube.com/" class="red-social" target="_blank" rel="noopener noreferrer"
+                            aria-label="YouTube">
+                            <img src="../../../img/youtubeblanco.png" alt="YouTube" class="icono-social">
+                        </a>
+                        <a href="https://x.com/" class="red-social" target="_blank" rel="noopener noreferrer"
+                            aria-label="Twitter">
+                            <img src="../../../img/xblanco.png" alt="Twitter" class="icono-social">
+                        </a>
+                        <a href="https://www.facebook.com/" class="red-social" target="_blank" rel="noopener noreferrer"
+                            aria-label="Facebook">
+                            <img src="../../../img/facebookblanco.png" alt="Facebook" class="icono-social">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-info">
+                <div class="lugar">
+                    <p>Puedes encontrarnos en:</p>
+                    <a href="https://maps.app.goo.gl/hSpv9RwdGKMLmeew6" target="_blank">Av. Nicolás de Piérola 1221,
+                        Trujillo 13001</a>
+                </div>
+                <div class="contacta">
+                    <a href='../../../contactanos/contacto.html'>Contáctanos</a> <br> <br>
+                    <a href='../../../sitemap/sitemap.html'>Mapa del sitio</a>
+                </div>
+                <div class="telefono">
+                    <p>Teléfono:</p>
+                    <a href="#">+51 910425708</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-divide">
+            <hr class="linea-dividir">
+        </div>
+
+        <div class="copyright">
+            <p class="copyright-texto">LifeHunter © 2025 Grupo 1. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="../js/codigo.js"></script>
+    <script src="session.js"></script>
+
+</body>
+
+
+<!-- Mirrored from lifehunter.netlify.app/reinoanimal/biografiaanimal/codigosa/biografiaalbatros by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 11 Jan 2026 08:53:32 GMT -->
+</html>

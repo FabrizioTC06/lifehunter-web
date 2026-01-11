@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="es">
+
+
+<!-- Mirrored from lifehunter.netlify.app/reinoanimal/biografiaanimal/codigosa/biografiaardilla by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 11 Jan 2026 08:53:52 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="../../../../unpkg.com/%40google/model-viewer%404.1.0/dist/model-viewer.min.js"></script>
+    <link rel="stylesheet" href="../css/BiografiaA.css">
+    <style>
+        body {
+            --fondo: url("../css/Fondo/Ardilla-Fondo.jpg")
+        }
+    </style>
+    <title>LifeHunter - Ardilla</title>
+    <link rel="shortcut icon" href="../imagenes/Fooder/logo1png.png" type="image/x-icon">
+    <link rel="stylesheet" href="../../../css/session.css">
+</head>
+
+<body class="body-abanico">
+    <header>
+        <a class='header-logo-link' href='../../../index.html'>
+            <img src="../../../img/logo.jpg" alt="Logo LifeHunter" class="header-logo">
+        </a>
+        <h1 class="tituloPrincipal">LifeHunter</h1>
+
+        <div class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <nav class="navegacion-principal">
+
+            <a class='nav-enlace' href='../../animal.html'>Regresar</a>
+            <div class="boton-sesion-mobile">Iniciar Sesión</div>
+        </nav>
+
+        <div class="boton-sesion iniciarSesion-btn">Iniciar Sesión</div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="titulo">
+                <h1>ARDILLA</h1>
+            </div>
+
+            <div class="info-box">
+                <div class="contenedor">
+                    <div class="taxonomy-block">
+                        <div class="taxonomy">
+                            <div>REINO</div>
+                            <div>CATEGORIA</div>
+                            <div>FILO</div>
+                            <div>CLASE</div>
+                            <div>ORDEN</div>
+                        </div>
+                        <div class="taxonomy2">
+                            <div><a href='../../animal.html'>Animal</a></div>
+                            <div><a href='../../animale250.html?Subfilo=vertebrado'>Vertebrado</a></div>
+                            <div><a href='../../animalc6cc.html?Filo=cordados'>Cordado</a></div>
+                            <div><a href='../../animal5471.html?clase=mamiferos'>Mamífero</a></div>
+                            <div><a href='../../animala4fd.html?orden=omnivoros'>Omnívoro</a></div>
+                        </div>
+                        <div class="taxonomy">
+                            <div>REPRODUCCION</div>
+                            <div>HABITAT</div>
+                        </div>
+                        <div class="taxonomy2">
+                            <div><a href='../../animaldfb3.html?reproduccion=viviparos'>Vivíparo</a></div>
+                            <div><a href='../../animal16d8.html?habitat=terrestres'>Terrestre</a></div>
+                        </div>
+                    </div>
+                    <div class="image-container">
+                        <img class="background" src="../imagenes/Ardilla/fondo.jpg" alt="Fondo">
+                        <img class="base" src="../imagenes/Ardilla/base.jpg" alt="Base">
+                        <img class="main-image" src="../../imagenes/Transparente/ArdillaT.png" alt="Ardilla">
+                    </div>
+                </div>
+            </div>
+
+            <div class="description">
+                <section>
+                    <h2>Descripción</h2>
+                    <hr>
+                    <p>
+                        Las ardillas, esos pequeños roedores de cola esponjosa que habitan desde las selvas tropicales
+                        hasta los parques urbanos, pertenecen a la familia Sciuridae, un grupo diverso que incluye más
+                        de 280 especies distribuidas en todos los continentes excepto Australia y la Antártida. Con su
+                        agilidad circense y su curiosidad insaciable, estos mamíferos han conquistado prácticamente
+                        todos los hábitats arbóreos del planeta,
+                        desarrollando adaptaciones que les permiten desde planear entre árboles hasta sobrevivir a
+                        gélidos inviernos. La ardilla roja (Sciurus vulgaris), con su pelaje que varía del rojo fuego al
+                        negro azabache según las regiones, y la ardilla gris (Sciurus carolinensis), invasora en Europa
+                        pero nativa de Norteamérica, son solo dos ejemplos de este grupo extraordinario que incluye
+                        también a las marmotas,
+                        los perritos de la pradera y las ardillas voladoras.
+                    </p>
+                </section>
+                <section>
+                    <h2>Distribución y hábitat</h2>
+                    <hr>
+                    <p>
+                        Las ardillas han colonizado una asombrosa variedad de entornos: desde las ardillas gigantes de
+                        la India (Ratufa indica) que habitan las selvas monzónicas hasta las ardillas antárticas (Xerus
+                        princeps) que sobreviven en los desiertos namibios. En América, la ardilla roja americana
+                        (Tamiasciurus hudsonicus) defiende agresivamente territorios de coníferas, mientras que en
+                        África las ardillas de tierra (Xerus erythropus)
+                        forman colonias en sabanas abiertas.
+                    </p>
+                    <p>
+                        Las ardillas voladoras del género Glaucomys han desarrollado membranas patagiales que les
+                        permiten planear hasta 90 metros entre árboles en los bosques boreales, mientras que las
+                        ardillas pigmeas (Exilisciurus) del sudeste asiático apenas miden 10 cm, convirtiéndose en los
+                        roedores arborícolas más pequeños. En las ciudades, especies como la ardilla gris oriental se
+                        han adaptado magistralmente a los entornos humanos,
+                        utilizando cables eléctricos como autopistas aéreas y transformando áticos en despensas.
+                    </p>
+                    <div class="mapa-habitat">
+                        <div id="globo3d" class="container"></div>
+                    </div>
+
+                    <script src="https://unpkg.com/globe.gl"></script>
+                    <script src="../js/Continentes.js"></script>
+                    <script>
+                        const habitats = [
+                            { lat: -15, lng: -60, color: 'red', label: 'América del Sur' },
+                            { lat: 10, lng: -85, color: 'orange', label: 'América Central' },
+                            { lat: 45, lng: -100, color: 'green', label: 'América del Norte' },
+                            { lat: 2, lng: 21, color: 'yellow', label: 'Africa' },
+                            { lat: 48, lng: 15, color: 'blue', label: 'Europa' },
+                            { lat: 35, lng: 105, color: 'purple', label: 'Asia' }
+                        ];
+                        crearGlobo(habitats);
+                    </script>
+                </section>
+
+                <section>
+                    <h2>Alimentación</h2>
+                    <hr>
+                    <p>
+                        La dieta de las ardillas es un tratado de adaptabilidad. Aunque principalmente granívoras
+                        (especializadas en semillas de árboles), muchas especies complementan su alimentación con
+                        hongos, brotes tiernos, huevos de aves e incluso insectos. Las ardillas rojas europeas tienen
+                        una relación simbiótica con los pinos: al enterrar piñones para su consumo invernal, olvidan la
+                        ubicación de hasta el 30% de ellos,
+                        facilitando la dispersión de nuevos árboles.
+                    </p>
+                    <p>
+                        Su técnica de procesamiento de nueces es un prodigio de eficiencia: giran el fruto
+                        sistemáticamente hasta encontrar el ángulo óptimo para perforar la cáscara con sus incisivos,
+                        que crecen continuamente a razón de 15 cm por año. En otoño, una sola ardilla puede enterrar
+                        hasta 3,000 nueces en cientos de escondites diferentes, recordando la ubicación de la mayoría
+                        mediante marcaje olfativo y memoria espacial extraordinaria.
+                        Estudios con GPS han demostrado que las ardillas grises urbanas ajustan sus rutinas de forrajeo
+                        para coincidir con los horarios en que los humanos les proveen alimento.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>Características físicas</h2>
+                    <hr>
+                    <p>
+                        La anatomía de la ardilla es una obra maestra de la evolución para la vida en los árboles. Sus
+                        patas traseras, más largas que las delanteras, actúan como poderosos resortes para saltos de
+                        hasta 2 metros en vertical. Las articulaciones de sus tobillos pueden rotar 180°, permitiendo
+                        descender de los troncos cabeza abajo con igual agilidad.
+                    </p>
+                    <p>
+                        Sus garras curvadas y afiladas se enganchan en la corteza más lisa, mientras que las
+                        almohadillas plantares aumentan la tracción en superficies difíciles. La cola, mucho más que un
+                        simple timón, sirve como balancín durante saltos, manta en invierno, y señal de comunicación
+                        (los movimientos bruscos alertan de depredadores). En las ardillas voladoras, esta se aplana
+                        para mejorar la aerodinámica durante los planeos.
+                    </p>
+                    <p>
+                        Sus bigotes (vibrisas), extremadamente sensibles, detectan cambios en las corrientes de aire y
+                        la proximidad de objetos en la oscuridad. Los ojos, situados lateralmente, proporcionan un campo
+                        visual de casi 360°, esencial para detectar rapaces mientras se alimentan.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>Comportamiento</h2>
+                    <hr>
+                    <p>
+                        La vida social de las ardillas varía desde la solitaria territorialidad de las ardillas rojas
+                        hasta las complejas colonias de las ardillas de tierra africanas. Comunican peligro mediante una
+                        variedad de vocalizaciones - desde el agudo "kuk-kuk-kuk" para aves rapaces hasta graves
+                        gruñidos para amenazas terrestres.
+                    </p>
+                    <p>
+                        Las ardillas urbanas han desarrollado comportamientos innovadores: abren contenedores de basura,
+                        aprenden a cruzar calles con semáforos, e incluso "hacen teatro" enterrando falsos alimentos
+                        cuando saben que son observadas (para despistar a posibles ladrones). En laboratorios, han
+                        resuelto puzzles complejos para acceder a comida, mostrando capacidad de aprendizaje por
+                        observación.
+                    </p>
+                    <p>
+                        Durante el invierno, las ardillas no hibernan verdaderamente sino que entran en periodos de
+                        letargo prolongado, despertándose cada 3-4 días para alimentarse de sus despensas ocultas. Su
+                        ritmo cardíaco puede bajar de 300 a apenas 10 latidos por minuto durante estos estados de
+                        conservación energética.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>Reproducción</h2>
+                    <hr>
+                    <p>
+                        El ciclo reproductivo de las ardillas es una carrera contra la alta mortalidad juvenil. Las
+                        hembras pueden entrar en celo tan solo dos veces al año (ardilla roja) o hasta cuatro (ardilla
+                        gris), atrayendo a múltiples machos que persiguen a la hembra en frenéticas carreras por las
+                        copas de los árboles.
+                    </p>
+                    <p>
+                        Tras 38-45 días de gestación, nacen camadas de 2-4 crías (hasta 8 en especies tropicales),
+                        ciegas y sin pelo. La madre construye nidos esféricos llamados "dreys" con hojas y ramitas, a
+                        menudo con múltiples entradas para escape rápido. A las 10 semanas, los jóvenes ya siguen a la
+                        madre en expediciones de forrajeo, aprendiendo qué comer y dónde esconderlo.
+                    </p>
+                    <p>
+                        La dispersión juvenil es dramática - las jóvenes ardillas deben encontrar su propio territorio
+                        en pocos días, enfrentando tasas de mortalidad del 75% en el primer año. Las que sobreviven
+                        pueden vivir hasta 10 años en cautiverio, aunque rara vez superan los 3-4 en libertad.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>Defensa y depredadores</h2>
+                    <hr>
+                    <p>
+                        A pesar de su agilidad, las ardillas constituyen presas clave para rapaces (halcones, águilas,
+                        búhos), mustélidos (martas, comadrejas) y felinos arbóreos. Sus estrategias defensivas incluyen
+                        inmovilidad absoluta contra depredadores visuales, movimientos erráticos en zigzag para escapar
+                        de aves, marcaje químico de territorios para evitar conflictos y
+                        alarmas vocales específicas para diferentes amenazas.
+                    </p>
+                    <p>
+                        Las ardillas voladoras añaden el engaño de movimiento - inician el planeo en una dirección antes
+                        de girar bruscamente en el aire. Las urbanas han aprendido que los humanos disuaden a muchos
+                        depredadores, anidando cerca de casas.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>Datos curiosos</h2>
+                    <hr>
+                    <ul class="lista">
+                        <li>La ardilla gigante india (Ratufa) puede saltar 6 metros entre árboles.</li>
+                        <li>Las ardillas olvidan hasta el 30% de sus escondites, plantando millones de árboles.</li>
+                        <li>Sus dientes frontales son tan fuertes que pueden morder a 22,000 psi.</li>
+                        <li>La Sciurus carolinensis introducida en Reino Unido ha desplazado al 90% de las ardillas
+                            rojas nativas.</li>
+                        <li>Algunas ardillas africanas son inmunes al veneno de escorpiones que cazan.</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Estado de conservación</h2>
+                    <hr>
+                    <p>
+                        Mientras especies como la ardilla gris prosperan (incluso se consideran plagas en zonas), otras
+                        como la ardilla roja europea han perdido el 80% de su hábitat en Inglaterra. La ardilla voladora
+                        japonesa (Pteromys momonga) está amenazada por la deforestación, mientras que la ardilla gigante
+                        negra (Ratufa bicolor) de Malasia figura como vulnerable.
+                    </p>
+                    <p>
+                        Proyectos como el "UK Red Squirrel Survival Trust" combaten la expansión de ardillas grises
+                        mientras restauran bosques de coníferas nativos. En India, santuarios protegen a las coloridas
+                        ardillas gigantes, demostrando que estos carismáticos roedores, más que simples habitantes del
+                        bosque, son ingenieros ecosistémicos cruciales cuya conservación beneficia a toda la
+                        biodiversidad arbórea.
+                    </p>
+                    <div class="estado-conservacion" data-estado="LC">
+                        <div class="estado" data-info="Extinto" data-code="EX">EX</div>
+                        <div class="estado" data-info="Extinto en estado silvestre" data-code="EW">EW</div>
+                        <div class="estado" data-info="En peligro crítico" data-code="CR">CR</div>
+                        <div class="estado" data-info="En peligro" data-code="EN">EN</div>
+                        <div class="estado" data-info="Vulnerable" data-code="VU">VU</div>
+                        <div class="estado" data-info="Casi amenazado" data-code="NT">NT</div>
+                        <div class="estado" data-info="Preocupación menor" data-code="LC">LC</div>
+                    </div>
+                </section>
+            </div>
+            <div class="img3D">
+                <h2>Modelo 3D:</h2>
+                <hr>
+                <model-viewer src="../Modelos3D/Ardilla.glb" alt="Modelo 3D de un animal" auto-rotate camera-controls ar
+                    shadow-intensity="1">
+                </model-viewer>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer-contenedor">
+        <div class="footer-contenido">
+            <div class="footer-con">
+                <div class="footer-logo">
+                    <img src="../../../img/Proyecto%20nuevo.png" alt="Logo de LifeHunter" class="logo-img">
+                </div>
+
+                <button id="btn-dato">¡Curiosidad animal!</button>
+
+                <div id="animal-container" class="hidden">
+                    <img id="animal-img" src="#" alt="Animal animado">
+                    <p id="dato-curioso"></p>
+                </div>
+
+                <div class="footer-communidad">
+                    <h3 class="community-titilo">Comunidad</h3>
+                    <div class="redes-sociales">
+                        <a href="https://discord.com/" class="red-social" target="_blank" rel="noopener noreferrer"
+                            aria-label="Discord">
+                            <img src="../../../img/discordblanco.png" alt="Discord" class="icono-social">
+                        </a>
+                        <a href="https://www.instagram.com/" class="red-social" target="_blank"
+                            rel="noopener noreferrer" aria-label="Instagram">
+                            <img src="../../../img/instagramblanco.png" alt="Instagram" class="icono-social">
+                        </a>
+                        <a href="https://www.youtube.com/" class="red-social" target="_blank" rel="noopener noreferrer"
+                            aria-label="YouTube">
+                            <img src="../../../img/youtubeblanco.png" alt="YouTube" class="icono-social">
+                        </a>
+                        <a href="https://x.com/" class="red-social" target="_blank" rel="noopener noreferrer"
+                            aria-label="Twitter">
+                            <img src="../../../img/xblanco.png" alt="Twitter" class="icono-social">
+                        </a>
+                        <a href="https://www.facebook.com/" class="red-social" target="_blank" rel="noopener noreferrer"
+                            aria-label="Facebook">
+                            <img src="../../../img/facebookblanco.png" alt="Facebook" class="icono-social">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-info">
+                <div class="lugar">
+                    <p>Puedes encontrarnos en:</p>
+                    <a href="https://maps.app.goo.gl/hSpv9RwdGKMLmeew6" target="_blank">Av. Nicolás de Piérola 1221,
+                        Trujillo 13001</a>
+                </div>
+                <div class="contacta">
+                    <a href='../../../contactanos/contacto.html'>Contáctanos</a> <br> <br>
+                    <a href='../../../sitemap/sitemap.html'>Mapa del sitio</a>
+                </div>
+                <div class="telefono">
+                    <p>Teléfono:</p>
+                    <a href="#">+51 910425708</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-divide">
+            <hr class="linea-dividir">
+        </div>
+
+        <div class="copyright">
+            <p class="copyright-texto">LifeHunter © 2025 Grupo 1. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="../js/codigo.js"></script>
+    <script src="session.js"></script>
+
+</body>
+
+
+<!-- Mirrored from lifehunter.netlify.app/reinoanimal/biografiaanimal/codigosa/biografiaardilla by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 11 Jan 2026 08:53:53 GMT -->
+</html>

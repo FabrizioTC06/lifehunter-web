@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="es">
+
+
+<!-- Mirrored from lifehunter.netlify.app/reinoanimal/biografiaanimal/codigosa/biografiaalacran by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 11 Jan 2026 08:53:02 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="../../../../unpkg.com/%40google/model-viewer%404.1.0/dist/model-viewer.min.js"></script>
+    <link rel="stylesheet" href="../css/BiografiaA.css">
+    <style>
+        body {
+            --fondo: url("../css/Fondo/Alacran-Fondo.png")
+        }
+    </style>
+    <title>LifeHunter - Alacrán</title>
+    <link rel="shortcut icon" href="../imagenes/Fooder/logo1png.png" type="image/x-icon">
+    <link rel="stylesheet" href="../../../css/session.css">
+</head>
+
+<body class="body-abanico">
+    <header>
+        <a class='header-logo-link' href='../../../index.html'>
+            <img src="../../../img/logo.jpg" alt="Logo LifeHunter" class="header-logo">
+        </a>
+        <h1 class="tituloPrincipal">LifeHunter</h1>
+
+        <div class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <nav class="navegacion-principal">
+
+            <a class='nav-enlace' href='../../animal.html'>Regresar</a>
+            <div class="boton-sesion-mobile">Iniciar Sesión</div>
+        </nav>
+
+        <div class="boton-sesion iniciarSesion-btn">Iniciar Sesión</div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="titulo">
+                <h1>ALACRÁN</h1>
+            </div>
+
+            <div class="info-box">
+                <div class="contenedor">
+                    <div class="taxonomy-block">
+                        <div class="taxonomy">
+                            <div>REINO</div>
+                            <div>CATEGORIA</div>
+                            <div>FILO</div>
+                            <div>CLASE</div>
+                            <div>ORDEN</div>
+                        </div>
+                        <div class="taxonomy2">
+                            <div><a href='../../animal.html'>Animal</a></div>
+                            <div><a href='../../animal0e7d.html?Subfilo=invertebrado'>Invertebrado</a></div>
+                            <div><a href='../../animalfc2b.html?Filo=artropodos'>Artropodo</a></div>
+                            <div><a href='../../animal6178.html?clase=aracnidos'>Aracnido</a></div>
+                            <div><a href='../../animal5fd4.html?orden=carnivoros'>Carnívoro</a></div>
+                        </div>
+                        <div class="taxonomy">
+                            <div>REPRODUCCION</div>
+                            <div>HABITAT</div>
+                        </div>
+                        <div class="taxonomy2">
+                            <div><a href='../../animalf411.html?reproduccion=oviparos'>Ovíparo</a></div>
+                            <div><a href='../../animal16d8.html?habitat=terrestres'>Terrestre</a></div>
+                        </div>
+                    </div>
+                    <div class="image-container">
+                        <img class="background" src="../imagenes/Alacran/fondo.jpg" alt="Fondo">
+                        <img class="base" src="../imagenes/Alacran/base.jpg" alt="Base">
+                        <img class="main-image" src="../../imagenes/Transparente/AlacranT.png" alt="Agaporni">
+                    </div>
+                </div>
+            </div>
+
+            <div class="description">
+                <section>
+                    <h2>Descripción</h2>
+                    <hr>
+                    <p>
+                        El alacrán, también conocido como escorpión, es un fascinante arácnido que ha habitado la Tierra
+                        desde hace más de 400 millones de años, demostrando una gran capacidad de adaptación. Pertenece
+                        al orden Scorpiones y se caracteriza por su apariencia intimidante, con un par de pinzas
+                        delanteras y una cola segmentada que termina en un aguijón venenoso.
+                    </p>
+                    <P>
+                        Estos animales son principalmente nocturnos y han desarrollado estrategias de supervivencia que
+                        les han permitido colonizar diversos ambientes, desde desiertos áridos hasta selvas tropicales.
+                    </P>
+                </section>
+                <section>
+                    <h2>Distribución y hábitat</h2>
+                    <hr>
+                    <p>
+                        En cuanto a su distribución y hábitat, los alacranes se encuentran en casi todos los
+                        continentes, excepto en la Antártida. Prefieren climas cálidos y secos, por lo que son
+                        especialmente abundantes en regiones desérticas y semiáridas de América, África y Asia.
+                    </p>
+                    <p>
+                        Sin embargo, algunas especies se han adaptado a entornos más húmedos, como bosques y cuevas.
+                        Suelen esconderse bajo rocas, troncos, grietas o incluso en viviendas humanas, donde buscan
+                        refugio y protección.
+                    </p>
+                    <div class="mapa-habitat">
+                        <div id="globo3d" class="container"></div>
+                    </div>
+
+                    <script src="https://unpkg.com/globe.gl"></script>
+                    <script src="../js/Continentes.js"></script>
+                    <script>
+                        const habitats = [
+                            { lat: -15, lng: -60, color: 'red', label: 'América del Sur' },
+                            { lat: 10, lng: -85, color: 'orange', label: 'América Central' },
+                            { lat: 45, lng: -100, color: 'green', label: 'América del Norte' },
+                            { lat: 2, lng: 21, color: 'yellow', label: 'Africa' },
+                            { lat: 35, lng: 105, color: 'purple', label: 'Asia' }
+                        ];
+                        crearGlobo(habitats);
+                    </script>
+                </section>
+
+                <section>
+                    <h2>Alimentación</h2>
+                    <hr>
+                    <p>
+                        La alimentación de los alacranes es principalmente carnívora, basada en insectos, arañas,
+                        pequeños reptiles e incluso otros escorpiones. Utilizan sus pinzas para sujetar a sus presas y,
+                        en caso de que opongan resistencia, emplean su veneno para paralizarlas.
+                    </p>
+                    <p>
+                        Son depredadores pacientes que pueden pasar largos periodos sin comer, gracias a su bajo
+                        metabolismo, lo que les permite sobrevivir en ambientes donde el alimento es escaso.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>Características físicas</h2>
+                    <hr>
+                    <p>
+                        En cuanto a sus características físicas, los alacranes poseen un cuerpo dividido en dos partes
+                        principales: el cefalotórax (que incluye la cabeza y el tórax fusionados) y el abdomen, que a su
+                        vez se divide en una sección anterior ancha y una posterior estrecha y flexible que forma la
+                        cola. Tienen cuatro pares de patas y un par de quelíceros (pequeñas estructuras cerca de la
+                        boca).
+                    </p>
+                    <p>
+                        Su exoesqueleto es duro y puede presentar colores que van desde amarillo pálido hasta negro,
+                        dependiendo de la especie y el hábitat. Algunas especies poseen fluorescencia bajo luz
+                        ultravioleta, un rasgo único en el reino animal.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>Comportamiento</h2>
+                    <hr>
+                    <p>
+                        El comportamiento del alacrán es generalmente solitario y territorial. Son más activos durante
+                        la noche, evitando las altas temperaturas del día. Aunque suelen ser tímidos y prefieren huir
+                        antes que atacar, pueden volverse agresivos si se sienten amenazados.
+                    </p>
+                    <p>
+                        Algunas especies cavan madrigueras, mientras que otras simplemente se refugian en grietas
+                        naturales. Su capacidad para detectar vibraciones en el suelo les ayuda a localizar presas y
+                        evitar depredadores.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>Reproducción</h2>
+                    <hr>
+                    <p>
+                        En la reproducción, los alacranes tienen un ritual de cortejo complejo, donde el macho guía a la
+                        hembra en una "danza nupcial" mientras deposita un espermatóforo (paquete de esperma) en el
+                        suelo. La hembra lo recoge para fertilizar sus huevos internamente.
+                    <p>
+                        La mayoría de las especies son vivíparas, es decir, las crías nacen directamente de la madre,
+                        completamente formadas. Una hembra puede tener entre 10 y 100 crías, que suben a su espalda
+                        hasta su primera muda, cuando ya pueden valerse por sí mismas.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>Defensa y depredadores</h2>
+                    <hr>
+                    <p>
+                        En cuanto a su defensa y depredadores, el alacrán depende principalmente de su veneno y su
+                        capacidad para esconderse. Aunque su picadura puede ser dolorosa e incluso mortal para pequeños
+                        animales, solo unas pocas especies representan un peligro real para los humanos.
+                    <p>
+                        Sus depredadores naturales incluyen aves, lagartos, serpientes, mamíferos como suricatos y otros
+                        arácnidos. Algunas especies han desarrollado comportamientos como levantar la cola en señal de
+                        amenaza o fingir su muerte para evitar ser atacadas.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>Datos curiosos</h2>
+                    <hr>
+                    <ul class="lista">
+                        <li>Los alacranes pueden sobrevivir hasta un año sin alimento, gracias a su metabolismo lento.
+                        </li>
+                        <li>Existen alrededor de 2,500 especies de alacranes en el mundo, pero solo unas 25 tienen un
+                            veneno potencialmente mortal para el ser humano.</li>
+                        <li>Son uno de los animales más antiguos que aún existen, con fósiles que datan del periodo
+                            Silúrico.</li>
+                        <li>Algunas culturas los consideran símbolos de fuerza y protección, mientras que otras los
+                            asocian con el peligro y la traición.</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Estado de conservación</h2>
+                    <hr>
+                    <p>
+                        El estado de conservación de los alacranes varía según la especie. La mayoría no se encuentran
+                        en peligro de extinción debido a su alta adaptabilidad y amplia distribución. Sin embargo, la
+                        destrucción de su hábitat y el uso de pesticidas en zonas urbanas pueden afectar sus
+                        poblaciones.
+                    </p>
+                    <p>
+                        Algunas especies endémicas con rangos de distribución limitados son más vulnerables. A pesar de
+                        su mala reputación, los alacranes cumplen un papel ecológico importante como controladores de
+                        plagas de insectos, por lo que su conservación es relevante para mantener el equilibrio en sus
+                        ecosistemas.
+                    </p>
+                    <div class="estado-conservacion" data-estado="LC">
+                        <div class="estado" data-info="Extinto" data-code="EX">EX</div>
+                        <div class="estado" data-info="Extinto en estado silvestre" data-code="EW">EW</div>
+                        <div class="estado" data-info="En peligro crítico" data-code="CR">CR</div>
+                        <div class="estado" data-info="En peligro" data-code="EN">EN</div>
+                        <div class="estado" data-info="Vulnerable" data-code="VU">VU</div>
+                        <div class="estado" data-info="Casi amenazado" data-code="NT">NT</div>
+                        <div class="estado" data-info="Preocupación menor" data-code="LC">LC</div>
+                    </div>
+                </section>
+            </div>
+            <div class="img3D">
+                <h2>Modelo 3D:</h2>
+                <hr>
+                <model-viewer src="../Modelos3D/Alacr%c3%a1n.glb" alt="Modelo 3D de un animal" auto-rotate camera-controls ar
+                    shadow-intensity="1">
+                </model-viewer>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer-contenedor">
+        <div class="footer-contenido">
+            <div class="footer-con">
+                <div class="footer-logo">
+                    <img src="../../../img/Proyecto%20nuevo.png" alt="Logo de LifeHunter" class="logo-img">
+                </div>
+
+                <button id="btn-dato">¡Curiosidad animal!</button>
+
+                <div id="animal-container" class="hidden">
+                    <img id="animal-img" src="#" alt="Animal animado">
+                    <p id="dato-curioso"></p>
+                </div>
+
+                <div class="footer-communidad">
+                    <h3 class="community-titilo">Comunidad</h3>
+                    <div class="redes-sociales">
+                        <a href="https://discord.com/" class="red-social" target="_blank" rel="noopener noreferrer"
+                            aria-label="Discord">
+                            <img src="../../../img/discordblanco.png" alt="Discord" class="icono-social">
+                        </a>
+                        <a href="https://www.instagram.com/" class="red-social" target="_blank"
+                            rel="noopener noreferrer" aria-label="Instagram">
+                            <img src="../../../img/instagramblanco.png" alt="Instagram" class="icono-social">
+                        </a>
+                        <a href="https://www.youtube.com/" class="red-social" target="_blank" rel="noopener noreferrer"
+                            aria-label="YouTube">
+                            <img src="../../../img/youtubeblanco.png" alt="YouTube" class="icono-social">
+                        </a>
+                        <a href="https://x.com/" class="red-social" target="_blank" rel="noopener noreferrer"
+                            aria-label="Twitter">
+                            <img src="../../../img/xblanco.png" alt="Twitter" class="icono-social">
+                        </a>
+                        <a href="https://www.facebook.com/" class="red-social" target="_blank" rel="noopener noreferrer"
+                            aria-label="Facebook">
+                            <img src="../../../img/facebookblanco.png" alt="Facebook" class="icono-social">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-info">
+                <div class="lugar">
+                    <p>Puedes encontrarnos en:</p>
+                    <a href="https://maps.app.goo.gl/hSpv9RwdGKMLmeew6" target="_blank">Av. Nicolás de Piérola 1221,
+                        Trujillo 13001</a>
+                </div>
+                <div class="contacta">
+                    <a href='../../../contactanos/contacto.html'>Contáctanos</a> <br> <br>
+                    <a href='../../../sitemap/sitemap.html'>Mapa del sitio</a>
+                </div>
+                <div class="telefono">
+                    <p>Teléfono:</p>
+                    <a href="#">+51 910425708</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-divide">
+            <hr class="linea-dividir">
+        </div>
+
+        <div class="copyright">
+            <p class="copyright-texto">LifeHunter © 2025 Grupo 1. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="../js/codigo.js"></script>
+    <script src="session.js"></script>
+
+</body>
+
+
+<!-- Mirrored from lifehunter.netlify.app/reinoanimal/biografiaanimal/codigosa/biografiaalacran by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 11 Jan 2026 08:53:02 GMT -->
+</html>

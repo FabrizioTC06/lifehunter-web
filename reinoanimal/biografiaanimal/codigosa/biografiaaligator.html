@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="es">
+
+
+<!-- Mirrored from lifehunter.netlify.app/reinoanimal/biografiaanimal/codigosa/biografiaaligator by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 11 Jan 2026 08:53:37 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="../../../../unpkg.com/%40google/model-viewer%404.1.0/dist/model-viewer.min.js"></script>
+    <link rel="stylesheet" href="../css/BiografiaA.css">
+    <style>
+        body {
+            --fondo: url("../css/Fondo/Aligator-Fondo.jpg")
+        }
+    </style>
+    <title>LifeHunter - Aligátor</title>
+    <link rel="shortcut icon" href="../imagenes/Fooder/logo1png.png" type="image/x-icon">
+    <link rel="stylesheet" href="../../../css/session.css">
+</head>
+
+<body class="body-abanico">
+    <header>
+        <a class='header-logo-link' href='../../../index.html'>
+            <img src="../../../img/logo.jpg" alt="Logo LifeHunter" class="header-logo">
+        </a>
+        <h1 class="tituloPrincipal">LifeHunter</h1>
+
+        <div class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <nav class="navegacion-principal">
+
+            <a class='nav-enlace' href='../../animal.html'>Regresar</a>
+            <div class="boton-sesion-mobile">Iniciar Sesión</div>
+        </nav>
+
+        <div class="boton-sesion iniciarSesion-btn">Iniciar Sesión</div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="titulo">
+                <h1>ALIGÁTOR</h1>
+            </div>
+
+            <div class="info-box">
+                <div class="contenedor">
+                    <div class="taxonomy-block">
+                        <div class="taxonomy">
+                            <div>REINO</div>
+                            <div>CATEGORIA</div>
+                            <div>FILO</div>
+                            <div>CLASE</div>
+                            <div>ORDEN</div>
+                        </div>
+                        <div class="taxonomy2">
+                            <div><a href='../../animal.html'>Animal</a></div>
+                            <div><a href='../../animale250.html?Subfilo=vertebrado'>Vertebrado</a></div>
+                            <div><a href='../../animalc6cc.html?Filo=cordados'>Cordado</a></div>
+                            <div><a href='../../animalfdc8.html?clase=reptiles'>Reptil</a></div>
+                            <div><a href='../../animal5fd4.html?orden=carnivoros'>Carnívoro</a></div>
+                        </div>
+                        <div class="taxonomy">
+                            <div>REPRODUCCION</div>
+                            <div>HABITAT</div>
+                        </div>
+                        <div class="taxonomy2">
+                            <div><a href='../../animalf411.html?reproduccion=oviparos'>Ovíparo</a></div>
+                            <div><a href='../../animal9e88.html?habitat=mixtos'>Mixto</a></div>
+                        </div>
+                    </div>
+                    <div class="image-container">
+                        <img class="background" src="../imagenes/Aligator/fondo.jpg" alt="Fondo">
+                        <img class="base" src="../imagenes/Aligator/base.jpg" alt="Base">
+                        <img class="main-image" src="../../imagenes/Transparente/Alig%c3%a1torT.png" alt="Aligátor">
+                    </div>
+                </div>
+            </div>
+
+            <div class="description">
+                <section>
+                    <h2>Descripción</h2>
+                    <hr>
+                    <p>
+                        El aligátor (Alligator mississippiensis), conocido en los pantanos del sureste estadounidense
+                        como "gator", es un superviviente prehistórico que ha mantenido prácticamente inalterada su
+                        morfología desde el Mioceno, hace 8 millones de años. Este coloso de agua dulce, que puede
+                        superar los 4.5 metros de longitud y los 450 kg de peso en su estado salvaje,
+                        representa el depredador ápice de los humedales subtropicales, un ingeniero ecológico cuyos
+                        hábitos de excavación y construcción de "estanques de aligátores" crean microhábitats esenciales
+                        para numerosas especies durante las sequías. Su pariente cercano, el caimán chino (Alligator
+                        sinensis), habita exclusivamente en el río Yangtsé,
+                        siendo una de las especies de crocodilianos más amenazadas del planeta.
+                    </p>
+                </section>
+                <section>
+                    <h2>Distribución y hábitat</h2>
+                    <hr>
+                    <p>
+                        El aligátor americano domina un territorio que abarca desde los estuarios de Carolina del Norte
+                        hasta los manglares de Texas, con su núcleo poblacional concentrado en Florida y Louisiana,
+                        donde se estima existen más de 2 millones de ejemplares. Estos reptiles han desarrollado una
+                        asombrosa adaptabilidad ecológica, ocupando ciénagas, ríos de corriente lenta,
+                        lagos, marismas e incluso canales de drenaje urbanos. Durante la estación seca, cuando las aguas
+                        retroceden, los aligátores excavan con sus poderosas colas y patas traseras "gator holes" (hoyos
+                        de aligátor) que retienen agua y se convierten en refugios vitales para peces, tortugas y aves
+                        acuáticas, demostrando su papel clave como especie clave en los ecosistemas de humedal.
+                        Estudios de telemetría satelital han revelado que algunos machos adultos establecen territorios
+                        de hasta 10 km² en sistemas fluviales, mientras que las hembras suelen ser más sedentarias, rara
+                        vez abandonando un área de 2 km² durante toda su vida.
+                    </p>
+                    <div class="mapa-habitat">
+                        <div id="globo3d" class="container"></div>
+                    </div>
+
+                    <script src="https://unpkg.com/globe.gl"></script>
+                    <script src="../js/Continentes.js"></script>
+                    <script>
+                        const habitats = [
+                            { lat: 45, lng: -100, color: 'green', label: 'América del Norte' },
+                            { lat: 35, lng: 105, color: 'purple', label: 'Asia' }
+                        ];
+                        crearGlobo(habitats);
+                    </script>
+                </section>
+
+                <section>
+                    <h2>Alimentación</h2>
+                    <hr>
+                    <p>
+                        Como máximo carnívoro de los humedales, el aligátor posee una estrategia alimenticia oportunista
+                        que varía dramáticamente con la edad. Las crías recién nacidas se alimentan principalmente de
+                        insectos acuáticos, crustáceos y pequeños peces, mientras que los juveniles incorporan a su
+                        dieta serpientes, aves zancudas y mamíferos medianos.
+                        Los adultos son capaces de derribar presas tan grandes como ciervos de cola blanca, jabalíes e
+                        incluso ganado bovino, utilizando su técnica de "giro mortal" bajo el agua para desgarrar trozos
+                        de carne.
+                    </p>
+                    <p>
+                        Su metabolismo ectotérmico les permite sobrevivir con una sola comida voluminosa al mes durante
+                        los meses fríos, aunque en verano pueden alimentarse semanalmente. Un estudio estomacal en
+                        Louisiana descubrió que el 12% de los aligátores adultos analizados habían consumido frutas y
+                        bayas, revelando un comportamiento omnívoro inesperado en estos reptiles.
+                        Su mordida, registrada en laboratorio a 2,125 psi (libras por pulgada cuadrada), es una de las
+                        más poderosas del reino animal, superada solo por sus parientes los cocodrilos de agua salada.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>Características físicas</h2>
+                    <hr>
+                    <p>
+                        El diseño corporal del aligátor es una obra maestra de la evolución, prácticamente inalterada
+                        desde la era de los dinosaurios. Su piel dorsal, reforzada por osteodermos (placas óseas
+                        internas), forma una coraza prácticamente impenetrable para la mayoría de depredadores, mientras
+                        que su vientre es más blando y vulnerable. Los ojos, narinas y orejas están situados en la parte
+                        superior del cráneo,
+                        permitiéndole permanecer casi completamente sumergido mientras vigila su entorno. Posee dos
+                        tipos especializados de glándulas salivales: unas que excretan el exceso de sal (aunque menos
+                        eficientes que las de los cocodrilos marinos) y otras que producen una secreción antibiótica que
+                        previene infecciones en sus frecuentes heridas por combates territoriales.
+                    </p>
+                    <p>
+                        La cola, que representa casi la mitad de su longitud total, funciona como timón submarino,
+                        propulsor para ataques sorpresa y arma contundente capaz de romper huesos. Sus patas traseras
+                        palmeadas son ideales para la natación, mientras que las delanteras, más musculadas, le permiten
+                        realizar los famosos "death rolls" (giros mortales) para despedazar presas.
+                        Un rasgo único es su capacidad para regular el flujo sanguíneo al corazón mediante una
+                        derivación especial que le permite permanecer sumergido hasta 24 horas en condiciones de frío
+                        extremo.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>Comportamiento</h2>
+                    <hr>
+                    <p>
+                        Contrario a la creencia popular, los aligátores exhiben comportamientos sociales complejos que
+                        incluyen jerarquías dominantes, cuidado parental prolongado y comunicación acústica sofisticada.
+                        Durante la temporada de apareamiento (abril-mayo), los machos emiten profundos bramidos
+                        infrasónicos que hacen vibrar la superficie del agua, anunciando su presencia a hembras y
+                        rivales a kilómetros de distancia.
+                        Estos sonidos, producidos por la expulsión de aire a través de las fosas nasales, pueden
+                        alcanzar los 10 Hz, frecuencia que se transmite eficientemente a través del agua.
+                    </p>
+                    <p>
+                        Las hembras construyen elaborados nidos de vegetación en descomposición que generan calor por
+                        fermentación, incubando los huevos a una temperatura constante de 32°C. Lo extraordinario es que
+                        la temperatura del nido determina el sexo de las crías: por debajo de 30°C nacen hembras, por
+                        encima de 34°C nacen machos, un fenómeno conocido como determinación sexual por temperatura. Las
+                        madres permanecen cerca del nido durante los 65 días de incubación,
+                        defendiéndolo ferozmente de mapaches, zarigüeyas y otros aligátores, y al oír los chillidos de
+                        las crías al eclosionar, ayudan a liberarlas rompiendo cuidadosamente el nido con sus
+                        mandíbulas.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>Reproducción</h2>
+                    <hr>
+                    <p>
+                        El ciclo reproductivo del aligátor es uno de los más complejos entre los reptiles. Las hembras
+                        alcanzan la madurez sexual alrededor de los 1.8 metros de longitud (6-10 años), mientras que los
+                        machos deben esperar hasta superar los 2.5 metros (10-15 años). El cortejo incluye exhibiciones
+                        como golpes de cabeza en el agua, burbujeo nasal y frotamiento de espaldas. Tras el
+                        apareamiento, la hembra construye un montículo de vegetación de hasta 1.5 metros de altura y 2
+                        metros de diámetro,
+                        donde deposita entre 35-50 huevos del tamaño de una pelota de béisbol.
+                    <p>
+                        Las crías, de apenas 20 cm al nacer, permanecen agrupadas en "guarderías" protegidas por la
+                        madre durante hasta 2 años, un período de cuidado parental excepcionalmente largo entre los
+                        crocodilianos. Durante este tiempo, la madre responde a sus llamadas de auxilio y las transporta
+                        cuidadosamente en su boca hacia cuerpos de agua más seguros. Estudios de marcaje y recaptura han
+                        demostrado que algunas hembras reconocen a su prole incluso tras separaciones prolongadas,
+                        mostrando un grado de memoria individual sorprendente.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>Defensa y depredadores</h2>
+                    <hr>
+                    <p>
+                        Aunque los aligátores adultos carecen prácticamente de depredadores naturales (excepto
+                        ocasionalmente pumas o grandes ejemplares de su propia especie), los huevos y crías son
+                        extremadamente vulnerables. Las tasas de mortalidad en el primer año superan el 80%,
+                        principalmente debido a mapaches, garzas, tortugas mordedoras y otros aligátores. Como defensa,
+                        las crías emiten un chillido agudo que atrae a la madre y producen secreciones químicas que
+                        alertan a sus hermanos del peligro.
+                    </p>
+                    <p>
+                        Los adultos emplean tácticas de caza magistrales: el "still hunting" (acecho inmóvil durante
+                        horas), el "sit-and-wait" (espera cerca de bebederos frecuentados) y el cooperativo "fish
+                        herding" (conducción coordinada de bancos de peces hacia aguas someras). Su sistema inmunológico
+                        es legendario, produciendo péptidos antimicrobianos que les permiten sobrevivir a heridas que
+                        matarían a otros animales, incluidas amputaciones parciales de miembros.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>Datos curiosos</h2>
+                    <hr>
+                    <ul class="lista">
+                        <li>Pueden regenerar hasta 9 veces la misma pieza dental a lo largo de su vida (más de 3,000
+                            dientes en total).</li>
+                        <li>El corazón de un aligátor puede desviar el flujo sanguíneo para priorizar órganos vitales
+                            durante inmersiones prolongadas.</li>
+                        <li>En 2005, se descubrió que su sangre contiene poderosos antibióticos naturales efectivos
+                            contra bacterias resistentes.</li>
+                        <li>Algunos individuos en Florida han aprendido a cazar presas colocando ramas sobre sus hocicos
+                            como "cebo" para aves que buscan material de nido.</li>
+                        <li>Pueden correr en tierra a 17 km/h en distancias cortas usando un movimiento "high walk" con
+                            el cuerpo elevado.</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Estado de conservación</h2>
+                    <hr>
+                    <p>
+                        El aligátor americano representa uno de los mayores éxitos de conservación del siglo XX. Cazado
+                        casi hasta la extinción por su piel en los años 1950 (cuando solo quedaban 200,000 ejemplares),
+                        fue protegido en 1967 bajo la Ley de Especies en Peligro. Gracias a programas de reproducción y
+                        manejo de humedales, su población superó los 5 millones en 1987, cuando fue eliminado de la
+                        lista de especies amenazadas.
+                        Hoy, programas de cosecha controlada generan $100 millones anuales en la industria peletera
+                        estadounidense.
+                    </p>
+                    <p>
+                        Sin embargo, nuevos desafíos emergen: hibridación con cocodrilos americanos en Florida,
+                        envenenamiento por toxinas de algas en aguas contaminadas, y conflictos humanos-aligátor que
+                        resultan en 7-10 ataques anuales (aunque menos del 10% son fatales). Programas innovadores como
+                        el "Gator Patrol" en Florida (que reubica aligátores problemáticos) y la reintroducción en
+                        estados como Arkansas están redefiniendo la coexistencia con estos antiguos señores de los
+                        pantanos.
+                        Mientras tanto, el caimán chino sigue en Peligro Crítico, con menos de 300 individuos en
+                        libertad, víctima de la destrucción de humedales y la caza furtiva en Asia.
+                    </p>
+                    <div class="estado-conservacion" data-estado="LC">
+                        <div class="estado" data-info="Extinto" data-code="EX">EX</div>
+                        <div class="estado" data-info="Extinto en estado silvestre" data-code="EW">EW</div>
+                        <div class="estado" data-info="En peligro crítico" data-code="CR">CR</div>
+                        <div class="estado" data-info="En peligro" data-code="EN">EN</div>
+                        <div class="estado" data-info="Vulnerable" data-code="VU">VU</div>
+                        <div class="estado" data-info="Casi amenazado" data-code="NT">NT</div>
+                        <div class="estado" data-info="Preocupación menor" data-code="LC">LC</div>
+                    </div>
+                </section>
+            </div>
+            <div class="img3D">
+                <h2>Modelo 3D:</h2>
+                <hr>
+                <model-viewer src="../Modelos3D/Aligator.glb" alt="Modelo 3D de un animal" auto-rotate camera-controls
+                    ar shadow-intensity="1">
+                </model-viewer>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer-contenedor">
+        <div class="footer-contenido">
+            <div class="footer-con">
+                <div class="footer-logo">
+                    <img src="../../../img/Proyecto%20nuevo.png" alt="Logo de LifeHunter" class="logo-img">
+                </div>
+
+                <button id="btn-dato">¡Curiosidad animal!</button>
+
+                <div id="animal-container" class="hidden">
+                    <img id="animal-img" src="#" alt="Animal animado">
+                    <p id="dato-curioso"></p>
+                </div>
+
+                <div class="footer-communidad">
+                    <h3 class="community-titilo">Comunidad</h3>
+                    <div class="redes-sociales">
+                        <a href="https://discord.com/" class="red-social" target="_blank" rel="noopener noreferrer"
+                            aria-label="Discord">
+                            <img src="../../../img/discordblanco.png" alt="Discord" class="icono-social">
+                        </a>
+                        <a href="https://www.instagram.com/" class="red-social" target="_blank"
+                            rel="noopener noreferrer" aria-label="Instagram">
+                            <img src="../../../img/instagramblanco.png" alt="Instagram" class="icono-social">
+                        </a>
+                        <a href="https://www.youtube.com/" class="red-social" target="_blank" rel="noopener noreferrer"
+                            aria-label="YouTube">
+                            <img src="../../../img/youtubeblanco.png" alt="YouTube" class="icono-social">
+                        </a>
+                        <a href="https://x.com/" class="red-social" target="_blank" rel="noopener noreferrer"
+                            aria-label="Twitter">
+                            <img src="../../../img/xblanco.png" alt="Twitter" class="icono-social">
+                        </a>
+                        <a href="https://www.facebook.com/" class="red-social" target="_blank" rel="noopener noreferrer"
+                            aria-label="Facebook">
+                            <img src="../../../img/facebookblanco.png" alt="Facebook" class="icono-social">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-info">
+                <div class="lugar">
+                    <p>Puedes encontrarnos en:</p>
+                    <a href="https://maps.app.goo.gl/hSpv9RwdGKMLmeew6" target="_blank">Av. Nicolás de Piérola 1221,
+                        Trujillo 13001</a>
+                </div>
+                <div class="contacta">
+                    <a href='../../../contactanos/contacto.html'>Contáctanos</a> <br> <br>
+                    <a href='../../../sitemap/sitemap.html'>Mapa del sitio</a>
+                </div>
+                <div class="telefono">
+                    <p>Teléfono:</p>
+                    <a href="#">+51 910425708</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-divide">
+            <hr class="linea-dividir">
+        </div>
+
+        <div class="copyright">
+            <p class="copyright-texto">LifeHunter © 2025 Grupo 1. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="../js/codigo.js"></script>
+    <script src="session.js"></script>
+
+</body>
+
+
+<!-- Mirrored from lifehunter.netlify.app/reinoanimal/biografiaanimal/codigosa/biografiaaligator by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 11 Jan 2026 08:53:38 GMT -->
+</html>

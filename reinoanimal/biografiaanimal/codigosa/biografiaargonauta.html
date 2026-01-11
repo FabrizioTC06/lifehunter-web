@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="es">
+
+
+<!-- Mirrored from lifehunter.netlify.app/reinoanimal/biografiaanimal/codigosa/biografiaargonauta by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 11 Jan 2026 08:53:55 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="../../../../unpkg.com/%40google/model-viewer%404.1.0/dist/model-viewer.min.js"></script>
+    <link rel="stylesheet" href="../css/BiografiaA.css">
+    <style>
+        body {
+            --fondo: url("../css/Fondo/Argonauta-Fondo.jpg")
+        }
+    </style>
+    <title>LifeHunter - Argonauta</title>
+    <link rel="shortcut icon" href="../imagenes/Fooder/logo1png.png" type="image/x-icon">
+    <link rel="stylesheet" href="../../../css/session.css">
+</head>
+
+<body class="body-abanico">
+    <header>
+        <a class='header-logo-link' href='../../../index.html'>
+            <img src="../../../img/logo.jpg" alt="Logo LifeHunter" class="header-logo">
+        </a>
+        <h1 class="tituloPrincipal">LifeHunter</h1>
+
+        <div class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <nav class="navegacion-principal">
+
+            <a class='nav-enlace' href='../../animal.html'>Regresar</a>
+            <div class="boton-sesion-mobile">Iniciar Sesión</div>
+        </nav>
+
+        <div class="boton-sesion iniciarSesion-btn">Iniciar Sesión</div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="titulo">
+                <h1>ARGONAUTA</h1>
+            </div>
+
+            <div class="info-box">
+                <div class="contenedor">
+                    <div class="taxonomy-block">
+                        <div class="taxonomy">
+                            <div>REINO</div>
+                            <div>CATEGORIA</div>
+                            <div>FILO</div>
+                            <div>CLASE</div>
+                            <div>ORDEN</div>
+                        </div>
+                        <div class="taxonomy2">
+                            <div><a href='../../animal.html'>Animal</a></div>
+                            <div><a href='../../animal0e7d.html?Subfilo=invertebrado'>Invertebrado</a></div>
+                            <div><a href='../../animal948b.html?Filo=moluscos'>Molusco</a></div>
+                            <div><a href='../../animaleeb2.html?clase=cefalopodos'>Cefalópodo</a></div>
+                            <div><a href='../../animal5fd4.html?orden=carnivoros'>Carnívoro</a></div>
+                        </div>
+                        <div class="taxonomy">
+                            <div>REPRODUCCION</div>
+                            <div>HABITAT</div>
+                        </div>
+                        <div class="taxonomy2">
+                            <div><a href='../../animalf411.html?reproduccion=oviparos'>Ovíparo</a></div>
+                            <div><a href='../../animal0f84.html?habitat=acuaticos'>Acuático</a></div>
+                        </div>
+                    </div>
+                    <div class="image-container">
+                        <img class="background" src="../imagenes/Argonauta/fondo.jpg" alt="Fondo">
+                        <img class="base" src="../imagenes/Argonauta/base.jpg" alt="Base">
+                        <img class="main-image" src="../../imagenes/Transparente/ArgonautaT.png" alt="Argonauta">
+                    </div>
+                </div>
+            </div>
+
+            <div class="description">
+                <section>
+                    <h2>Descripción</h2>
+                    <hr>
+                    <p>
+                        El argonauta (Argonauta argo), conocido también como "nautilo papel" o "pulpo pelágico", es uno
+                        de los cefalópodos más enigmáticos de los mares tropicales y subtropicales. Este maestro del
+                        engaño, perteneciente a la familia Argonautidae, ha fascinado a naturalistas desde Aristóteles
+                        por su extraordinaria estrategia reproductiva y su concha calcárea que parece robada de un
+                        molusco ancestral. Las hembras,
+                        significativamente más grandes que los machos (pueden alcanzar 30 cm frente a los diminutos 2 cm
+                        de sus compañeros), secretan una delicada estructura en forma de barca que no es una verdadera
+                        concha sino un incubador flotante para sus huevos, una adaptación única en el reino animal.
+                    </p>
+                </section>
+                <section>
+                    <h2>Distribución y hábitat</h2>
+                    <hr>
+                    <p>
+                        Los argonautas son criaturas estrictamente pelágicas que habitan las capas superficiales de los
+                        océanos (generalmente entre 0-200 metros de profundidad), distribuidos en aguas tropicales y
+                        templadas de todo el mundo. Prefieren zonas de convergencia de corrientes donde el plancton se
+                        concentra, desde el Mediterráneo hasta el Pacífico sur, evitando áreas costeras. Estudios con
+                        marcadores satelitales han revelado
+                        que realizan migraciones verticales diarias, ascendiendo por la noche para alimentarse y
+                        descendiendo durante el día para evitar depredadores.
+                    </p>
+                    <p>
+                        Lo extraordinario es su capacidad para controlar activamente su flotabilidad: al regular la
+                        cantidad de aire atrapado en su "falsa concha", pueden mantenerse a profundidades específicas
+                        sin esfuerzo natatorio. En el Mar de Cortés, se han observado agregaciones estacionales de
+                        cientos de individuos siguiendo blooms de plancton, formando espectaculares "flotas" de
+                        argonautas que navegan las corrientes.
+                    </p>
+                    <div class="mapa-habitat">
+                        <div id="globo3d" class="container"></div>
+                    </div>
+
+                    <script src="https://unpkg.com/globe.gl"></script>
+                    <script src="../js/Continentes.js"></script>
+                    <script>
+                        const habitats = [
+                            { lat: 0, lng: -160, color: '#00bfff', label: 'Océano Pacífico' },
+                            { lat: 0, lng: -30, color: '#1e90ff', label: 'Océano Atlántico' },
+                            { lat: -20, lng: 80, color: '#4682b4', label: 'Océano Índico' }
+                        ];
+                        crearGlobo(habitats);
+                    </script>
+                </section>
+
+                <section>
+                    <h2>Alimentación</h2>
+                    <hr>
+                    <p>
+                        La dieta del argonauta consiste principalmente en pequeños organismos pelágicos: larvas de
+                        peces, copépodos, medusas y otros moluscos que capturan con sus dos tentáculos especializados
+                        (los dorsales, mucho más largos que los otros seis). Su técnica de caza es un prodigio de
+                        eficiencia energética: se mantienen casi inmóviles en la columna de agua, extendiendo sus
+                        filamentosos tentáculos cubiertos de mucus pegajoso como redes vivientes.
+                    </p>
+                    <p>
+                        Cuando detectan una presa, la envuelven rápidamente y la llevan hacia su pico quitinoso, capaz
+                        de perforar exoesqueletos duros. Estudios de contenidos estomacales han demostrado que
+                        seleccionan presas con alto contenido lipídico, cruciales para mantener su metabolismo en aguas
+                        abiertas donde la comida es escasa. Durante periodos de abundancia, pueden almacenar nutrientes
+                        en
+                        glándulas especiales para tiempos de escasez.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>Características físicas</h2>
+                    <hr>
+                    <p>
+                        La morfología del argonauta es una maravilla de adaptación a la vida pelágica. Las hembras
+                        poseen unos lóbulos en los tentáculos dorsales que secretan carbonato de calcio formando esa
+                        "concha" en espiral que las hace famosas - en realidad una estructura porosa y liviana (98%
+                        aire) que funciona como cámara de cría y dispositivo de flotación. Su cuerpo es casi
+                        completamente transparente cuando está sumergido,
+                        con sólo los ojos y las glándulas digestivas visibles como puntos de color.
+                    </p>
+                    <p>
+                        Los machos, diminutos en comparación, carecen de esta estructura pero poseen un tentáculo
+                        modificado (el hectocótilo) que se desprende durante el apareamiento para fecundar a la hembra a
+                        distancia - un fenómeno que confundió a los primeros naturalistas, quienes pensaban que era un
+                        parásito. Los ojos del argonauta, grandes y bien desarrollados, pueden detectar tanto la
+                        polarización de la luz como mínimos movimientos en aguas turbias.
+                    </p>
+                    <p>
+                        Su sistema de propulsión por chorro (como otros cefalópodos) está perfeccionado para movimientos
+                        precisos más que para velocidad, permitiéndoles maniobrar con elegancia en aguas abiertas. La
+                        superficie exterior de su "concha" está cubierta de microestructuras que difractan la luz,
+                        haciéndola casi invisible desde abajo contra la superficie iluminada.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>Comportamiento</h2>
+                    <hr>
+                    <p>
+                        A diferencia de muchos cefalópodos, los argonautas son criaturas principalmente solitarias que
+                        solo interactúan para aparearse. Pasan la mayor parte de su tiempo flotando pasivamente cerca de
+                        la superficie, ajustando periódicamente la cantidad de aire en su concha para mantener
+                        profundidad. Cuando son amenazados, pueden expulsar rápidamente el aire y sumergirse, o liberar
+                        una nube de tinta como distracción.
+                    </p>
+                    <p>
+                        Un comportamiento fascinante es su interacción con la superficie marina: en condiciones de
+                        calma, se han observado hembras "pegando" el borde de su concha a la tensión superficial del
+                        agua, creando una burbuja de aire estable que les permite descansar sin gastar energía. Durante
+                        tormentas, descienden a mayores profundidades donde las olas no perturban su frágil estructura.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>Reproducción</h2>
+                    <hr>
+                    <p>
+                        El ciclo reproductivo del argonauta es uno de los más extraordinarios del océano. Los machos,
+                        que viven solo unos pocos meses, desarrollan un tentáculo especializado (el hectocótilo) que
+                        contiene paquetes de esperma. Durante el apareamiento, este tentáculo se desprende y migra
+                        autónomamente dentro del manto de la hembra, donde puede permanecer viable durante semanas hasta
+                        que ella decide fertilizar sus huevos.
+                    </p>
+                    <p>
+                        La hembra deposita hasta 100,000 huevos diminutos en su cámara calcárea, donde los ventila con
+                        movimientos rítmicos y los protege de depredadores durante 4-8 semanas hasta la eclosión. Las
+                        crías, miniaturas perfectas de los adultos, son inmediatamente independientes y comienzan a
+                        secretar su propia concha a los pocos días. Las hembras pueden vivir hasta 2 años,
+                        reproduciéndose múltiples veces, mientras que los machos mueren poco después de transferir su
+                        hectocótilo.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>Defensa y depredadores</h2>
+                    <hr>
+                    <p>
+                        A pesar de sus estrategias de camuflaje, los argonautas enfrentan numerosos depredadores:
+                        atunes, delfines, peces luna y tortugas marinas que pueden detectar sus delicadas siluetas. Su
+                        principal defensa es la transparencia y la capacidad de liberar tinta oscura que confunde a los
+                        atacantes.
+                    </p>
+                    <p>
+                        Las tormentas representan otra amenaza: las olas pueden destrozar sus frágiles conchas,
+                        dejándolas vulnerables. En los últimos años, la acidificación oceánica ha emergido como peligro
+                        crítico, dificultando la formación de sus estructuras calcáreas. Los plásticos flotantes son
+                        confundidos frecuentemente con sus conchas, llevando a enredos fatales.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>Datos curiosos</h2>
+                    <hr>
+                    <ul class="lista">
+                        <li>Las hembras pueden reparar su concha dañada secretando nuevo carbonato de calcio.</li>
+                        <li>Los argonautas inspiraron el mito griego de Jasón y los Argonautas.</li>
+                        <li>Su "concha" fue clasificada erróneamente como molusco fósil hasta el siglo XIX.</li>
+                        <li>Pueden ajustar el grosor de su concha según la temperatura del agua.</li>
+                        <li>Los machos son 15 veces más pequeños que las hembras - el mayor dimorfismo sexual entre
+                            cefalópodos.</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Estado de conservación</h2>
+                    <hr>
+                    <p>
+                        Aunque no evaluado globalmente, el argonauta es considerado bioindicador de la salud de
+                        ecosistemas pelágicos. Su dependencia del carbonato de calcio lo hace especialmente vulnerable a
+                        la acidificación oceánica, con estudios mostrando deformidades en conchas en áreas con pH
+                        alterado.
+                    </p>
+                    <p>
+                        Programas como "Ocean Drifters" estudian sus patrones de distribución para monitorear cambios en
+                        corrientes marinas. Estas criaturas etéreas, que han navegado los mares desde el Mioceno, siguen
+                        siendo faros de lo desconocido, recordándonos que los océanos guardan misterios que apenas
+                        comenzamos a comprender. Su supervivencia está íntimamente ligada a la nuestra, en un planeta
+                        donde cada cambio en el mar afecta a todos sus navegantes, visibles e invisibles.
+                    </p>
+                    <div class="estado-conservacion" data-estado="LC">
+                        <div class="estado" data-info="Extinto" data-code="EX">EX</div>
+                        <div class="estado" data-info="Extinto en estado silvestre" data-code="EW">EW</div>
+                        <div class="estado" data-info="En peligro crítico" data-code="CR">CR</div>
+                        <div class="estado" data-info="En peligro" data-code="EN">EN</div>
+                        <div class="estado" data-info="Vulnerable" data-code="VU">VU</div>
+                        <div class="estado" data-info="Casi amenazado" data-code="NT">NT</div>
+                        <div class="estado" data-info="Preocupación menor" data-code="LC">LC</div>
+                    </div>
+                </section>
+            </div>
+            <div class="img3D">
+                <h2>Modelo 3D:</h2>
+                <hr>
+                <model-viewer src="../Modelos3D/Argonauta.glb" alt="Modelo 3D de un animal" auto-rotate camera-controls
+                    ar shadow-intensity="1">
+                </model-viewer>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer-contenedor">
+        <div class="footer-contenido">
+            <div class="footer-con">
+                <div class="footer-logo">
+                    <img src="../../../img/Proyecto%20nuevo.png" alt="Logo de LifeHunter" class="logo-img">
+                </div>
+
+                <button id="btn-dato">¡Curiosidad animal!</button>
+
+                <div id="animal-container" class="hidden">
+                    <img id="animal-img" src="#" alt="Animal animado">
+                    <p id="dato-curioso"></p>
+                </div>
+
+                <div class="footer-communidad">
+                    <h3 class="community-titilo">Comunidad</h3>
+                    <div class="redes-sociales">
+                        <a href="https://discord.com/" class="red-social" target="_blank" rel="noopener noreferrer"
+                            aria-label="Discord">
+                            <img src="../../../img/discordblanco.png" alt="Discord" class="icono-social">
+                        </a>
+                        <a href="https://www.instagram.com/" class="red-social" target="_blank"
+                            rel="noopener noreferrer" aria-label="Instagram">
+                            <img src="../../../img/instagramblanco.png" alt="Instagram" class="icono-social">
+                        </a>
+                        <a href="https://www.youtube.com/" class="red-social" target="_blank" rel="noopener noreferrer"
+                            aria-label="YouTube">
+                            <img src="../../../img/youtubeblanco.png" alt="YouTube" class="icono-social">
+                        </a>
+                        <a href="https://x.com/" class="red-social" target="_blank" rel="noopener noreferrer"
+                            aria-label="Twitter">
+                            <img src="../../../img/xblanco.png" alt="Twitter" class="icono-social">
+                        </a>
+                        <a href="https://www.facebook.com/" class="red-social" target="_blank" rel="noopener noreferrer"
+                            aria-label="Facebook">
+                            <img src="../../../img/facebookblanco.png" alt="Facebook" class="icono-social">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-info">
+                <div class="lugar">
+                    <p>Puedes encontrarnos en:</p>
+                    <a href="https://maps.app.goo.gl/hSpv9RwdGKMLmeew6" target="_blank">Av. Nicolás de Piérola 1221,
+                        Trujillo 13001</a>
+                </div>
+                <div class="contacta">
+                    <a href='../../../contactanos/contacto.html'>Contáctanos</a> <br> <br>
+                    <a href='../../../sitemap/sitemap.html'>Mapa del sitio</a>
+                </div>
+                <div class="telefono">
+                    <p>Teléfono:</p>
+                    <a href="#">+51 910425708</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-divide">
+            <hr class="linea-dividir">
+        </div>
+
+        <div class="copyright">
+            <p class="copyright-texto">LifeHunter © 2025 Grupo 1. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="../js/codigo.js"></script>
+    <script src="session.js"></script>
+
+</body>
+
+
+<!-- Mirrored from lifehunter.netlify.app/reinoanimal/biografiaanimal/codigosa/biografiaargonauta by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 11 Jan 2026 08:53:55 GMT -->
+</html>
