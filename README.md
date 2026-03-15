@@ -1,36 +1,36 @@
 # 🦁 LifeHunter
 
-**LifeHunter** es una plataforma web educativa e interactiva diseñada para explorar la biodiversidad a través de los 5 reinos biológicos y la taxonomía animal.
+**LifeHunter** is an interactive and educational web platform designed to explore biodiversity through the 5 biological kingdoms and animal taxonomy.
 
-Este proyecto busca facilitar el aprendizaje de la zoología y biología mediante una interfaz visual, moderna y fácil de navegar.
+This project aims to facilitate the learning of zoology and biology through a visual, modern, and easy-to-navigate interface.
 
-## 🚀 Tecnologías Utilizadas
+## 🚀 Technologies Used
 
-El proyecto fue construido utilizando un enfoque **Vanilla Stack** (sin frameworks pesados) para asegurar el máximo rendimiento y compatibilidad:
+The project was built using a **Vanilla Stack** (without heavy frameworks) to ensure maximum performance and core web fundamental compatibility:
 
-* **HTML5:** Estructura semántica del contenido.
-* **CSS3:** Diseño responsivo, animaciones y estilos visuales personalizados.
-* **JavaScript (ES6+):** Lógica de interacción, navegación dinámica y manejo del DOM.
+* **HTML5:** Semantic content structure.
+* **CSS3:** Responsive design, animations, and custom visual styles.
+* **JavaScript (ES6+):** Interaction logic, dynamic navigation, and DOM manipulation.
 
-## 🌟 Características
+## 🌟 Features
 
-* **Navegación por Reinos:** Secciones dedicadas para Animalia, Plantae, Fungi, Protista y Monera.
-* **Fichas Taxonómicas:** Información detallada sobre especies y clasificaciones.
-* **Interfaz Inmersiva:** Uso de efectos visuales para mejorar la experiencia de usuario.
+* **Kingdom Navigation:** Dedicated sections for Animalia, Plantae, Fungi, Protista, and Monera.
+* **Taxonomic Cards:** Detailed information about species and classifications.
+* **Immersive Interface:** Use of visual effects to enhance the user learning experience.
 
-## 🔧 Instalación y Uso
+## 🔧 Installation & Usage
 
-Este es un sitio web estático, por lo que no requiere instalación de dependencias complejas.
+This is a static website, so it does not require complex dependency installations.
 
-1.  Clona el repositorio:
+1.  Clone the repository:
     ```bash
     git clone [https://github.com/FabrizioTC06/lifehunter-web.git](https://github.com/FabrizioTC06/lifehunter-web.git)
     ```
-2.  Navega a la carpeta del proyecto.
-3.  Abre el archivo `index.html` en tu navegador favorito.
+2.  Navigate to the project folder.
+3.  Open the `index.html` file in your preferred web browser.
 
-> **Nota:** Para una mejor experiencia de desarrollo, se recomienda usar la extensión "Live Server" en VS Code.
+> **Note:** For a better development experience, using the "Live Server" extension in VS Code is recommended.
 
 ---
-*Desarrollado por **Fabrizio Teodor** - 2025*
-*Proyecto Académico - Ingeniería de Sistemas UTP*
+*Developed by **Fabrizio Teodor Celis** - 2025*
+*Academic Project - Computer and Systems Engineering, UTP*
